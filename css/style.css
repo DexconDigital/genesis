@@ -1,0 +1,56 @@
+@font-face{
+    font-family: 'releway';
+    src: url("../fonts/Raleway-Regular.ttf");
+    
+}
+@font-face{
+    font-family: 'century-gotic';
+    src: url("../fonts/GOTHIC.TTF")
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    overflow-x:hidden;
+    padding: 0;
+    margin: 0;
+}
+body .body{
+    flex: 1;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "century-gotic"; 
+}
+p, span {
+    font-family: "releway"; }
+
+.color_a_nav{
+    color: grey;
+}
+.li_color{
+    color: #99cf16;
+}
+.a_linea{
+    border-right: 1px solid #dddddd;
+}
+.a_linea2{
+    border-right: 1px solid #dddddd;
+}
+a:hover{
+    color: #99cf16;
+    transition: all 0.35s ease-out;
+    text-decoration: none;
+}
+.contenedor_logo{
+    height: 78px;
+    width: 149px;
+}
+.contenedor_pse{
+    height: 55px;
+    width: 72px;
+}
+.margen_busca{
+    margin-bottom: 21px;
+}
