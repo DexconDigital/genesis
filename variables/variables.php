@@ -118,7 +118,7 @@ $frase_home = [
 	"titulo" => "Bienvenidos",
 	"parrafos" => [
 		0 => "Recorre este sitio y descubre todo lo que tenemos preparado para ti, encuentra toda la información sobre inmuebles y los contenidos especialmente pensados para hacer de la búsqueda inmobiliaria una experiencia cómoda y con resultados satisfactorios.",
-		1 => "Consulta en nuestra base de datos y encuentra el inmueble que estas buscando, fácil de usar y con resultados directos. Gracias por preferirnos y por contar con nosotros para cumplir tus sueños.",
+		1 => " Consulta en nuestra base de datos y encuentra el inmueble que estas buscando, fácil de usar y con resultados directos. Gracias por preferirnos y por contar con nosotros para cumplir tus sueños.",
 	],
 	"imagen" => "images/bienvenidos.png",
 ];

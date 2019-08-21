@@ -54,3 +54,34 @@ a:hover{
 .margen_busca{
     margin-bottom: 21px;
 }
+.style_span_tipo_inmueble{
+    position: absolute;
+    top: 15px;
+    font-size: 9px;
+    color: #fff;
+    text-align: center;
+    right: auto;
+    letter-spacing: 1.5px;
+    background-color: #77c720;
+    padding: 6px 10px 4px 10px;
+   
+}
+.style_span_precio{
+    position: absolute;
+    top:212px;
+    font-size: 9px;
+    color: #fff;
+    text-align: center;
+    right: 21px;
+    letter-spacing: 1.5px;
+    background-color:  #77c720;
+    padding: 6px 10px 4px 10px;
+}
+.margen_targe{
+    padding: 20px;
+}
+.color_venta{
+    color: #77c720;
+    font-size: 44px;
+    margin-top: 18px;
+}
