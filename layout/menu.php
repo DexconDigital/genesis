@@ -34,22 +34,22 @@
                     <a class="nav-link " href="index.php">Inicio <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item" style="">
-                    <a class="nav-link" href="#">Quiénes Somos</a>
+                    <a class="nav-link" href="quienes_somos.php">Quiénes Somos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Servicios</a>
+                    <a class="nav-link" href="servicios.php">Servicios</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Inmuebles</a>
+                    <a class="nav-link" href="inmuebles.php">Inmuebles</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Clientes</a>
+                    <a class="nav-link" href="clientes.php">Clientes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
+                    <a class="nav-link" href="blog.php">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contáctanos</a>
+                    <a class="nav-link" href="contactos.php">Contáctanos</a>
                 </li>
 
 
