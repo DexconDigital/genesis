@@ -42,8 +42,13 @@
                 <li class="nav-item">
                     <a class="nav-link" href="inmuebles.php">Inmuebles</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="clientes.php">Clientes</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Clientes</a>
+                    <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="https://www.simiinmobiliarias.com/base/simired/simidocsapi1.0/index.php?inmo=583&tipo=2" target="_blank">Arrendatarios</a>
+                        <a class="dropdown-item" href="https://www.simiinmobiliarias.com/base/simired/simidocsapi1.0/index.php?inmo=583&tipo=2"  target="_blank"> Propietarios</a>
+                        
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="blog.php">Blog</a>

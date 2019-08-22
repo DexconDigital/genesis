@@ -1,9 +1,9 @@
 <i class="fas fa-angle-double-up subir"></i>
 <footer>
                 <div>
-                    <div class="container border border-secondary mt-5">
-                        <div class="row border border-secondary">
-                            <div class="col-md-3 border border-secondary">
+                    <div class="container  mt-5">
+                        <div class="row ">
+                            <div class="col-md-3 ">
                                 <div>
                                     <h2 style="font-size: 20px;font-weight: 600;margin-bottom: 30px;text-transform: uppercase;text-align: center;"> G.A. Inmobiliaria</h2>
                                     <p style="    text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius dolore qui possimus eligendi aperiam, ad neque, odit animi doloremque, nisi sequi soluta quos labore magni ab. A doloremque quidem amet.</p>
@@ -22,7 +22,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-md-3 border border-secondary">
+                            <div class="col-md-3 ">
                                 <div>
                                     <h2 style="font-size: 20px;font-weight: 600;margin-bottom: 30px;text-transform: uppercase;text-align: center;">Formularios</h2>
 
@@ -36,7 +36,7 @@
                                     </nav>
                                 </div>
                             </div>
-                            <div class="col-md-3 border border-secondary">
+                            <div class="col-md-3 ">
                                 <div>
                                     <h2 style="font-size: 20px;font-weight: 600;margin-bottom: 30px;text-transform: uppercase;text-align: center;">Ubícanos</h2>
 
@@ -45,7 +45,7 @@
                                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.6105356778453!2d-74.06044668555337!3d4.663327743279707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a5edbe0bf49%3A0x936d31bf17fc020e!2sCl.+77+%2314-19%2C+Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1566400574822!5m2!1ses-419!2sco" frameborder="0" style="border:0; width: 100%;" allowfullscreen></iframe>
                                 </div>
                             </div>
-                            <div class="col-md-3 border border-secondary">
+                            <div class="col-md-3 ">
                                 <div>
                                     <h2 style="font-size: 20px;font-weight: 600;margin-bottom: 30px;text-transform: uppercase;text-align: center;">Contáctanos</h2>
                                 </div>
@@ -61,8 +61,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="footer-bottom-area border border-secondary">
-                    <div class="container border border-secondary text-center p-2">
+                <div class="footer-bottom-area ">
+                    <div class="container  text-center p-2">
                         <p>Copyright © 2019 <a class="color_a_foot" href="https://www.dexcondigital.com/">Dexcon Digital.</a></p>
                     </div>
                 </div>

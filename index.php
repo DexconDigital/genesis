@@ -20,43 +20,96 @@ $page = 'Inicio'; ?>
         </section>
 
         <section id="hero">
-            <div style="position: relative;" id="slide_hero" class="carousel slide carousel-fade" data-ride="carousel">
-                <div class="carousel-inner img_opacity">
-
-                    <div class="carousel-ite active img_opacity">
-                        <img src="images/slide1.jpg" class="d-block w-100 " alt="...">
-                        <div style="    top: 217px;" class="carousel-caption d-none d-md-block  wow fadeInUp">
-                            <h1 class="texto"><strong>Encuentra el inmueble de tus sueños</strong></h1>
-
+            <!--Carousel Wrapper-->
+            <div id="video-carousel-example2" class="carousel slide carousel-fade" data-ride="carousel">
+                <!--Indicators-->
+                <ol class="carousel-indicators">
+                    <li data-target="#video-carousel-example2" data-slide-to="0" class="active"></li>
+                    <li data-target="#video-carousel-example2" data-slide-to="1"></li>
+                    <li data-target="#video-carousel-example2" data-slide-to="2"></li>
+                </ol>
+                <!--/.Indicators-->
+                <!--Slides-->
+                <div class="carousel-inner" role="listbox">
+                    <!-- First slide -->
+                    <div class="carousel-item active">
+                        <!--Mask color-->
+                        <div class="view">
+                            <!--Video source-->
+                            <video class="video-fluid" autoplay loop muted>
+                                <source src="images/slide1.jpg" type="" />
+                            </video>
+                            <div class="mask rgba-indigo-light"></div>
                         </div>
-                    </div>
 
+                        <!--Caption-->
+                        <div class="carousel-caption">
+                            <div class="animated fadeInDown">
+                                <h3 class="h3-responsive">1</h3>
+                                <p>First text</p>
+                            </div>
+                        </div>
+                        <!--Caption-->
+                    </div>
+                    <!-- /.First slide -->
+
+                    <!-- Second slide -->
                     <div class="carousel-item">
-                        <img src="images/slide2.jpg" class="d-block w-100 img_opacity" alt="...">
-                        <div style="    top: 217px;" class="carousel-caption d-none d-md-block  ">
-                            <h1><strong>Encuentra el inmueble de tus sueños</strong></h1>
-
+                        <!--Mask color-->
+                        <div class="view">
+                            <!--Video source-->
+                            <video class="video-fluid" autoplay loop muted>
+                                <source src="images/slide2.jpg" type="" />
+                            </video>
+                            <div class="mask rgba-purple-slight"></div>
                         </div>
+
+                        <!--Caption-->
+                        <div class="carousel-caption">
+                            <div class="animated fadeInDown">
+                                <h3 class="h3-responsive">2</h3>
+                                <p>Secondary text</p>
+                            </div>
+                        </div>
+                        <!--Caption-->
                     </div>
+                    <!-- /.Second slide -->
+
+                    <!-- Third slide -->
                     <div class="carousel-item">
-                        <img src="images/slide3.jpg" class="d-block w-100 img_opacity" alt="...">
-                        <div style="    top: 217px;" class="carousel-caption d-none d-md-block  ">
-                            <h1><strong>Encuentra el inmueble de tus sueños</strong></h1>
-
+                        <!--Mask color-->
+                        <div class="view">
+                            <!--Video source-->
+                            <video class="video-fluid" autoplay loop muted>
+                                <source src="images/slide3.jpg" type="" />
+                            </video>
+                            <div class="mask rgba-black-strong"></div>
                         </div>
+
+                        <!--Caption-->
+                        <div class="carousel-caption">
+                            <div class="animated fadeInDown">
+                                <h3 class="h3-responsive">3</h3>
+                                <p>Third text</p>
+                            </div>
+                        </div>
+                        <!--Caption-->
                     </div>
-
-
-                    <div class="overlay"></div>
-                    <a class="carousel-control-prev" href="#slide_hero" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only" >Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#slide_hero" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+                    <!-- /.Third slide -->
                 </div>
+                <!--/.Slides-->
+                <!--Controls-->
+                <a class="carousel-control-prev" href="#video-carousel-example2" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#video-carousel-example2" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                <!--/.Controls-->
+            </div>
+            <!--Carousel Wrapper-->
 
         </section>
 
@@ -70,7 +123,7 @@ $page = 'Inicio'; ?>
                     <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="" placeholder="Tipo de Inmueble"></div>
                     <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="" placeholder=" Precio Mínimo"></div>
                     <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="" placeholder=" Precio Máximo"></div>
-                    <div class="col-3 margen_busca"><button style="background-color:#99cf16;" type="button" class="btn rounded-0 col-12" name=""><span style="color:white">Buscar</span></button></div>
+                    <div class="col-3 margen_busca"><button style="background-color:#99cf16;  padding: 6px;" type="button" class="btn rounded-0 col-12" name=""><span style="color:white">Buscar</span></button></div>
                 </div>
             </div>
         </section>
@@ -394,7 +447,7 @@ $page = 'Inicio'; ?>
                             <div class="margen_serv" style=" text-align: justify;">
                                 <p><?php echo $texto_servicios['ventas']['parrafos'][0] ?></p>
                             </div>
-                            <div style="margin-top: 136px;" class="margen_busca"><button style="background-color:gray;" type="button" class="btn rounded-0 col-12" name=""><span style="color:white">ver
+                            <div style="margin-top: 136px;" class="margen_busca"><button style="background-color:gray;padding: 5px;" type="button" class="btn rounded-0 col-12" name=""><span style="color:white">ver
                                         más </span></button></div>
                         </div>
                     </div>
@@ -409,7 +462,7 @@ $page = 'Inicio'; ?>
                             <div class="margen_serv" style=" text-align: justify;">
                                 <p><?php echo $texto_servicios['arriendos']['parrafos'][0] ?></p>
                             </div>
-                            <div class="margen_busca"><button style="background-color:gray;" type="button" class="btn rounded-0 col-12" name=""><span style="color:white">ver
+                            <div class="margen_busca"><button style="background-color:gray;padding: 5px;" type="button" class="btn rounded-0 col-12" name=""><span style="color:white">ver
                                         más </span></button></div>
                         </div>
                     </div>
@@ -424,7 +477,7 @@ $page = 'Inicio'; ?>
                             <div class="margen_serv" style=" text-align: justify;">
                                 <p><?php echo $texto_servicios['avaluos']['parrafos'][0] ?></p>
                             </div>
-                            <div class="margen_busca"><button style="background-color:gray;" type="button" class="btn rounded-0 col-12" name=""><span style="color:white">ver
+                            <div class="margen_busca"><button style="background-color:gray;padding: 5px;" type="button" class="btn rounded-0 col-12" name=""><span style="color:white">ver
                                         más </span></button></div>
                         </div>
                     </div>
@@ -506,7 +559,7 @@ $page = 'Inicio'; ?>
                     <div class="col-md-4">
                         <div class="card" style="border-color: white;">
                             <img src="images/no_image.png" class="card-img-top" alt="...">
-                            <div class="card-body p-0 mt-4">
+                            <div class="card-body espacio_tageta mt-4">
                                 <h4 class="card-title"><strong>Titulo Noticia</strong></h4>
                                 <p>23 Agosto 2019 / Admin</p>
                                 <p style="border-bottom: 1px dashed #646464; margin-bottom: 30px;padding-bottom: 30px;" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -517,7 +570,7 @@ $page = 'Inicio'; ?>
                     <div class="col-md-4">
                         <div class="card" style="border-color: white;">
                             <img src="images/no_image.png" class="card-img-top" alt="...">
-                            <div class="card-body p-0 mt-4">
+                            <div class="card-body espacio_tageta mt-4">
                                 <h4 class="card-title"><strong>Titulo Noticia</strong></h4>
                                 <p>23 Agosto 2019 / Admin</p>
                                 <p style="border-bottom: 1px dashed #646464; margin-bottom: 30px;padding-bottom: 30px;" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -528,7 +581,7 @@ $page = 'Inicio'; ?>
                     <div class="col-md-4">
                         <div class="card" style="border-color: white;">
                             <img src="images/no_image.png" class="card-img-top" alt="...">
-                            <div class="card-body p-0 mt-4">
+                            <div class="card-body espacio_tageta mt-4">
                                 <h4 class="card-title"><strong>Titulo Noticia</strong></h4>
                                 <p>23 Agosto 2019 / Admin</p>
                                 <p style="border-bottom: 1px dashed #646464; margin-bottom: 30px;padding-bottom: 30px;" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -548,7 +601,7 @@ $page = 'Inicio'; ?>
     </div>
 
     <?php include('layout/archivosfooter.php'); ?>
-  
+
 </body>
 
 </html>
