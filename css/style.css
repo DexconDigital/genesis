@@ -85,3 +85,67 @@ a:hover{
     font-size: 44px;
     margin-top: 18px;
 }
+.margen_serv{
+    margin-top: 30px;
+}
+.banner_estadi{
+background: url(../images/no_image.png);
+background-color: #4c4c4c52;
+height: 271px;
+}
+.estilo_icono_foot{
+    color: #77c720;
+    display: block;
+    transition: all 0.35s ease-out;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    margin: auto;
+    text-align: center;
+    background: transparent;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border: 1px solid #c2c2c2;
+}
+.li_footer{
+    display: block;
+    margin: 10px 0;
+    
+}
+.a_footer{
+    display: inline-block;
+    transition: all 0.35s ease-out
+    ;text-decoration: none;
+    text-align: center;
+    color: black;
+}
+.contac_foot{
+    color: #77c720;
+    padding-right: 10px;
+    font-size: 20px;
+}
+.style_correo{
+    font-size: 14px;
+    color: black;
+}
+.color_a_foot{
+    color: black;
+}
+
+.subir {
+    display: none;
+    padding: 15px;
+    background-color: #77c720;;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    -webkit-box-shadow: -2px 2px 5px 3px rgba(189,189,189,1);
+    -moz-box-shadow: -2px 2px 5px 3px rgba(189,189,189,1);
+    box-shadow: -2px 2px 5px 3px rgba(189,189,189,1);
+    z-index: 2;
+}
+

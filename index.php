@@ -16,109 +16,47 @@ $page = 'Inicio'; ?>
     <div class="container-fluid body">
 
         <section id="menu">
-            <div class="border border-secondary">
-                <div class="container">
-                    <div class=" col-md-12">
-                        <div class="d-flex bd-highlight border border-secondary">
-                            <div class=" row mr-auto  bd-highlight ">
-                                <a class="color_a_nav  a_linea p-2" href="tel:<?php echo $datos_contacto['telefono_fijo']['link'] ?>"><i class="fa fa-phone m-2 li_color"></i><?php echo $datos_contacto['telefono_fijo']['imprimir'] ?></a>
-                                <a class="color_a_nav p-2" href="tel:<?php echo $datos_contacto['celular']['link'] ?>"><i class="fas fa-mobile-alt m-2 li_color"></i><?php echo $datos_contacto['celular']['imprimir'] ?></a>
-                            </div>
-
-                            <div class="bd-highlight a_linea2 d-flex align-items-end ">
-                                <a class="color_a_nav p-2  " href="tel:<?php echo $datos_contacto['whatsapp']['link'] ?>"><i class="fab fa-whatsapp m-2 li_color"></i><?php echo $datos_contacto['whatsapp']['imprimir'] ?></a>
-                            </div>
-                            <div class=" bd-highlight d-flex align-items-end ">
-                                <a class="color_a_nav p-2" href="mailto:<?php echo $datos_contacto['correo']['correo'] ?>"><i class="far fa-envelope m-2 li_color "></i><?php echo $datos_contacto['correo']['correo'] ?></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light border border-secondary">
-                <div class="container">
-                    <div class="border border-secondary">
-                        <a class="navbar-brand contenedor_logo" href="#">
-                            <img style="height: 100%;width: 100%;object-fit:contain;" src="images/logo.png" class="d-inline-block align-top" alt="">
-                        </a>
-                    </div>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse border border-secondary" id="navbarNav">
-                        <ul class="  navbar-nav " style="margin-left: 96px">
-                            <li class="nav-item active">
-                                <a class="nav-link " href="index.php">Inicio <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item" style="">
-                                <a class="nav-link" href="#">Quiénes Somos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Servicios</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Inmuebles</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Clientes</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contáctanos</a>
-                            </li>
-
-
-                        </ul>
-
-                    </div>
-                    <div class="border border-secondary">
-
-                        <a class="nav-link contenedor_pse" href="#">
-                            <img style="height: 100%;width: 100%;object-fit:contain;" src="images/logopse.png" class="d-inline-block align-top" alt="">
-                        </a>
-
-                    </div>
-                </div>
-            </nav>
+            <?php include 'layout/menu.php' ?>
         </section>
 
-        <section id="slider">
-            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="images/slide1.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h1>Bienvenidos</h1>
-                            <p></p>
+        <section id="hero">
+            <div style="position: relative;" id="slide_hero" class="carousel slide carousel-fade" data-ride="carousel">
+                <div class="carousel-inner img_opacity">
+
+                    <div class="carousel-ite active img_opacity">
+                        <img src="images/slide1.jpg" class="d-block w-100 " alt="...">
+                        <div style="    top: 217px;" class="carousel-caption d-none d-md-block  wow fadeInUp">
+                            <h1 class="texto"><strong>Encuentra el inmueble de tus sueños</strong></h1>
+
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="images/slide2.jpg" class="d-block w-100 img_opacity" alt="...">
+                        <div style="    top: 217px;" class="carousel-caption d-none d-md-block  ">
+                            <h1><strong>Encuentra el inmueble de tus sueños</strong></h1>
+
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="images/slide2.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h1>Bienvenidos</h1>
-                            <p>Recorre este sitio y descubre todo lo que tenemos preparado para ti, encuentra toda la información sobre inmuebles y los contenidos especialmente pensados para hacer de la búsqueda inmobiliaria una experiencia cómoda y con resultados satisfactorios.</p>
+                        <img src="images/slide3.jpg" class="d-block w-100 img_opacity" alt="...">
+                        <div style="    top: 217px;" class="carousel-caption d-none d-md-block  ">
+                            <h1><strong>Encuentra el inmueble de tus sueños</strong></h1>
+
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="images/slide3.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h1>Bienvenidos</h1>
-                            <p>Consulta en nuestra base de datos y encuentra el inmueble que estas buscando, fácil de usar y con resultados directos. Gracias por preferirnos y por contar con nosotros para cumplir tus sueños.</p>
-                        </div>
-                    </div>
+
+
+                    <div class="overlay"></div>
+                    <a class="carousel-control-prev" href="#slide_hero" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only" >Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#slide_hero" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
 
         </section>
 
@@ -444,31 +382,173 @@ $page = 'Inicio'; ?>
 
         <section id="servicios">
             <div class="container">
-                <div class="col-md-12 border border-secondary">
+                <div class="d-flex justify-content-between col-md-12 row border border-secondary">
                     <div class="col-md-4 row border border-secondary">
                         <div class="col-md-3">
                             <i class="fas fa-tags color_venta"></i>
                         </div>
                         <div class="col-md-9">
                             <div>
-                                <h4><?php echo $texto_servicios['ventas']['titulo'] ?></h4>
+                                <h4><strong><?php echo $texto_servicios['ventas']['titulo'] ?></strong></h4>
                             </div>
-                            <div style=" text-align: justify;">
+                            <div class="margen_serv" style=" text-align: justify;">
                                 <p><?php echo $texto_servicios['ventas']['parrafos'][0] ?></p>
+                            </div>
+                            <div style="margin-top: 136px;" class="margen_busca"><button style="background-color:gray;" type="button" class="btn rounded-0 col-12" name=""><span style="color:white">ver
+                                        más </span></button></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 row border border-secondary">
+                        <div class="col-md-3">
+                            <i class="fas fa-sign color_venta"></i>
+                        </div>
+                        <div class="col-md-9">
+                            <div>
+                                <h4><strong><?php echo $texto_servicios['arriendos']['titulo'] ?></strong></h4>
+                            </div>
+                            <div class="margen_serv" style=" text-align: justify;">
+                                <p><?php echo $texto_servicios['arriendos']['parrafos'][0] ?></p>
                             </div>
                             <div class="margen_busca"><button style="background-color:gray;" type="button" class="btn rounded-0 col-12" name=""><span style="color:white">ver
                                         más </span></button></div>
                         </div>
                     </div>
-                    <div class="col-md-4 border border-secondary"></div>
-                    <div class="col-md-4 border border-secondary"></div>
+                    <div class="col-md-4 row border border-secondary">
+                        <div class="col-md-3">
+                            <i class="fas fa-balance-scale color_venta"></i>
+                        </div>
+                        <div class="col-md-9">
+                            <div>
+                                <h4><strong><?php echo $texto_servicios['avaluos']['titulo'] ?></strong></h4>
+                            </div>
+                            <div class="margen_serv" style=" text-align: justify;">
+                                <p><?php echo $texto_servicios['avaluos']['parrafos'][0] ?></p>
+                            </div>
+                            <div class="margen_busca"><button style="background-color:gray;" type="button" class="btn rounded-0 col-12" name=""><span style="color:white">ver
+                                        más </span></button></div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
+
+        <section id="estadisticas">
+            <div class="banner_estadi ">
+                <div class="container  contenedor_banner">
+
+                    <div class="row d-flex justify-content-between" style="padding: 73px;">
+                        <div class="col-3 text-center" style="">
+                            <div>
+                                <i class="far fa-address-card tamaño_icono_banner"></i>
+                                <h1>100</h1>
+                                <h5><?php echo $texto_contador_estadisticas['parrafos'][0] ?></h5>
+                            </div>
+                        </div>
+                        <div class="col-3 text-center" style="">
+                            <div>
+                                <i class="far fa-address-card tamaño_icono_banner"></i>
+                                <h1>100</h1>
+                                <h5><?php echo $texto_contador_estadisticas['parrafos'][1] ?></h5>
+                            </div>
+                        </div>
+                        <div class="col-3 text-center" style="">
+                            <div>
+                                <i class="far fa-address-card tamaño_icono_banner"></i>
+                                <h1>100</h1>
+                                <h5><?php echo $texto_contador_estadisticas['parrafos'][2] ?></h5>
+                            </div>
+                        </div>
+                        <div class="col-3 text-center" style="">
+                            <div>
+                                <i class="far fa-address-card tamaño_icono_banner"></i>
+                                <h1>100</h1>
+                                <h5><?php echo $texto_contador_estadisticas['parrafos'][3] ?></h5>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="aliados">
+            <div class="col-md-12">
+                <div class="col-12">
+                    <h1 class="text-center mt-5">Nuestros Aliados</h1>
+                </div>
+            </div>
+            <div class="owl-carousel owl-theme owl-loaded owl-drag" id="aliados_slide">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage" style="transform: translate3d(-1401px, 0px, 0px); transition: all 0s ease 0s; width: 4206px;">
+                        <div class="owl-item cloned" style="width: 457.333px; margin-right: 10px;">
+                            <div class="item" style="height: 150px;">
+                                <img style="height: 100%; object-fit: contain;" src="images/LOGO SIMI.png" alt="">
+                            </div>
+                        </div>
+                        <div class="owl-item cloned" style="width: 457.333px; margin-right: 10px;">
+                            <div class="item" style="height: 150px;">
+                                <img style="height: 100%; object-fit: none;" src="images/LOGO EL LIBERTADOR.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section id="noticias">
+            <div class="container mt-5">
+                <div class="col-12">
+                    <h1 class="text-center mt-5">Últimas Noticias</h1>
+                </div>
+                <div class="col-md-12 row mt-5">
+                    <div class="col-md-4">
+                        <div class="card" style="border-color: white;">
+                            <img src="images/no_image.png" class="card-img-top" alt="...">
+                            <div class="card-body p-0 mt-4">
+                                <h4 class="card-title"><strong>Titulo Noticia</strong></h4>
+                                <p>23 Agosto 2019 / Admin</p>
+                                <p style="border-bottom: 1px dashed #646464; margin-bottom: 30px;padding-bottom: 30px;" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <button style="background-color:#99cf16;padding: 1px;" type="button" class="btn rounded-0 col-6" name=""><span style="color:white">ver más</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="border-color: white;">
+                            <img src="images/no_image.png" class="card-img-top" alt="...">
+                            <div class="card-body p-0 mt-4">
+                                <h4 class="card-title"><strong>Titulo Noticia</strong></h4>
+                                <p>23 Agosto 2019 / Admin</p>
+                                <p style="border-bottom: 1px dashed #646464; margin-bottom: 30px;padding-bottom: 30px;" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <button style="background-color:#99cf16;padding: 1px;" type="button" class="btn rounded-0 col-6" name=""><span style="color:white">ver más</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="border-color: white;">
+                            <img src="images/no_image.png" class="card-img-top" alt="...">
+                            <div class="card-body p-0 mt-4">
+                                <h4 class="card-title"><strong>Titulo Noticia</strong></h4>
+                                <p>23 Agosto 2019 / Admin</p>
+                                <p style="border-bottom: 1px dashed #646464; margin-bottom: 30px;padding-bottom: 30px;" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <button style="background-color:#99cf16;padding: 1px;" type="button" class="btn rounded-0 col-6" name=""><span style="color:white">ver más</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="footer">
+            <?php include 'layout/footer.php' ?>
         </section>
 
     </div>
 
     <?php include('layout/archivosfooter.php'); ?>
+  
 </body>
 
 </html>
