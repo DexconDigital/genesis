@@ -20,7 +20,7 @@ $page = 'servicios' ?>
         </section>
 
         <section>
-            <div class="container">
+            <div class="container" style="margin-top: 30px;">
                 <div class="col-md-12">
                     <div class="col-md-8">
                         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">

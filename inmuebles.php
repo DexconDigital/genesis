@@ -29,7 +29,12 @@ $page = 'inmueble' ?>
                     <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="" placeholder="Tipo de Inmueble"></div>
                     <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="" placeholder=" Precio Mínimo"></div>
                     <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="" placeholder=" Precio Máximo"></div>
-                    <div class="col-3 margen_busca"><button style="background-color:#99cf16; padding: 6px;" type="button" class="btn rounded-0 col-12" name=""><span style="color:white">Buscar</span></button></div>
+                    <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="" placeholder=" Baños"></div>
+                    <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="" placeholder=" Habitaciones"></div>
+                    <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="" placeholder=" Garajes"></div>
+                    <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="" placeholder=" Área Máxima"></div>
+                    <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="" placeholder=" Área Mínima"></div>
+                    <div class="col-12 margen_busca"><button  type="button" class="btn rounded-0 col-6 botoon_inmueble" name=""><span style="color:white">Buscar</span></button></div>
                 </div>
             </div>
         </section>

@@ -67,15 +67,12 @@ a:hover{
    
 }
 .style_span_precio{
-    position: absolute;
-    top:212px;
-    font-size: 9px;
+    font-size: 12px;
     color: #fff;
     text-align: center;
     right: 21px;
-    letter-spacing: 1.5px;
-    background-color:  #77c720;
-    padding: 6px 10px 4px 10px;
+    background-color: #77c720;
+    padding: 6px 20px 4px 20px;
 }
 .margen_targe{
     padding: 20px;
@@ -89,9 +86,10 @@ a:hover{
     margin-top: 30px;
 }
 .banner_estadi{
-background: url(../images/no_image.png);
-background-color: #4c4c4c52;
-height: 271px;
+    
+    background: url(../images/count.jpg) no-repeat;
+    
+    background-position: center;
 }
 .estilo_icono_foot{
     color: #77c720;
@@ -118,7 +116,7 @@ height: 271px;
     transition: all 0.35s ease-out
     ;text-decoration: none;
     text-align: center;
-    color: black;
+    color:white;
 }
 .contac_foot{
     color: #77c720;
@@ -127,10 +125,21 @@ height: 271px;
 }
 .style_correo{
     font-size: 14px;
-    color: black;
+    color: white;
 }
 .color_a_foot{
-    color: black;
+    color: white;
+    
+}
+.botoon_inmueble{
+    background-color:#99cf16;
+     padding: 6px;
+     margin-left: 262px;
+     margin-right: auto;
+}
+.color_a_foot_imper{
+    color: white;
+    font-weight: bold;
 }
 
 .subir {
@@ -153,10 +162,10 @@ height: 271px;
     border: 1px solid rgba(0, 0, 0, 0.125);
     float: left;
     background-color: #ffffff;
-    padding: 30px 40px;
+    padding: 58px 40px;
     position: relative;
     text-align: justify;
-    top: 56px;
+    
 }
 .asesor_style{
     top: 20px;
@@ -422,4 +431,52 @@ select:focus,  select[option]:focus {
     border-bottom: 1px solid #cdcdcd;
     padding-bottom: 11px;
     margin-bottom: 30px;
+}
+.img_bienvenidos{
+    margin-left: auto;
+    margin-right: auto;
+}
+.gruesor_letra{
+    font-weight: 800;
+}
+.color_estadis{
+    color: #8cd042;
+}
+.color_icono_banner{
+    color: white;
+}
+.color_result{
+    color: white;
+}
+footer{
+    background: url(../images/footer-bg.jpg) no-repeat scroll center center;
+    background-size: cover;
+}
+.footer_elem_uno{
+    font-size: 20px;font-weight: 600;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
+.copy_style{
+    color: white;
+}
+.tamaño_botton{
+    color:white;
+    margin-left: 85px;
+    margin-right: 85px;
+    
+}
+.h3_contac::after{
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 80px;
+    height: 5px;
+    content: "";
+    background: #77c720;
+}
+.color_a_foot_black{
+    color: black;
 }

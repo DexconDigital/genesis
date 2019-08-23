@@ -95,7 +95,7 @@ $page = 'Inicio'; ?>
         <section id=" Propiedades destacadas">
             <div class="container border border-secondary">
                 <div class="border border-secondary mt-5">
-                    <h1 class="text-center"> Propiedades destacadas</h1>
+                    <h1 class="text-center gruesor_letra">Propiedades destacadas</h1>
                 </div>
                 <div class="col-md-12">
                     <div class="owl-carousel owl-theme">
@@ -104,7 +104,6 @@ $page = 'Inicio'; ?>
                                 <div class="col-md-7 row border border-secondary">
                                     <img style="object-fit: cover;width: 100%;height: 100%;" src="images/no_image.png" alt="">
                                     <span class="style_span_tipo_inmueble">Tipo de inmueble</span>
-                                    <span class="style_span_precio">Precio:</span>
                                 </div>
                                 <div class="col-md-5 border border-secondary">
                                     <div class="col-12 border border-secondary">
@@ -128,7 +127,7 @@ $page = 'Inicio'; ?>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
-                                        <button style="background-color:#99cf16;padding: 1px;" type="button" class="btn rounded-0 col-12" name=""><span style="color:white">Buscar</span></button>
+                                        <span class="style_span_precio">$Precio</span>
                                     </div>
                                 </div>
                             </div>
@@ -136,7 +135,6 @@ $page = 'Inicio'; ?>
                                 <div class="col-md-7 row border border-secondary">
                                     <img style="object-fit: cover;width: 100%;height: 100%;" src="images/no_image.png" alt="">
                                     <span class="style_span_tipo_inmueble">Tipo de inmueble</span>
-                                    <span class="style_span_precio">Precio:</span>
                                 </div>
                                 <div class="col-md-5 border border-secondary">
                                     <div class="col-12 border border-secondary">
@@ -160,7 +158,7 @@ $page = 'Inicio'; ?>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
-                                        <button style="background-color:#99cf16;padding: 1px;" type="button" class="btn rounded-0 col-12" name=""><span style="color:white">Buscar</span></button>
+                                        <span class="style_span_precio">$Precio</span>
                                     </div>
                                 </div>
 
@@ -172,7 +170,7 @@ $page = 'Inicio'; ?>
                                     <div class="col-md-7 row border border-secondary">
                                         <img style="object-fit: cover;width: 100%;height: 100%;" src="images/no_image.png" alt="">
                                         <span class="style_span_tipo_inmueble">Tipo de inmueble</span>
-                                        <span class="style_span_precio">Precio:</span>
+
                                     </div>
                                     <div class="col-md-5 border border-secondary">
                                         <div class="col-12 border border-secondary">
@@ -196,7 +194,7 @@ $page = 'Inicio'; ?>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
-                                            <button style="background-color:#99cf16;padding: 1px;" type="button" class="btn rounded-0 col-12" name=""><span style="color:white">Buscar</span></button>
+                                            <span class="style_span_precio">$Precio</span>
                                         </div>
                                     </div>
                                 </div>
@@ -204,7 +202,6 @@ $page = 'Inicio'; ?>
                                     <div class="col-md-7 row border border-secondary">
                                         <img style="object-fit: cover;width: 100%;height: 100%;" src="images/no_image.png" alt="">
                                         <span class="style_span_tipo_inmueble">Tipo de inmueble</span>
-                                        <span class="style_span_precio">Precio:</span>
                                     </div>
                                     <div class="col-md-5 border border-secondary">
                                         <div class="col-12 border border-secondary">
@@ -228,7 +225,7 @@ $page = 'Inicio'; ?>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
-                                            <button style="background-color:#99cf16;padding: 1px;" type="button" class="btn rounded-0 col-12" name=""><span style="color:white">Buscar</span></button>
+                                            <span class="style_span_precio">$Precio</span>
                                         </div>
                                     </div>
 
@@ -241,7 +238,6 @@ $page = 'Inicio'; ?>
                                     <div class="col-md-7 row border border-secondary">
                                         <img style="object-fit: cover;width: 100%;height: 100%;" src="images/no_image.png" alt="">
                                         <span class="style_span_tipo_inmueble">Tipo de inmueble</span>
-                                        <span class="style_span_precio">Precio:</span>
                                     </div>
                                     <div class="col-md-5 border border-secondary">
                                         <div class="col-12 border border-secondary">
@@ -265,7 +261,7 @@ $page = 'Inicio'; ?>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
-                                            <button style="background-color:#99cf16;padding: 1px;" type="button" class="btn rounded-0 col-12" name=""><span style="color:white">Buscar</span></button>
+                                            <span class="style_span_precio">$Precio</span>
                                         </div>
                                     </div>
                                 </div>
@@ -273,7 +269,6 @@ $page = 'Inicio'; ?>
                                     <div class="col-md-7 row border border-secondary">
                                         <img style="object-fit: cover;width: 100%;height: 100%;" src="images/no_image.png" alt="">
                                         <span class="style_span_tipo_inmueble">Tipo de inmueble</span>
-                                        <span class="style_span_precio">Precio:</span>
                                     </div>
                                     <div class="col-md-5 border border-secondary">
                                         <div class="col-12 border border-secondary">
@@ -297,7 +292,7 @@ $page = 'Inicio'; ?>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
-                                            <button style="background-color:#99cf16;padding: 1px;" type="button" class="btn rounded-0 col-12" name=""><span style="color:white">Buscar</span></button>
+                                            <span class="style_span_precio">$Precio</span>
                                         </div>
                                     </div>
 
@@ -310,7 +305,6 @@ $page = 'Inicio'; ?>
                                     <div class="col-md-7 row border border-secondary">
                                         <img style="object-fit: cover;width: 100%;height: 100%;" src="images/no_image.png" alt="">
                                         <span class="style_span_tipo_inmueble">Tipo de inmueble</span>
-                                        <span class="style_span_precio">Precio:</span>
                                     </div>
                                     <div class="col-md-5 border border-secondary">
                                         <div class="col-12 border border-secondary">
@@ -334,7 +328,7 @@ $page = 'Inicio'; ?>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
-                                            <button style="background-color:#99cf16;padding: 1px;" type="button" class="btn rounded-0 col-12" name=""><span style="color:white">Buscar</span></button>
+                                            <span class="style_span_precio">$Precio</span>
                                         </div>
                                     </div>
                                 </div>
@@ -342,7 +336,6 @@ $page = 'Inicio'; ?>
                                     <div class="col-md-7 row border border-secondary">
                                         <img style="object-fit: cover;width: 100%;height: 100%;" src="images/no_image.png" alt="">
                                         <span class="style_span_tipo_inmueble">Tipo de inmueble</span>
-                                        <span class="style_span_precio">Precio:</span>
                                     </div>
                                     <div class="col-md-5 border border-secondary">
                                         <div class="col-12 border border-secondary">
@@ -366,7 +359,7 @@ $page = 'Inicio'; ?>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
-                                            <button style="background-color:#99cf16;padding: 1px;" type="button" class="btn rounded-0 col-12" name=""><span style="color:white">Buscar</span></button>
+                                            <span class="style_span_precio">$Precio</span>
                                         </div>
                                     </div>
 
@@ -383,12 +376,12 @@ $page = 'Inicio'; ?>
         <section id="bienvenidos">
             <div class="col-md-12 mt-3">
                 <div class="col-12">
-                    <h1 class="text-center"><?php echo $frase_home['titulo'] ?></h1>
+                    <h1  class="text-center gruesor_letra"><?php echo $frase_home['titulo'] ?></h1>
                 </div>
                 <div class="container" style="text-align: justify; margin-top: 39px;">
                     <p><?php echo $frase_home['parrafos'][0] ?><?php echo $frase_home['parrafos'][1] ?></p>
                 </div>
-                <div>
+                <div class="col-md-10 img_bienvenidos">
                     <?php $r = $frase_home;
                     echo '
                <img src="' . $r['imagen'] . '" class="w-100" alt="">'; ?>
@@ -397,7 +390,7 @@ $page = 'Inicio'; ?>
         </section>
 
         <section id="servicios">
-            <div class="container">
+            <div class="container" style="margin-bottom: 33px;">
                 <div class="d-flex justify-content-between col-md-12 row border border-secondary">
                     <div class="col-md-4 row border border-secondary">
                         <div class="col-md-3">
@@ -408,10 +401,8 @@ $page = 'Inicio'; ?>
                                 <h4><strong><?php echo $texto_servicios['ventas']['titulo'] ?></strong></h4>
                             </div>
                             <div class="margen_serv" style=" text-align: justify;">
-                                <p><?php echo $texto_servicios['ventas']['parrafos'][0] ?></p>
+                                <p>Nuestra experiencia en la venta de inmuebles nos permite brindar un servicio de alta calidad... <a style="color: #77c720;" href="servicios.php"> Ver más</a> </p>
                             </div>
-                            <div style="margin-top: 136px;" class="margen_busca"><button style="background-color:gray;padding: 5px;" type="button" class="btn rounded-0 col-12" name=""><span style="color:white">ver
-                                        más </span></button></div>
                         </div>
                     </div>
                     <div class="col-md-4 row border border-secondary">
@@ -423,10 +414,8 @@ $page = 'Inicio'; ?>
                                 <h4><strong><?php echo $texto_servicios['arriendos']['titulo'] ?></strong></h4>
                             </div>
                             <div class="margen_serv" style=" text-align: justify;">
-                                <p><?php echo $texto_servicios['arriendos']['parrafos'][0] ?></p>
+                                <p>La vivienda es una necesidad básica humana, por eso al serlo se convierte en un elemento... <a style="color: #77c720;" href="servicios.php"> Ver más</a> </p>
                             </div>
-                            <div class="margen_busca"><button style="background-color:gray;padding: 5px;" type="button" class="btn rounded-0 col-12" name=""><span style="color:white">ver
-                                        más </span></button></div>
                         </div>
                     </div>
                     <div class="col-md-4 row border border-secondary">
@@ -438,10 +427,9 @@ $page = 'Inicio'; ?>
                                 <h4><strong><?php echo $texto_servicios['avaluos']['titulo'] ?></strong></h4>
                             </div>
                             <div class="margen_serv" style=" text-align: justify;">
-                                <p><?php echo $texto_servicios['avaluos']['parrafos'][0] ?></p>
+                                <p>Saber el valor correcto de un inmueble es importante tanto para el comprador como para...<a style="color: #77c720;" href="servicios.php"> Ver más</a></p>
                             </div>
-                            <div class="margen_busca"><button style="background-color:gray;padding: 5px;" type="button" class="btn rounded-0 col-12" name=""><span style="color:white">ver
-                                        más </span></button></div>
+                           
                         </div>
                     </div>
                 </div>
@@ -453,32 +441,32 @@ $page = 'Inicio'; ?>
                 <div class="container  contenedor_banner">
 
                     <div class="row d-flex justify-content-between" style="padding: 73px;">
-                        <div class="col-3 text-center" style="">
+                        <div class="col-3 text-center color_estadis" style="">
                             <div>
-                                <i class="far fa-address-card tamaño_icono_banner"></i>
+                                <i class="far fa-address-card color_icono_banner"></i>
                                 <h1>100</h1>
-                                <h5><?php echo $texto_contador_estadisticas['parrafos'][0] ?></h5>
+                                <h5 class="color_result"><?php echo $texto_contador_estadisticas['parrafos'][0] ?></h5>
                             </div>
                         </div>
-                        <div class="col-3 text-center" style="">
+                        <div class="col-3 text-center color_estadis" style="">
                             <div>
-                                <i class="far fa-address-card tamaño_icono_banner"></i>
+                                <i class="far fa-address-card color_icono_banner"></i>
                                 <h1>100</h1>
-                                <h5><?php echo $texto_contador_estadisticas['parrafos'][1] ?></h5>
+                                <h5 class="color_result"><?php echo $texto_contador_estadisticas['parrafos'][1] ?></h5>
                             </div>
                         </div>
-                        <div class="col-3 text-center" style="">
+                        <div class="col-3 text-center color_estadis" style="">
                             <div>
-                                <i class="far fa-address-card tamaño_icono_banner"></i>
+                                <i class="far fa-address-card color_icono_banner"></i>
                                 <h1>100</h1>
-                                <h5><?php echo $texto_contador_estadisticas['parrafos'][2] ?></h5>
+                                <h5 class="color_result"><?php echo $texto_contador_estadisticas['parrafos'][2] ?></h5>
                             </div>
                         </div>
-                        <div class="col-3 text-center" style="">
+                        <div class="col-3 text-center color_estadis" style="">
                             <div>
-                                <i class="far fa-address-card tamaño_icono_banner"></i>
+                                <i class="far fa-address-card color_icono_banner"></i>
                                 <h1>100</h1>
-                                <h5><?php echo $texto_contador_estadisticas['parrafos'][3] ?></h5>
+                                <h5 class="color_result"><?php echo $texto_contador_estadisticas['parrafos'][3] ?></h5>
                             </div>
                         </div>
                     </div>
@@ -490,7 +478,7 @@ $page = 'Inicio'; ?>
         <section id="aliados">
             <div class="col-md-12">
                 <div class="col-12">
-                    <h1 class="text-center mt-5">Nuestros Aliados</h1>
+                    <h1 class="text-center mt-5 gruesor_letra">Nuestros Aliados</h1>
                 </div>
             </div>
             <div class="owl-carousel owl-theme owl-loaded owl-drag" id="aliados_slide">
@@ -516,7 +504,7 @@ $page = 'Inicio'; ?>
         <section id="noticias">
             <div class="container mt-5">
                 <div class="col-12">
-                    <h1 class="text-center mt-5">Últimas Noticias</h1>
+                    <h1 class="text-center mt-5 gruesor_letra">Últimas Noticias</h1>
                 </div>
                 <div class="col-md-12 row mt-5">
                     <div class="col-md-4">
