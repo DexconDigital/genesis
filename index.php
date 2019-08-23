@@ -21,95 +21,58 @@ $page = 'Inicio'; ?>
 
         <section id="hero">
             <!--Carousel Wrapper-->
-            <div id="video-carousel-example2" class="carousel slide carousel-fade" data-ride="carousel">
-                <!--Indicators-->
-                <ol class="carousel-indicators">
-                    <li data-target="#video-carousel-example2" data-slide-to="0" class="active"></li>
-                    <li data-target="#video-carousel-example2" data-slide-to="1"></li>
-                    <li data-target="#video-carousel-example2" data-slide-to="2"></li>
-                </ol>
-                <!--/.Indicators-->
+            <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+
                 <!--Slides-->
                 <div class="carousel-inner" role="listbox">
-                    <!-- First slide -->
                     <div class="carousel-item active">
-                        <!--Mask color-->
                         <div class="view">
-                            <!--Video source-->
-                            <video class="video-fluid" autoplay loop muted>
-                                <source src="images/slide1.jpg" type="" />
-                            </video>
-                            <div class="mask rgba-indigo-light"></div>
-                        </div>
-
-                        <!--Caption-->
-                        <div class="carousel-caption">
-                            <div class="animated fadeInDown">
-                                <h3 class="h3-responsive">1</h3>
-                                <p>First text</p>
-                            </div>
-                        </div>
-                        <!--Caption-->
-                    </div>
-                    <!-- /.First slide -->
-
-                    <!-- Second slide -->
-                    <div class="carousel-item">
-                        <!--Mask color-->
-                        <div class="view">
-                            <!--Video source-->
-                            <video class="video-fluid" autoplay loop muted>
-                                <source src="images/slide2.jpg" type="" />
-                            </video>
-                            <div class="mask rgba-purple-slight"></div>
-                        </div>
-
-                        <!--Caption-->
-                        <div class="carousel-caption">
-                            <div class="animated fadeInDown">
-                                <h3 class="h3-responsive">2</h3>
-                                <p>Secondary text</p>
-                            </div>
-                        </div>
-                        <!--Caption-->
-                    </div>
-                    <!-- /.Second slide -->
-
-                    <!-- Third slide -->
-                    <div class="carousel-item">
-                        <!--Mask color-->
-                        <div class="view">
-                            <!--Video source-->
-                            <video class="video-fluid" autoplay loop muted>
-                                <source src="images/slide3.jpg" type="" />
-                            </video>
+                            <img class="d-block w-100" src="images/slide1.jpg" alt="First slide">
                             <div class="mask rgba-black-strong"></div>
                         </div>
+                        <div class="carousel-caption wow fadeInUp" data-wow-delay="0.6s" style="top:183px;">
+                            <h1 id="style_slide_uno" class="h3-responsive"><?php echo $frases_slide_principal[0] ?></h1>
 
-                        <!--Caption-->
-                        <div class="carousel-caption">
-                            <div class="animated fadeInDown">
-                                <h3 class="h3-responsive">3</h3>
-                                <p>Third text</p>
-                            </div>
+
+
                         </div>
-                        <!--Caption-->
                     </div>
-                    <!-- /.Third slide -->
+                    <div class="carousel-item">
+                        <!--Mask color-->
+                        <div class="view">
+                            <img class="d-block w-100" src="images/slide2.jpg" alt="Second slide">
+                            <div class="mask rgba-black-strong"></div>
+                        </div>
+                        <div class="carousel-caption wow fadeInLeft" data-wow-delay="0.6s" style="top:183px;">
+                            <h1 id="style_slide_dos" class="h3-responsive"><?php echo $frases_slide_principal[1] ?></h1>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <!--Mask color-->
+                        <div class="view">
+                            <img class="d-block w-100" src="images/slide3.jpg" alt="Third slide">
+                            <div class="mask rgba-black-strong"></div>
+                        </div>
+                        <div class="carousel-caption wow fadeInDown" data-wow-delay="0.6s" style="top:183px;">
+                            <h1 id="style_slide_tres" class="h3-responsive"><?php echo $frases_slide_principal[2] ?></h1>
+
+                        </div>
+                    </div>
                 </div>
                 <!--/.Slides-->
                 <!--Controls-->
-                <a class="carousel-control-prev" href="#video-carousel-example2" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fas fa-angle-left nex_slide "></i></span>
                     <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#video-carousel-example2" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"><i class="fas fa-angle-right nex_slide "></i></span>
                     <span class="sr-only">Next</span>
                 </a>
                 <!--/.Controls-->
             </div>
-            <!--Carousel Wrapper-->
+            <!--/.Carousel Wrapper-->
 
         </section>
 

@@ -40,7 +40,7 @@ $page = 'inmueble' ?>
                 <div class="col-md-12 row border border-secondary">
                     <div class="col-md-3 border border-secondary cont_general">
                         <div class="img_noticia">
-                            <a class="a_img" href="">
+                            <a class="a_img" href="detalle_inmueble.php">
                                 <img style="    width: 100%;" src=" images/no_image.png" alt="">
                             </a>
                         </div>
@@ -58,7 +58,7 @@ $page = 'inmueble' ?>
                         <div class="cont_precio">
                             <ul class="list_aline">
                                 <li class="estilo_letra_list"><a style="color:gray;" class="precio_style">$Precio</a></li>
-                                <li class="cont_bott_noticia"><a class="boton_style" href="">Ver Más</a></li>
+                                <li class="cont_bott_noticia"><a class="boton_style" href="detalle_inmueble.php">Ver Más</a></li>
                             </ul>
                         </div>
                     </div>
