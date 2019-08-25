@@ -6405,7 +6405,7 @@ table.table a.btn.btn-black {
   padding: 0.375rem 0.75rem; }
 
 .navbar {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  
   font-weight: 300; }
   .navbar form .md-form input {
     margin: 0 5px 1px 8px; }

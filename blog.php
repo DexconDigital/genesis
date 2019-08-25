@@ -19,7 +19,7 @@ $page = 'blog' ?>
             <?php include 'layout/menu.php' ?>
         </section>
 
-        <section id="noticias">
+        <section id="noticias" class="margen_blok">
             <div class="container mt-5">
                
                 <div class="col-md-12 row mt-5">

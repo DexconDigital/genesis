@@ -19,21 +19,21 @@ $page = 'inmueble' ?>
             <?php include 'layout/menu.php' ?>
         </section>
 
-        <section id="buscador">
-            <div class="container" style="margin-top: 34px;">
+        <section id="buscador" class="contenedor_busca margen_inmueble">
+            <div class="container">
                 <div class=" row col-12">
-                    <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="" placeholder="Código"></div>
-                    <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="" placeholder="Ciudad"></div>
-                    <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="" placeholder="Barrio"></div>
-                    <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="" placeholder="Tipo de Gestión"></div>
+                    <div class="col-3 margen_busca top_busca"><input type="text" class="form-control rounded-0" id="" placeholder="Código"></div>
+                    <div class="col-3 margen_busca top_busca"><input type="text" class="form-control rounded-0" id="" placeholder="Ciudad"></div>
+                    <div class="col-3 margen_busca top_busca"><input type="text" class="form-control rounded-0" id="" placeholder="Barrio"></div>
+                    <div class="col-3 margen_busca top_busca"><input type="text" class="form-control rounded-0" id="" placeholder="Tipo de Gestión"></div>
                     <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="" placeholder="Tipo de Inmueble"></div>
                     <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="" placeholder=" Precio Mínimo"></div>
                     <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="" placeholder=" Precio Máximo"></div>
                     <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="" placeholder=" Baños"></div>
                     <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="" placeholder=" Habitaciones"></div>
                     <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="" placeholder=" Garajes"></div>
-                    <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="" placeholder=" Área Máxima"></div>
                     <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="" placeholder=" Área Mínima"></div>
+                    <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="" placeholder=" Área Máxima"></div>
                     <div class="col-12 margen_busca"><button  type="button" class="btn rounded-0 col-6 botoon_inmueble" name=""><span style="color:white">Buscar</span></button></div>
                 </div>
             </div>
@@ -41,9 +41,9 @@ $page = 'inmueble' ?>
 
         <section id="lista_inmueble">
 
-            <div class="container border border-secondary">
-                <div class="col-md-12 row border border-secondary">
-                    <div class="col-md-3 border border-secondary cont_general">
+            <div class="container ">
+                <div class="col-md-12 row ">
+                    <div class="col-md-3  cont_general">
                         <div class="img_noticia">
                             <a class="a_img" href="detalle_inmueble.php">
                                 <img style="    width: 100%;" src=" images/no_image.png" alt="">
@@ -51,7 +51,7 @@ $page = 'inmueble' ?>
                         </div>
 
                     </div>
-                    <div class="col-md-5 border border-secondary cont_general">
+                    <div class="col-md-5  cont_general">
                         <div class="contenido_noti">
                             <h3 class="mrge_noti">
                                 <a>Tipo de inmueble / Tipo de gestión</a></h3>
@@ -59,7 +59,7 @@ $page = 'inmueble' ?>
                             <p>Pequeña descripción</p>
                         </div>
                     </div>
-                    <div class="col-md-2 border border-secondary cont_general">
+                    <div class="col-md-2  cont_general">
                         <div class="cont_precio">
                             <ul class="list_aline">
                                 <li class="estilo_letra_list"><a style="color:gray;" class="precio_style">$Precio</a></li>
@@ -67,7 +67,7 @@ $page = 'inmueble' ?>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-2 border border-secondary cont_ico_noti">
+                    <div class="col-md-2 cont_ico_noti">
                         <div class="list_icon_noti">
                             <ul class="magen_icon_list">
                                 <li class="tamaño_icon_not"><i class="fa fa-bed icon_noti"></i>Alcobas</li>

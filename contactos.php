@@ -19,7 +19,7 @@ $page = 'contactos' ?>
             <?php include 'layout/menu.php' ?>
         </section>
 
-        <section id="mapa">
+        <section id="mapa" class="margen_contacto">
             <div class="row">
                 <div class="col-12 p-0">
                     <div class="">
@@ -33,10 +33,10 @@ $page = 'contactos' ?>
         </section>
 
         <section>
-            <div class="container border border-secondary contenido_contac">
+            <div class="container  contenido_contac">
 
-                <div class="col md-12 row border border-secondary">
-                    <div class="col-md-5 border border-secondary">
+                <div class="col md-12 row ">
+                    <div class="col-md-5 ">
                         <div>
                             <h3 class="h3_contac">Información de Contacto</h3>
                             <nav class="nav_list">
@@ -52,7 +52,7 @@ $page = 'contactos' ?>
                             </nav>
                         </div>
                     </div>
-                    <div class="col-md-7 border border-secondary">
+                    <div class="col-md-7 ">
                         <div>
                             <h3 class="h3_contac">Mensaje</h3>
                             <form action="">
@@ -94,7 +94,7 @@ $page = 'contactos' ?>
                                 <div class="col-md-12">
                                         <div class="custom-control custom-checkbox mb-4">
                                             <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
-                                            <label class="custom-control-label" for="defaultContactFormCopy"><a class="color_a_foot_black" href="">Confimo que he leído, entendido y acepto la política de tratamiento de datos personales.</a></label>
+                                            <label class="custom-control-label" for="defaultContactFormCopy">Confimo que he leído, entendido y acepto la<a class="color_a_foot_black" href=""> política de tratamiento de datos personales.</a></label>
                                         </div>
                                     </div>
                                 <div class="col-sm-12">

@@ -19,10 +19,10 @@ $page = 'servicios' ?>
             <?php include 'layout/menu.php' ?>
         </section>
 
-        <section id="servicios">
+        <section id="servicios" class="marge_servicios">
             <div class="container" style="margin-top: 52px;">
                 <div class="col-md-12 row">
-                    <div class="col-md-6  magen_container_servi wow fadeInLeft" data-wow-delay="0.6s">
+                    <div class="col-md-8  magen_container_servi wow fadeInLeft" data-wow-delay="0.6s">
                         <div class="col-md-12  text-center">
                             <h1 class="color_servi gruesor_letra"><?php echo $texto_servicios['ventas']['titulo'] ?></h1>
                         </div>
@@ -30,19 +30,19 @@ $page = 'servicios' ?>
                             <p class="texto_servi"><?php echo $texto_servicios['ventas']['parrafos'][0] ?></p>
                         </div>
                     </div>
-                    <div class="col-md-6   wow fadeInRight" data-wow-delay="0.6s">
+                    <div class="col-md-4 row  wow fadeInRight" style="margin-left: 15px;" data-wow-delay="0.6s">
                         <?php $r = $texto_servicios['ventas'];
                         echo '
-                      <img style="width: 67%;" src="' . $r['imagen'] . '" alt="">'; ?>
+                      <img style="width: 92%;" src="' . $r['imagen'] . '" alt="">'; ?>
                     </div>
                 </div>
-                <div class="col-md-12 row">
-                    <div class="col-md-6  wow fadeInLeft" data-wow-delay="0.6s">
+                <div class="col-md-12 row mt-5">
+                    <div class="col-md-4  wow fadeInLeft" data-wow-delay="0.6s">
                         <?php $r = $texto_servicios['arriendos'];
                         echo '
-                       <img style="width: 67%;margin-left: 36%;" src="' . $r['imagen'] . '" alt="">'; ?>
+                       <img style="width: 92%;margin-left: 16%;" src="' . $r['imagen'] . '" alt="">'; ?>
                     </div>
-                    <div class="col-md-6  magen_container_servi wow fadeInRight"data-wow-delay="0.6s" >
+                    <div class="col-md-8  magen_container_servi wow fadeInRight"data-wow-delay="0.6s" >
                         <div class="col-md-12  text-center">
                             <h1 class="color_servi gruesor_letra"><?php echo $texto_servicios['arriendos']['titulo'] ?></h1>
                         </div>
@@ -52,8 +52,8 @@ $page = 'servicios' ?>
                     </div>
 
                 </div>
-                <div class="col-md-12 row">
-                    <div class="col-md-6  magen_container_servi wow fadeInLeft" data-wow-delay="0.6s">
+                <div class="col-md-12 row mt-5">
+                    <div class="col-md-8  magen_container_servi wow fadeInLeft" data-wow-delay="0.6s">
                         <div class="col-md-12  text-center">
                             <h1 class="color_servi gruesor_letra"><?php echo $texto_servicios['avaluos']['titulo'] ?></h1>
                         </div>
@@ -61,10 +61,10 @@ $page = 'servicios' ?>
                             <p class="texto_servi"><?php echo $texto_servicios['avaluos']['parrafos'][0] ?></p>
                         </div>
                     </div>
-                    <div class="col-md-6  wow fadeInRight" data-wow-delay="0.9s">
+                    <div class="col-md-4  wow fadeInRight" data-wow-delay="0.9s">
                         <?php $r = $texto_servicios['avaluos'];
                         echo '
-                     <img style="width: 67%;" src="' . $r['imagen'] . '" alt="">'; ?>
+                     <img style="width: 92%;" src="' . $r['imagen'] . '" alt="">'; ?>
                     </div>
                 </div>
 

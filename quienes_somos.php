@@ -19,10 +19,11 @@ $page = 'Quienes' ?>
             <?php include 'layout/menu.php' ?>
         </section>
 
-        <section id="somos">
-            <div class="col-md-12 mt-3">
+        <section id="somos" class="margen_servicios">
+            <div class="col-md-12 mt-5">
                 <div class="col-12">
                     <h1 class="text-center gruesor_letra"><?php echo $texto_quienes_somos['quienes_somos']['titulo'] ?></h1>
+                    <div class="linea_decora"></div>
                 </div>
                 <div class="container" style="text-align: justify; margin-top: 39px;">
                     <p><?php echo $texto_quienes_somos['quienes_somos']['parrafos'][0] ?></p>
@@ -55,6 +56,7 @@ $page = 'Quienes' ?>
             <div class=" container  mt-5 wow fadeInRight">
                 <div class="col-12 ">
                     <h1 class="text-center gruesor_letra"><?php echo $texto_quienes_somos['que_hacemos']['titulo'] ?></h1>
+                    <div class="linea_decora"></div>
                 </div>
                 <div class="col-md-12 row mt-5">
                     <div class="col-md-8">
@@ -72,6 +74,7 @@ $page = 'Quienes' ?>
             <div class=" container  mt-5 wow fadeInLeft">
                 <div class="col-12">
                     <h1 class="text-center gruesor_letra"><?php echo $texto_quienes_somos['hacia_donde_vamos']['titulo'] ?></h1>
+                    <div class="linea_decora"></div>
                 </div>
                 <div class="col-md-12 row mt-5">
                     <div class="col-md-4">
@@ -90,6 +93,7 @@ $page = 'Quienes' ?>
             <div class=" container  mt-5">
                 <div class="col-12  ">
                     <h1 class="text-center gruesor_letra">Nuestros Asesores</h1>
+                    <div class="linea_decora"></div>
                 </div>
                 <div class="col-md-12 row mt-5">
                     <div class="col-md-4">

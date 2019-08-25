@@ -480,3 +480,129 @@ footer{
 .color_a_foot_black{
     color: black;
 }
+.linea_decora{
+    content: '';
+    
+    height: 5px;
+    width: 80px;
+    bottom: 0;
+    background-color: #77c720;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: -13px;
+}
+.espacio_propi{
+    margin-bottom: 10px;
+}
+.top_busca{
+    margin-top: 40px;
+}
+.contenedor_busca{
+    background-color: #ded3d373;
+    margin-bottom: 40px;
+}
+.titulo_similares{
+    background: #77c720;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.lista_similares{
+    margin-bottom: 30px;
+    overflow: hidden;
+    padding: 15px;
+}
+.marge_list_simi{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.li_similares{
+    height: 45px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.cont_Boton_similares{
+    display: inline-block;
+    width: 100%;
+}
+.boton_similares{
+    border: 0;
+    background: #77c720;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 0;
+    transition: all 0.35s ease-out;
+    display: block;
+    font-size: 16px;
+    width: 100%;
+}
+.margen_slider{
+    margin-top: 126px;
+}
+.margen_servicios{
+    margin-top: 15%;
+}
+.marge_servicios{
+    margin-top: 15%;
+}
+.margen_inmueble{
+    margin-top: 12%;
+}
+.margen_blok{
+    margin-top: 15%;
+}
+.margen_contacto{
+    margin-top: 126px;
+}
+.mi_nav{
+    
+        box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.16), 0 0px 0px 0 rgba(0, 0, 0, 0.12);
+        
+    
+}
+.margen_detalle_inm{
+    margin-top: 15%;
+}
+.marge_li_nav{
+    margin: 0px 19px;
+}
+#color_nav:hover{
+    color: #77c720;
+}
+.sticky-header{
+    box-shadow: white;
+    top: 0px !important;
+    background: white;
+    transition: all 0.5s ease 0s;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+.contenedor_contact{
+    display: inline-block;
+    width: 100%;
+}
+.cont_img{
+    width: 45%;
+    float: left;
+}
+.estulo_img_cont{
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0px;
+    width: 100%;
+}
+.icon_cont{
+    width: 50%;
+    float: left;
+    margin-left: -3%;
+}
