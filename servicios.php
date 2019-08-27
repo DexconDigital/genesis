@@ -21,7 +21,7 @@ $page = 'Servicios' ?>
 
         <section id="servicios" class="marge_servicios">
             <div class="container" style="margin-top: 52px;">
-                <section id="ventas">
+                <section id="arriendos">
                     <div class="col-md-12 row">
                         <div class="col-md-8  magen_container_servi wow fadeInLeft" data-wow-delay="0.6s">
                             <div class="col-md-12  text-center">

@@ -413,7 +413,7 @@ $page = 'Inicio'; ?>
                                 <h4><strong><?php echo $texto_servicios['arriendos']['titulo'] ?></strong></h4>
                             </div>
                             <div class="margen_serv" style=" text-align: justify;">
-                                <p>La vivienda es una necesidad básica humana, por eso al serlo se convierte en un elemento... <a style="color: #77c720;" href="servicios.php#ventas"> Ver más</a> </p>
+                                <p>La vivienda es una necesidad básica humana, por eso al serlo se convierte en un elemento... <a style="color: #77c720;" href="servicios.php#arriendos"> Ver más</a> </p>
                             </div>
                         </div>
                     </div>
