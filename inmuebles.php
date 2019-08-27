@@ -62,7 +62,7 @@ $page = 'inmueble' ?>
                     <div class="col-md-2  cont_general">
                         <div class="cont_precio">
                             <ul class="list_aline">
-                                <li class="estilo_letra_list"><a style="color:gray;" class="precio_style">$Precio</a></li>
+                                <li class="estilo_letra_list"><a class="precio_style">$Precio</a></li>
                                 <li class="cont_bott_noticia"><a class="boton_style" href="detalle_inmueble.php">Ver Más</a></li>
                             </ul>
                         </div>

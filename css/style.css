@@ -44,12 +44,19 @@ a:hover{
     text-decoration: none;
 }
 .contenedor_logo{
-    height: 78px;
-    width: 149px;
+    height: 91px;
+    width: 158px;
+    margin-left: 17px;
 }
 .contenedor_pse{
     height: 55px;
     width: 72px;
+    margin-top: 23px;
+}
+.container_libert{
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .margen_busca{
     margin-bottom: 21px;
@@ -126,9 +133,11 @@ a:hover{
 .style_correo{
     font-size: 14px;
     color: white;
+    font-family: Roboto;
 }
 .color_a_foot{
     color: white;
+    font-family: Roboto;
     
 }
 .botoon_inmueble{
@@ -241,7 +250,7 @@ a:hover{
     margin-top: 70px;
 }
 .color_servi{
-    color: grey;
+    color:black;
 }
 .wow {
     visibility: hidden;
@@ -355,7 +364,6 @@ a:hover{
 .h3_contac{
     font-size: 30px;
     font-weight: bold;
-    color: gray;
     position: relative;
 }
 .nav_list{
@@ -378,7 +386,6 @@ a:hover{
 .h3_contac{
     font-size: 30px;
     font-weight: bold;
-    color: gray;
     position: relative;
     margin-bottom: 32px;
     margin-left: 15px;
@@ -389,17 +396,20 @@ textarea:focus,  textarea[cols]:focus {
     box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px #77c720;
     outline: 0 none;
 }
-/*textarea */
-select:focus,  select[option]:focus {
+.select:focus, option:focus, option[values]:focus {
     border-color: #77c720;
     box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px #77c720;
     outline: 0 none;
 }
+.select-option:hover {
+    background-color: red;
+  }
 #style_slide_uno{
     font-size: 62px;
     color: #ffffff;
     font-weight: 800;
 }
+
 #style_slide_dos{
     font-size: 56px;
     color: #ffffff;
@@ -456,18 +466,20 @@ footer{
     font-size: 20px;font-weight: 600;
     margin-bottom: 30px;
     text-transform: uppercase;
-    text-align: center;
     color: white;
 }
 .copy_style{
     color: white;
+    font-family: Roboto;
 }
+
 .tamaño_botton{
     color:white;
     margin-left: 85px;
     margin-right: 85px;
     
 }
+
 .h3_contac::after{
     position: absolute;
     left: 0;
@@ -478,7 +490,10 @@ footer{
     background: #77c720;
 }
 .color_a_foot_black{
-    color: black;
+    color: #77c720;
+}
+.color_a_foot_white{
+color: black;
 }
 .linea_decora{
     content: '';
@@ -570,7 +585,7 @@ footer{
     margin-top: 15%;
 }
 .marge_li_nav{
-    margin: 0px 19px;
+    margin: 0px 17px;
 }
 #color_nav:hover{
     color: #77c720;

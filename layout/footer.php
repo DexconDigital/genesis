@@ -10,13 +10,13 @@
                                 </div>
                                 <div style="    margin-top: 35px;">
                                     <ul>
-                                        <a href="">
-                                            <li class="fab fa-facebook-f estilo_icono_foot" style="display: inline-block;margin-right: 5px;"></li>
+                                        <a href="<?php echo $redes_sociales ['facebook']['link']?>" target="_blank" >
+                                            <li class="fab fa-facebook-f estilo_icono_foot " style="display: inline-block;margin-right: 5px;"></li>
                                         </a>
-                                        <a href="">
+                                        <a href="<?php echo $redes_sociales ['instagram']['link']?>" target="_blank">
                                             <li class="fab fa-instagram estilo_icono_foot" style="display: inline-block;margin-right: 5px;"></li>
                                         </a>
-                                        <a href="">
+                                        <a href="<?php echo $redes_sociales ['twitter']['link']?>" target="_blank">
                                             <li class="fab fa-twitter estilo_icono_foot" style="display: inline-block;margin-right: 5px;"></li>
                                         </a>
                                     </ul>
@@ -45,7 +45,7 @@
                                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.6105356778453!2d-74.06044668555337!3d4.663327743279707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a5edbe0bf49%3A0x936d31bf17fc020e!2sCl.+77+%2314-19%2C+Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1566400574822!5m2!1ses-419!2sco" frameborder="0" style="border:0; width: 100%;" allowfullscreen></iframe>
                                 </div>
                                 <div class="row">
-                                <a class="btn" href="" style="background-color:#99cf16;padding:2px;margin-left: auto;margin-right: auto;" class="btn rounded-0 col-md-12 waves-effect waves-light" name=""><span class="tamaño_botton">Como llegar</span></a>
+                                <a class="btn" href="https://www.google.com/maps/place/Cl.+77+%2314-19,+Bogot%C3%A1/@4.6633224,-74.0604467,17z/data=!3m1!4b1!4m5!3m4!1s0x8e3f9a5edbe0bf49:0x936d31bf17fc020e!8m2!3d4.6633224!4d-74.058258" name="submitNewsletter" style="background-color:#99cf16;padding:2px;margin-left: auto;margin-right: auto;" class="btn rounded-0 col-md-12 waves-effect waves-light" name=""><span class="tamaño_botton">Como llegar</span></a>
                                 </div>
                             </div>
                             <div class="col-md-3 ">

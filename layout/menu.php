@@ -23,7 +23,7 @@
                 <nav class="navbar navbar-expand-lg navbar-light mi_nav" style="padding: 0px 1rem;">
                     <div class="container">
                         <div class="">
-                            <a class="navbar-brand contenedor_logo" href="#">
+                            <a class="navbar-brand contenedor_logo" href="index.php">
                                 <img style="height: 100%;width: 100%;object-fit:contain;" src="images/logo.png" class="d-inline-block align-top" alt="">
                             </a>
                         </div>
@@ -31,7 +31,7 @@
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse " id="navbarNav">
-                            <ul class="  navbar-nav ">
+                            <ul class="  navbar-nav mt-4 ">
                                 <li class="nav-item marge_li_nav">
                                     <a id="color_nav" class="nav-link " href="index.php">Inicio <span class="sr-only">(current)</span></a>
                                 </li>

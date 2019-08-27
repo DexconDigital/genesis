@@ -481,24 +481,17 @@ $page = 'Inicio'; ?>
                     <div class="linea_decora"></div>
                 </div>
             </div>
-            <div class="owl-carousel owl-theme owl-loaded owl-drag" id="aliados_slide">
-                <div class="owl-stage-outer">
-                    <div class="owl-stage" style="transform: translate3d(-1401px, 0px, 0px); transition: all 0s ease 0s; width: 4206px;">
-                        <div class="owl-item cloned" style="width: 457.333px; margin-right: 10px;">
-                            <div class="item" style="height: 150px;">
-                                <img style="height: 100%; object-fit: contain;" src="images/LOGO SIMI.png" alt="">
-                            </div>
-                        </div>
-                        <div class="owl-item cloned" style="width: 457.333px; margin-right: 10px;">
-                            <div class="item" style="height: 150px;">
-                                <img style="height: 100%; object-fit: none;" src="images/LOGO EL LIBERTADOR.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<div class="col-md-12">
+    <div class="col-md-8 text-center container_libert">
+    <img style="height: 100%; object-fit: contain;" src="images/LOGO SIMI.png" alt="">
+    </div>
 
+    <div class="col-md-8 text-center container_libert">
+    <img style="height: 100%; object-fit: none;" src="images/LOGO EL LIBERTADOR.png" alt="">
+    </div>
 
-            </div>
+    </div>
+</div>
         </section>
 
         <section id="noticias">

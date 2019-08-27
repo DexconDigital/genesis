@@ -138,13 +138,13 @@ $texto_quienes_somos = [
 	],
 	"que_hacemos" => [
 		"titulo" => "¿Qué Hacemos?",
-		"parrafo" => "En G.A. Inmobiliaria nos esforzamos constantemente por obtener nuestro objetivo, la satisfacción de nuestros clientes, ofreciéndoles valores como honestidad, ética y profesionalismo en los servicios que prestamos. En pocas palabras, en G.A. INMOBILIARIA nos dedicamos a AYUDAR A QUE NUESTROS CLIENTES CUMPLAN SU SUEÑOS.",
+		"parrafo" => "En G.A. INMOBILIARIA nos esforzamos constantemente por obtener nuestro objetivo, la satisfacción de nuestros clientes, ofreciéndoles valores como honestidad, ética y profesionalismo en los servicios que prestamos. En pocas palabras, en G.A. INMOBILIARIA nos dedicamos a AYUDAR A QUE NUESTROS CLIENTES CUMPLAN SU SUEÑOS.",
 		"imagen" => "images/hacemos.jpg"
 	],
 	"hacia_donde_vamos" => [
 		"imagen" => "images/brujula.jpg",
 		"titulo" => "¿Hacia Dónde Vamos?",
-		"parrafo" => "G.A. Inmobiliaria S.A.S., deberá establecerse como una empresa líder y reconocida en el sector inmobiliario Colombiano, lo cual lograremos con el respeto integral a nuestros clientes y el mejoramiento continuo de nuestros servicios, regidos en todo momento por la honestidad, rectitud y el profesionalismo de nuestro equipo de trabajo.",
+		"parrafo" => "G.A. INMOBILIARIA S.A.S., deberá establecerse como una empresa líder y reconocida en el sector inmobiliario Colombiano, lo cual lograremos con el respeto integral a nuestros clientes y el mejoramiento continuo de nuestros servicios, regidos en todo momento por la honestidad, rectitud y el profesionalismo de nuestro equipo de trabajo.",
 	],	
 ];
 
