@@ -10,7 +10,7 @@ $page = 'detalle_inm' ?>
 
     <?php include 'layout/archivosheader.php' ?>
 
-    <title>Servicios</title>
+    <title>Detalle | Inmmueble</title>
 </head>
 
 <body>

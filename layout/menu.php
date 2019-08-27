@@ -58,7 +58,7 @@
                         </div>
 
                         <div class="bd-highlight a_linea2 d-flex align-items-end ">
-                            <a class="color_a_nav p-2  " href="tel:<?php echo $datos_contacto['whatsapp']['link'] ?>"><i class="fab fa-whatsapp m-2 li_color"></i><?php echo $datos_contacto['whatsapp']['imprimir'] ?></a>
+                            <a class="color_a_nav p-2" target="_blank" href="<?php echo $datos_contacto['whatsapp']['link'] ?>"><i class="fab fa-whatsapp m-2 li_color"></i><?php echo $datos_contacto['whatsapp']['imprimir'] ?></a>
                         </div>
                         <div class=" bd-highlight d-flex align-items-end ">
                             <a class="color_a_nav p-2" href="mailto:<?php echo $datos_contacto['correo']['correo'] ?>"><i class="far fa-envelope m-2 li_color "></i><?php echo $datos_contacto['correo']['correo'] ?></a>
@@ -84,7 +84,7 @@
                                     <?php if ($page == 'Inicio') {
                                         echo 'active';
                                     } ?>">
-                                    <a id="color_nav" class="nav-link " href="index.php">Inicio <span class="sr-only">(current)</span></a>
+                                    <a id="color_nav" class= "nav-link " href="index.php"  >Inicio <span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item marge_li_nav
                                     <?php if ($page == 'quienes') {
