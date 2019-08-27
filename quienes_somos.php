@@ -1,5 +1,5 @@
 <?php require 'variables/variables.php';
-$page = 'Quienes' ?>
+$page = 'quienes' ?>
 <!doctype html>
 <html lang="en">
 

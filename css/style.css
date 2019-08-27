@@ -54,7 +54,7 @@ a:hover{
     margin-top: 23px;
 }
 .container_libert{
-    height: 150px;
+    
     margin-left: auto;
     margin-right: auto;
 }
@@ -576,10 +576,7 @@ color: black;
     margin-top: 126px;
 }
 .mi_nav{
-    
-        box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.16), 0 0px 0px 0 rgba(0, 0, 0, 0.12);
-        
-    
+ box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.16), 0 0px 0px 0 rgba(0, 0, 0, 0.12);
 }
 .margen_detalle_inm{
     margin-top: 15%;
@@ -621,3 +618,18 @@ color: black;
     float: left;
     margin-left: -3%;
 }
+.nav-item.active .nav-link {
+    position: relative;
+}
+.nav-item.active .nav-link:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 98%;
+    height: 2px;
+    background-color: #99cf16;
+}
+
+ 

@@ -400,7 +400,7 @@ $page = 'Inicio'; ?>
                                 <h4><strong><?php echo $texto_servicios['ventas']['titulo'] ?></strong></h4>
                             </div>
                             <div class="margen_serv" style=" text-align: justify;">
-                                <p>Nuestra experiencia en la venta de inmuebles nos permite brindar un servicio de alta calidad... <a style="color: #77c720;" href="servicios.php"> Ver más</a> </p>
+                                <p>Nuestra experiencia en la venta de inmuebles nos permite brindar un servicio de alta calidad... <a style="color: #77c720;" href="servicios.php#"> Ver más</a> </p>
                             </div>
                         </div>
                     </div>
@@ -413,7 +413,7 @@ $page = 'Inicio'; ?>
                                 <h4><strong><?php echo $texto_servicios['arriendos']['titulo'] ?></strong></h4>
                             </div>
                             <div class="margen_serv" style=" text-align: justify;">
-                                <p>La vivienda es una necesidad básica humana, por eso al serlo se convierte en un elemento... <a style="color: #77c720;" href="servicios.php"> Ver más</a> </p>
+                                <p>La vivienda es una necesidad básica humana, por eso al serlo se convierte en un elemento... <a style="color: #77c720;" href="servicios.php#ventas"> Ver más</a> </p>
                             </div>
                         </div>
                     </div>
@@ -426,7 +426,7 @@ $page = 'Inicio'; ?>
                                 <h4><strong><?php echo $texto_servicios['avaluos']['titulo'] ?></strong></h4>
                             </div>
                             <div class="margen_serv" style=" text-align: justify;">
-                                <p>Saber el valor correcto de un inmueble es importante tanto para el comprador como para...<a style="color: #77c720;" href="servicios.php"> Ver más</a></p>
+                                <p>Saber el valor correcto de un inmueble es importante tanto para el comprador como para...<a style="color: #77c720;" href="servicios.php#avaluos"> Ver más</a></p>
                             </div>
 
                         </div>

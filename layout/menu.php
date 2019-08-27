@@ -1,3 +1,51 @@
+<!-- Codigo del preloader -->
+<style>
+    #wrap-preload {
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: #fff;
+        opacity: 1;
+        visibility: visible;
+        transition: opacity .5s ease, visibility .5s ease;
+        z-index: 1032;
+    }
+
+    #wrap-preload.close {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .fixed-top {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+    }
+
+    #wrap-preload>img.gif {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        z-index: 1032;
+        height: 15%;
+    }
+</style>
+<div id="wrap-preload">
+    <img src="images/preloader.gif" alt="gif" class="gif" id="gif">
+</div>
+<script>
+    var loader = document.getElementById("wrap-preload");
+    window.addEventListener("load", function() {
+        loader.style.visibility = "hidden";
+    });
+</script>
+<!-- Fin de codigo preloader -->
 <header class="main-header sticky-header">
     <div class="coltainer-fluit">
         <div class="row ">
@@ -32,16 +80,27 @@
                         </button>
                         <div class="collapse navbar-collapse " id="navbarNav">
                             <ul class="  navbar-nav mt-4 ">
-                                <li class="nav-item marge_li_nav">
+                                <li class="nav-item marge_li_nav
+                                    <?php if ($page == 'Inicio') {
+                                        echo 'active';
+                                    } ?>">
                                     <a id="color_nav" class="nav-link " href="index.php">Inicio <span class="sr-only">(current)</span></a>
                                 </li>
-                                <li class="nav-item marge_li_nav">
+                                <li class="nav-item marge_li_nav
+                                    <?php if ($page == 'quienes') {
+                                        echo 'active';
+                                    } ?>">
                                     <a id="color_nav" class="nav-link" href="quienes_somos.php">Quiénes Somos</a>
                                 </li>
-                                <li class="nav-item marge_li_nav">
+                                <li class="nav-item marge_li_nav
+                                    <?php if ($page == 'Servicios') {
+                                        echo 'active';
+                                    } ?>">
                                     <a id="color_nav" class="nav-link" href="servicios.php">Servicios</a>
                                 </li>
-                                <li class="nav-item marge_li_nav">
+                                <li class="nav-item marge_li_nav <?php if ($page == 'inmueble') {
+                                        echo 'active';
+                                    } ?> ">
                                     <a id="color_nav" class="nav-link" href="inmuebles.php">Inmuebles</a>
                                 </li>
                                 <li class="nav-item dropdown marge_li_nav">
@@ -52,10 +111,16 @@
 
                                     </div>
                                 </li>
-                                <li id="color_nav" class="nav-item marge_li_nav">
+                                <li id="color_nav" class="nav-item marge_li_nav
+                                    <?php if ($page == 'blog') {
+                                        echo 'active';
+                                    } ?>">
                                     <a id="color_nav" class="nav-link" href="blog.php">Blog</a>
                                 </li>
-                                <li class="nav-item marge_li_nav">
+                                <li class="nav-item marge_li_nav
+                                    <?php if ($page == 'contacto') {
+                                        echo 'active';
+                                    } ?>">
                                     <a id="color_nav" class="nav-link" href="contactos.php">Contáctanos</a>
                                 </li>
 
@@ -77,3 +142,12 @@
         </div>
     </div>
 </header>
+
+<div class="w-100px" id="espacio-menu">
+</div>
+
+<script>
+  var altomenu = document.getElementById('medida_nav').offsetHeight;
+  altomenu = altomenu + 'px';
+  var espacio_menu = document.getElementById('espacio-menu').style.height = altomenu;
+</script>
