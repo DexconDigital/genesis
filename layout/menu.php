@@ -107,7 +107,7 @@
                                     <a id="color_nav" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Clientes</a>
                                     <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
                                         <a id="color_nav" class="dropdown-item" href="https://www.simiinmobiliarias.com/base/simired/simidocsapi1.0/index.php?inmo=583&tipo=2" target="_blank">Arrendatarios</a>
-                                        <a id="color_nav" class="dropdown-item" href="https://www.simiinmobiliarias.com/base/simired/simidocsapi1.0/index.php?inmo=583&tipo=2" target="_blank"> Propietarios</a>
+                                        <a id="color_nav" class="dropdown-item" href="https://www.simiinmobiliarias.com/base/simired/simidocsapi1.0/index.php?inmo=583&tipo=1" target="_blank"> Propietarios</a>
 
                                     </div>
                                 </li>

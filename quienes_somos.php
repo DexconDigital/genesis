@@ -10,7 +10,7 @@ $page = 'quienes' ?>
 
     <?php include 'layout/archivosheader.php' ?>
 
-    <title>Quienes Somos</title>
+    <title>Quiénes Somos</title>
 </head>
 
 <body>

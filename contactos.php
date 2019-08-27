@@ -10,7 +10,7 @@ $page = 'contacto' ?>
 
     <?php include 'layout/archivosheader.php' ?>
 
-    <title>Contactos</title>
+    <title>Contáctanos</title>
 </head>
 
 <body>
