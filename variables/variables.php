@@ -1,7 +1,7 @@
 <?php
 
 $nombre_inmobiliaria = "G.A. Inmobiliaria";
-
+$Logo = "images/Logo.png";
 //logo empresa
 $logo_empresa = [
 	"src" => "images/Logo.png",
@@ -60,7 +60,7 @@ $datos_contacto = [
 		"icono" => "far fa-envelope",
 	],
 	"horario" => [
-		"horario" => "",
+		"horario" => "8:00 AM a 5:30 PM Lunes A Viernes",
 		"icono" => "fas fa-calendar-alt",
 	],	
 ];

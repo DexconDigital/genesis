@@ -72,7 +72,7 @@
                     <div class="container">
                         <div class="">
                             <a class="navbar-brand contenedor_logo" href="index.php">
-                                <img style="height: 100%;width: 100%;object-fit:contain;" src="images/logo.png" class="d-inline-block align-top" alt="">
+                                <img style="height: 100%;width: 100%;object-fit:contain;" src="<?php echo $Logo;?>" class="d-inline-block align-top" alt="">
                             </a>
                         </div>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -128,7 +128,7 @@
                             </ul>
                             <div class="" style="margin-left: auto;">
 
-                                <a class="nav-link contenedor_pse" href="#">
+                                <a class="nav-link contenedor_pse" target="_blank" href="https://www.mipagoamigo.com/MPA_WebSite/">
                                     <img style="height: 100%;width: 100%;object-fit:contain;" src="images/logopse.png" class="d-inline-block align-top" alt="">
                                 </a>
 

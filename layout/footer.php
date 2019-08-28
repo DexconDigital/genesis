@@ -30,8 +30,8 @@
                                 <div class="">
                                     <nav style="display: block;">
                                         <ul style="text-align: left;list-style: outside none none;margin: 0;padding: 0;">
-                                            <li class="li_footer"><a class="a_footer" href="#"><i style="color: #6fb81f;" class="fa fa-angle-right mr-2"></i>Libertador Persona Natural</a></li>
-                                            <li class="li_footer"><a class="a_footer" href="#"><i style="color: #6fb81f;" class="fa fa-angle-right mr-2"></i>Libertador Persona Jurídica</a></li>
+                                            <li class="li_footer"><a class="a_footer" href="archivos/Natural.pdf" download="Libertador Persona Natural.pdf" ><i style="color: #6fb81f;" class="fa fa-angle-right mr-2"></i>Libertador Persona Natural</a></li>
+                                            <li class="li_footer"><a class="a_footer" href="archivos/Juridica.pdf" download="Libertador Persona Jurídica.pdf"><i style="color: #6fb81f;" class="fa fa-angle-right mr-2"></i>Libertador Persona Jurídica</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -58,7 +58,7 @@
                                     <p class="footer-border-bottom"><a class="color_a_foot" href="tel:<?php echo $datos_contacto['celular']['link'] ?>"><i class="fas fa-mobile-alt contac_foot"></i><?php echo $datos_contacto['celular']['imprimir'] ?></a></p>
                                     <p class="footer-border-bottom"><a class="color_a_foot" target="_blank" href="<?php echo $datos_contacto['whatsapp']['link'] ?>"><i class="fab fa-whatsapp contac_foot"></i><?php echo $datos_contacto['whatsapp']['imprimir'] ?></a></p>
                                     <p class="footer-border-bottom"><a class="style_correo" href="mailto:<?php echo $datos_contacto['correo']['correo'] ?>"><i class="far fa-envelope contac_foot"></i><?php echo $datos_contacto['correo']['correo'] ?></a></p>
-                                    <p class="footer-border-bottom"><a class="color_a_foot" href=""><i class="fas fa-calendar-alt contac_foot"></i><?php echo $datos_contacto['horario']['horario'] ?></a></p>
+                                    <p class="footer-border-bottom" style="color:white;"><a class="color_a_foot" ><i class="fas fa-calendar-alt contac_foot"></i><?php echo $datos_contacto['horario']['horario'] ?></a></p>
                                 </div>
                             </div>
                         </div>
