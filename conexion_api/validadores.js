@@ -38,12 +38,10 @@ var validarpagina = function(pagina, totalPagina){
             $('.next').css('display', 'none');
         }else{
             $('.previus').css('display','none');
-            console.log("estoyaqui3");
         }
         
     }else if(pagina == totalPagina){
         $('.next').css('display', 'none');
-        console.log("estoyaqui1");
     }
 }
 
@@ -58,4 +56,17 @@ var existeCampo = function(campo){
         campo = 0;
     }
     return campo;
+}
+
+function format(input) {
+    var num = input.value.replace(/\./g, '');
+    if (!isNaN(num)) {
+        num = num.toString().split('').reverse().join('').replace(/(?=\d*\.?)(\d{3})/g, '$1.');
+        num = num.split('').reverse().join('').replace(/^[\.]/, '');
+        input.value = num;
+    }
+    else {
+        alert('Solo se permiten numeros');
+        input.value = input.value.replace(/[^\d\.]*/g, '');
+    }
 }

@@ -1,4 +1,5 @@
 <?php require 'variables/variables.php';
+require 'controllers/indexController.php';
 $page = 'Inicio'; ?>
 
 <!DOCTYPE html>
@@ -76,27 +77,29 @@ $page = 'Inicio'; ?>
         <section id="buscador">
             <div class="container" style="margin-top: 34px;">
                 <div class=" row col-12">
-                    <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="" placeholder="Código"></div>
+                    <div class="col-3 margen_busca">
+                        <input type="text" class="form-control rounded-0" id="codigo_buscar" placeholder="Código"></div>
 
-                    <div class="col-3 margen_busca"><select id="" class="form-control rounded-0">
+                    <div class="col-3 margen_busca">
+                        <select id="ciudad_buscar" class="form-control rounded-0">
                             <option selected="" value="0">Ciudad</option>
                         </select>
                     </div>
-                    <div class="col-3 margen_busca"><select id="" class="form-control rounded-0">
+                    <div class="col-3 margen_busca"><select id="barrio_buscar" class="form-control rounded-0">
                             <option selected="" value="0">Barrio</option>
                         </select>
                     </div>
-                    <div class="col-3 margen_busca"><select id="" class="form-control rounded-0">
+                    <div class="col-3 margen_busca"><select id="tipo_gestion_buscar" class="form-control rounded-0">
                             <option selected="" value="0">Tipo de gestión</option>
                         </select>
                     </div>
-                    <div class="col-3 margen_busca"><select id="" class="form-control rounded-0">
+                    <div class="col-3 margen_busca"><select id="tipo_inmueble_buscar" class="form-control rounded-0">
                             <option selected="" value="0">Tipo de inmueble</option>
                         </select>
                     </div>
-                    <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="" placeholder=" Precio Mínimo"></div>
-                    <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="" placeholder=" Precio Máximo"></div>
-                    <div class="col-3 margen_busca"><button style="background-color:#99cf16;  padding: 6px;" type="button" class="btn rounded-0 col-12" name=""><span style="color:white">Buscar</span></button></div>
+                    <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="precio_minimo_buscar" onkeyup="format(this)" onchange="format(this)" placeholder=" Precio Mínimo"></div>
+                    <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="precio_maximo_buscar" onkeyup="format(this)" onchange="format(this)" placeholder=" Precio Máximo"></div>
+                    <div class="col-3 margen_busca"><button style="background-color:#99cf16;  padding: 6px;" type="button" class="btn rounded-0 col-12" id="buscar"><span style="color:white">Buscar</span></button></div>
                 </div>
             </div>
         </section>
@@ -109,275 +112,11 @@ $page = 'Inicio'; ?>
                     <div class="linea_decora"></div>
                 </div>
                 <div class="col-md-12">
-                    <div class="owl-carousel owl-theme">
-                        <div class="item margen_targe">
-                            <div class="col-md-12 row" style="margin-bottom: 40px;">
-                                <div class="col-md-7 row ">
-                                    <img style="object-fit: cover;width: 100%;height: 100%;" src="images/no_image.png" alt="">
-                                    <span class="style_span_tipo_inmueble">Tipo de inmueble</span>
-                                </div>
-                                <div class="col-md-5 ">
-                                    <div class="col-12 ">
-                                        <h5> <strong>Tipo de Gestion</strong></h5>
-                                    </div>
-                                    <div class="row     p-2">
-                                        <div class="col-md-12">
-                                            <li class="fas fa-map-marker-alt mr-2 mb-2 "> Ubicación:</li>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <li class="fas fa-chart-area mr-2 mb-2 "> Área:</li>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <li class="fas fa-bath  mr-2 mb-2 "> Baños:</li>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <li class="fas fa-bed  mr-2 mb-2 "> Alcobas:</li>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <li class="fas fa-bed  mr-2 mb-2 "> Codigo:</li>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <span class="style_span_precio">$Precio</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12 row ">
-                                <div class="col-md-7 row ">
-                                    <img style="object-fit: cover;width: 100%;height: 100%;" src="images/no_image.png" alt="">
-                                    <span class="style_span_tipo_inmueble">Tipo de inmueble</span>
-                                </div>
-                                <div class="col-md-5 ">
-                                    <div class="col-12 ">
-                                        <h5> <strong>Tipo de Gestion</strong></h5>
-                                    </div>
-                                    <div class="col-md-12    p-2">
-                                        <div class="col-md-12">
-                                            <li class="fas fa-map-marker-alt mr-2 mb-2 "> Ubicación:</li>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <li class="fas fa-chart-area mr-2 mb-2 "> Área:</li>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <li class="fas fa-bath  mr-2 mb-2 "> Baños:</li>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <li class="fas fa-bed  mr-2 mb-2 "> Alcobas:</li>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <li class="fas fa-bed  mr-2 mb-2 "> Codigo:</li>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <span class="style_span_precio">$Precio</span>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="item ">
-                            <div class="item margen_targe">
-                                <div class="col-md-12 row" style="margin-bottom: 40px;">
-                                    <div class="col-md-7 row ">
-                                        <img style="object-fit: cover;width: 100%;height: 100%;" src="images/no_image.png" alt="">
-                                        <span class="style_span_tipo_inmueble">Tipo de inmueble</span>
-
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="col-12 ">
-                                            <h5> <strong>Tipo de Gestion</strong></h5>
-                                        </div>
-                                        <div class="row     p-2">
-                                            <div class="col-md-12">
-                                                <li class="fas fa-map-marker-alt mr-2 mb-2 "> Ubicación:</li>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <li class="fas fa-chart-area mr-2 mb-2 "> Área:</li>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <li class="fas fa-bath  mr-2 mb-2 "> Baños:</li>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <li class="fas fa-bed  mr-2 mb-2 "> Alcobas:</li>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <li class="fas fa-bed  mr-2 mb-2 "> Codigo:</li>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <span class="style_span_precio">$Precio</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12 row ">
-                                    <div class="col-md-7 row ">
-                                        <img style="object-fit: cover;width: 100%;height: 100%;" src="images/no_image.png" alt="">
-                                        <span class="style_span_tipo_inmueble">Tipo de inmueble</span>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="col-12 ">
-                                            <h5> <strong>Tipo de Gestion</strong></h5>
-                                        </div>
-                                        <div class="col-md-12    p-2">
-                                            <div class="col-md-12">
-                                                <li class="fas fa-map-marker-alt mr-2 mb-2 "> Ubicación:</li>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <li class="fas fa-chart-area mr-2 mb-2 "> Área:</li>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <li class="fas fa-bath  mr-2 mb-2 "> Baños:</li>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <li class="fas fa-bed  mr-2 mb-2 "> Alcobas:</li>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <li class="fas fa-bed  mr-2 mb-2 "> Codigo:</li>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <span class="style_span_precio">$Precio</span>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="item margen_targe">
-                                <div class="col-md-12 row" style="margin-bottom: 40px;">
-                                    <div class="col-md-7 row ">
-                                        <img style="object-fit: cover;width: 100%;height: 100%;" src="images/no_image.png" alt="">
-                                        <span class="style_span_tipo_inmueble">Tipo de inmueble</span>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="col-12 ">
-                                            <h5> <strong>Tipo de Gestion</strong></h5>
-                                        </div>
-                                        <div class="row     p-2">
-                                            <div class="col-md-12">
-                                                <li class="fas fa-map-marker-alt mr-2 mb-2 "> Ubicación:</li>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <li class="fas fa-chart-area mr-2 mb-2 "> Área:</li>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <li class="fas fa-bath  mr-2 mb-2 "> Baños:</li>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <li class="fas fa-bed  mr-2 mb-2 "> Alcobas:</li>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <li class="fas fa-bed  mr-2 mb-2 "> Codigo:</li>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <span class="style_span_precio">$Precio</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12 row ">
-                                    <div class="col-md-7 row ">
-                                        <img style="object-fit: cover;width: 100%;height: 100%;" src="images/no_image.png" alt="">
-                                        <span class="style_span_tipo_inmueble">Tipo de inmueble</span>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="col-12 ">
-                                            <h5> <strong>Tipo de Gestion</strong></h5>
-                                        </div>
-                                        <div class="col-md-12    p-2">
-                                            <div class="col-md-12">
-                                                <li class="fas fa-map-marker-alt mr-2 mb-2 "> Ubicación:</li>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <li class="fas fa-chart-area mr-2 mb-2 "> Área:</li>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <li class="fas fa-bath  mr-2 mb-2 "> Baños:</li>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <li class="fas fa-bed  mr-2 mb-2 "> Alcobas:</li>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <li class="fas fa-bed  mr-2 mb-2 "> Codigo:</li>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <span class="style_span_precio">$Precio</span>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="item margen_targe">
-                                <div class="col-md-12 row" style="margin-bottom: 40px;">
-                                    <div class="col-md-7 row ">
-                                        <img style="object-fit: cover;width: 100%;height: 100%;" src="images/no_image.png" alt="">
-                                        <span class="style_span_tipo_inmueble">Tipo de inmueble</span>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="col-12 ">
-                                            <h5> <strong>Tipo de Gestion</strong></h5>
-                                        </div>
-                                        <div class="row     p-2">
-                                            <div class="col-md-12">
-                                                <li class="fas fa-map-marker-alt mr-2 mb-2 "> Ubicación:</li>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <li class="fas fa-chart-area mr-2 mb-2 "> Área:</li>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <li class="fas fa-bath  mr-2 mb-2 "> Baños:</li>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <li class="fas fa-bed  mr-2 mb-2 "> Alcobas:</li>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <li class="fas fa-bed  mr-2 mb-2 "> Codigo:</li>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <span class="style_span_precio">$Precio</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12 row ">
-                                    <div class="col-md-7 row ">
-                                        <img style="object-fit: cover;width: 100%;height: 100%;" src="images/no_image.png" alt="">
-                                        <span class="style_span_tipo_inmueble">Tipo de inmueble</span>
-                                    </div>
-                                    <div class="col-md-5 ">
-                                        <div class="col-12 ">
-                                            <h5> <strong>Tipo de Gestion</strong></h5>
-                                        </div>
-                                        <div class="col-md-12    p-2">
-                                            <div class="col-md-12">
-                                                <li class="fas fa-map-marker-alt mr-2 mb-2 "> Ubicación:</li>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <li class="fas fa-chart-area mr-2 mb-2 "> Área:</li>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <li class="fas fa-bath  mr-2 mb-2 "> Baños:</li>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <li class="fas fa-bed  mr-2 mb-2 "> Alcobas:</li>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <li class="fas fa-bed  mr-2 mb-2 "> Codigo:</li>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <span class="style_span_precio">$Precio</span>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
+                    <div class="owl-carousel owl-theme" id="owl-destacadas">
+                        <!-- Imprimir propiedades destacadas
+                        Edicion desde Controllers/modelo_inmueble.php
+                        Funcion modelo_inmueble destacados -->
+                        <?php inmuebles_destacados($api) ?>
                     </div>
                 </div>
             </div>
@@ -504,57 +243,56 @@ $page = 'Inicio'; ?>
                 </div>
 
             </div>
-    </div>
-    </section>
+        </section>
 
-    <section id="noticias">
-        <div class="container mt-5">
-            <div class="col-12">
-                <h1 class="text-center mt-5 gruesor_letra">Últimas Noticias</h1>
-                <div class="linea_decora"></div>
+        <section id="noticias">
+            <div class="container mt-5">
+                <div class="col-12">
+                    <h1 class="text-center mt-5 gruesor_letra">Últimas Noticias</h1>
+                    <div class="linea_decora"></div>
+                </div>
+                <div class="col-md-12 row mt-5">
+                    <div class="col-md-4">
+                        <div class="card" style="border-color: white;">
+                            <img src="images/no_image.png" class="card-img-top" alt="...">
+                            <div class="card-body espacio_tageta mt-4">
+                                <h4 class="card-title"><strong>Titulo Noticia</strong></h4>
+                                <p>23 Agosto 2019 / Admin</p>
+                                <p style="border-bottom: 1px dashed #646464; margin-bottom: 30px;padding-bottom: 30px;" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <button style="background-color:#99cf16;padding: 1px;" type="button" class="btn rounded-0 col-6" name=""><span style="color:white">ver más</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="border-color: white;">
+                            <img src="images/no_image.png" class="card-img-top" alt="...">
+                            <div class="card-body espacio_tageta mt-4">
+                                <h4 class="card-title"><strong>Titulo Noticia</strong></h4>
+                                <p>23 Agosto 2019 / Admin</p>
+                                <p style="border-bottom: 1px dashed #646464; margin-bottom: 30px;padding-bottom: 30px;" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <button style="background-color:#99cf16;padding: 1px;" type="button" class="btn rounded-0 col-6" name=""><span style="color:white">ver más</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="border-color: white;">
+                            <img src="images/no_image.png" class="card-img-top" alt="...">
+                            <div class="card-body espacio_tageta mt-4">
+                                <h4 class="card-title"><strong>Titulo Noticia</strong></h4>
+                                <p>23 Agosto 2019 / Admin</p>
+                                <p style="border-bottom: 1px dashed #646464; margin-bottom: 30px;padding-bottom: 30px;" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <button style="background-color:#99cf16;padding: 1px;" type="button" class="btn rounded-0 col-6" name=""><span style="color:white">ver más</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-12 row mt-5">
-                <div class="col-md-4">
-                    <div class="card" style="border-color: white;">
-                        <img src="images/no_image.png" class="card-img-top" alt="...">
-                        <div class="card-body espacio_tageta mt-4">
-                            <h4 class="card-title"><strong>Titulo Noticia</strong></h4>
-                            <p>23 Agosto 2019 / Admin</p>
-                            <p style="border-bottom: 1px dashed #646464; margin-bottom: 30px;padding-bottom: 30px;" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <button style="background-color:#99cf16;padding: 1px;" type="button" class="btn rounded-0 col-6" name=""><span style="color:white">ver más</span></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card" style="border-color: white;">
-                        <img src="images/no_image.png" class="card-img-top" alt="...">
-                        <div class="card-body espacio_tageta mt-4">
-                            <h4 class="card-title"><strong>Titulo Noticia</strong></h4>
-                            <p>23 Agosto 2019 / Admin</p>
-                            <p style="border-bottom: 1px dashed #646464; margin-bottom: 30px;padding-bottom: 30px;" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <button style="background-color:#99cf16;padding: 1px;" type="button" class="btn rounded-0 col-6" name=""><span style="color:white">ver más</span></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card" style="border-color: white;">
-                        <img src="images/no_image.png" class="card-img-top" alt="...">
-                        <div class="card-body espacio_tageta mt-4">
-                            <h4 class="card-title"><strong>Titulo Noticia</strong></h4>
-                            <p>23 Agosto 2019 / Admin</p>
-                            <p style="border-bottom: 1px dashed #646464; margin-bottom: 30px;padding-bottom: 30px;" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <button style="background-color:#99cf16;padding: 1px;" type="button" class="btn rounded-0 col-6" name=""><span style="color:white">ver más</span></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-    </section>
+        </section>
 
-    <section id="footer">
-        <?php include 'layout/footer.php' ?>
-    </section>
+        <section id="footer">
+            <?php include 'layout/footer.php' ?>
+        </section>
 
     </div>
 

@@ -20,7 +20,7 @@ function inmuebles_destacados($r)
 {
     if (is_array($r)) {
             $cantidad_inmuebles= count($r)-1;
-            modelo_inmueble($r, $cantidad_inmuebles);
+            modelo_inmueble_destacadas($r, $cantidad_inmuebles);
     } else {
         echo '<h2 class="text-center" >No tiene Inmuebles Destacados</h2>';
     }

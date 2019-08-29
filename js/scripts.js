@@ -15,7 +15,7 @@ $(document).ready(function() {
         }
     });
 
-    $('#owl-desstacadas').owlCarousel({
+    $('#owl-destacadas').owlCarousel({
         loop:true,
         margin:10,
         nav:true,

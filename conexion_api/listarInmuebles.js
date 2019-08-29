@@ -1,23 +1,27 @@
+// El paginador recibe parametros por, convertir esos parametros de php a la variable pagina.
 var numeroPaginas = cantidadPaginas(totalpagina, totalInmuebles);
-console.log(numeroPaginas, totalpagina, totalInmuebles);
 
-var contenido_paginas = 'Pagina ' + page + ' de ' + numeroPaginas + '';
+if(pagina == 1){
+    $('#atras').css('display', 'none');
+}else if(pagina == numeroPaginas){
+    $('#siguiente').css('display', 'none');
+}
+var contenido_paginas= 'Pagina '+pagina+' de '+numeroPaginas+'';
+
 $('#numero_pagina').append(contenido_paginas);
 
-if (page == 1) {
-    $('#ant').css('display', 'none');
-} else if (page == numeroPaginas) {
-    $('#next').css('display', 'none');
-}
+
+$('#pagina_numero').append(contenido_paginas);
+
 function paginador(actual) {
-    var reemplazar = '/pagina/' + page;
+    var reemplazar = '&pag='+pagina;
     url = url.replace(reemplazar, "");
     if (actual == 1) {
-        page--;
-        location.href = url + '/pagina/' + page;
+        pagina--;
+        location.href = url+'pag='+pagina;
     }
     if (actual == 2) {
-        page++;
-        location.href = url + '/pagina/' + page;
+        pagina++;
+        location.href = url+'pag='+pagina;
     }
 }
