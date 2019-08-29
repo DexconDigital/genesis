@@ -68,7 +68,7 @@
             </div>
 
             <div class="col-12 border-top">
-                <nav class="navbar navbar-expand-lg navbar-light mi_nav" style="padding: 0px 1rem;">
+                <nav id="" class="navbar navbar-expand-lg navbar-light mi_nav" style="padding: 0px 1rem;">
                     <div class="container">
                         <div class="">
                             <a class="navbar-brand contenedor_logo" href="index.php">

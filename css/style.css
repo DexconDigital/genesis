@@ -632,5 +632,9 @@ color: black;
     background-color: #99cf16;
 }
 
+body::-webkit-scrollbar-thumb{
+    background-color: #8cd042;
+    border-radius: 10px;
+}
 
  

@@ -13,7 +13,7 @@ $page = 'Inicio'; ?>
 </head>
 
 <body>
-    <div class="container-fluid body">
+    <div id="contenedor" class="container-fluid body">
 
         <section id="menu ">
             <?php include 'layout/menu.php' ?>
@@ -77,10 +77,23 @@ $page = 'Inicio'; ?>
             <div class="container" style="margin-top: 34px;">
                 <div class=" row col-12">
                     <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="" placeholder="Código"></div>
-                    <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="" placeholder="Ciudad"></div>
-                    <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="" placeholder="Barrio"></div>
-                    <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="" placeholder="Tipo de Gestión"></div>
-                    <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="" placeholder="Tipo de Inmueble"></div>
+
+                    <div class="col-3 margen_busca"><select id="" class="form-control rounded-0">
+                            <option selected="" value="0">Ciudad</option>
+                        </select>
+                    </div>
+                    <div class="col-3 margen_busca"><select id="" class="form-control rounded-0">
+                            <option selected="" value="0">Barrio</option>
+                        </select>
+                    </div>
+                    <div class="col-3 margen_busca"><select id="" class="form-control rounded-0">
+                            <option selected="" value="0">Tipo de gestión</option>
+                        </select>
+                    </div>
+                    <div class="col-3 margen_busca"><select id="" class="form-control rounded-0">
+                            <option selected="" value="0">Tipo de inmueble</option>
+                        </select>
+                    </div>
                     <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="" placeholder=" Precio Mínimo"></div>
                     <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="" placeholder=" Precio Máximo"></div>
                     <div class="col-3 margen_busca"><button style="background-color:#99cf16;  padding: 6px;" type="button" class="btn rounded-0 col-12" name=""><span style="color:white">Buscar</span></button></div>
@@ -481,67 +494,67 @@ $page = 'Inicio'; ?>
                     <div class="linea_decora"></div>
                 </div>
             </div>
-<div class="col-md-12">
-    <div class="col-md-8 text-center container_libert">
-    <img style="height: 100%; object-fit: contain;" src="images/LOGO SIMI.png" alt="">
-    </div>
-
-    <div class="col-md-8 text-center container_libert">
-    <img style="height: 100%; object-fit: none;" src="images/LOGO EL LIBERTADOR.png" alt="">
-    </div>
-
-    </div>
-</div>
-        </section>
-
-        <section id="noticias">
-            <div class="container mt-5">
-                <div class="col-12">
-                    <h1 class="text-center mt-5 gruesor_letra">Últimas Noticias</h1>
-                    <div class="linea_decora"></div>
+            <div class="col-md-12">
+                <div class="col-md-8 text-center container_libert">
+                    <img style="height: 100%; object-fit: contain;" src="images/LOGO SIMI.png" alt="">
                 </div>
-                <div class="col-md-12 row mt-5">
-                    <div class="col-md-4">
-                        <div class="card" style="border-color: white;">
-                            <img src="images/no_image.png" class="card-img-top" alt="...">
-                            <div class="card-body espacio_tageta mt-4">
-                                <h4 class="card-title"><strong>Titulo Noticia</strong></h4>
-                                <p>23 Agosto 2019 / Admin</p>
-                                <p style="border-bottom: 1px dashed #646464; margin-bottom: 30px;padding-bottom: 30px;" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <button style="background-color:#99cf16;padding: 1px;" type="button" class="btn rounded-0 col-6" name=""><span style="color:white">ver más</span></button>
-                            </div>
+
+                <div class="col-md-8 text-center container_libert">
+                    <img style="height: 100%; object-fit: none;" src="images/LOGO EL LIBERTADOR.png" alt="">
+                </div>
+
+            </div>
+    </div>
+    </section>
+
+    <section id="noticias">
+        <div class="container mt-5">
+            <div class="col-12">
+                <h1 class="text-center mt-5 gruesor_letra">Últimas Noticias</h1>
+                <div class="linea_decora"></div>
+            </div>
+            <div class="col-md-12 row mt-5">
+                <div class="col-md-4">
+                    <div class="card" style="border-color: white;">
+                        <img src="images/no_image.png" class="card-img-top" alt="...">
+                        <div class="card-body espacio_tageta mt-4">
+                            <h4 class="card-title"><strong>Titulo Noticia</strong></h4>
+                            <p>23 Agosto 2019 / Admin</p>
+                            <p style="border-bottom: 1px dashed #646464; margin-bottom: 30px;padding-bottom: 30px;" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <button style="background-color:#99cf16;padding: 1px;" type="button" class="btn rounded-0 col-6" name=""><span style="color:white">ver más</span></button>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card" style="border-color: white;">
-                            <img src="images/no_image.png" class="card-img-top" alt="...">
-                            <div class="card-body espacio_tageta mt-4">
-                                <h4 class="card-title"><strong>Titulo Noticia</strong></h4>
-                                <p>23 Agosto 2019 / Admin</p>
-                                <p style="border-bottom: 1px dashed #646464; margin-bottom: 30px;padding-bottom: 30px;" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <button style="background-color:#99cf16;padding: 1px;" type="button" class="btn rounded-0 col-6" name=""><span style="color:white">ver más</span></button>
-                            </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="border-color: white;">
+                        <img src="images/no_image.png" class="card-img-top" alt="...">
+                        <div class="card-body espacio_tageta mt-4">
+                            <h4 class="card-title"><strong>Titulo Noticia</strong></h4>
+                            <p>23 Agosto 2019 / Admin</p>
+                            <p style="border-bottom: 1px dashed #646464; margin-bottom: 30px;padding-bottom: 30px;" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <button style="background-color:#99cf16;padding: 1px;" type="button" class="btn rounded-0 col-6" name=""><span style="color:white">ver más</span></button>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card" style="border-color: white;">
-                            <img src="images/no_image.png" class="card-img-top" alt="...">
-                            <div class="card-body espacio_tageta mt-4">
-                                <h4 class="card-title"><strong>Titulo Noticia</strong></h4>
-                                <p>23 Agosto 2019 / Admin</p>
-                                <p style="border-bottom: 1px dashed #646464; margin-bottom: 30px;padding-bottom: 30px;" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <button style="background-color:#99cf16;padding: 1px;" type="button" class="btn rounded-0 col-6" name=""><span style="color:white">ver más</span></button>
-                            </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="border-color: white;">
+                        <img src="images/no_image.png" class="card-img-top" alt="...">
+                        <div class="card-body espacio_tageta mt-4">
+                            <h4 class="card-title"><strong>Titulo Noticia</strong></h4>
+                            <p>23 Agosto 2019 / Admin</p>
+                            <p style="border-bottom: 1px dashed #646464; margin-bottom: 30px;padding-bottom: 30px;" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <button style="background-color:#99cf16;padding: 1px;" type="button" class="btn rounded-0 col-6" name=""><span style="color:white">ver más</span></button>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
-        </section>
+    </section>
 
-        <section id="footer">
-            <?php include 'layout/footer.php' ?>
-        </section>
+    <section id="footer">
+        <?php include 'layout/footer.php' ?>
+    </section>
 
     </div>
 
