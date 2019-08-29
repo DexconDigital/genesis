@@ -1,4 +1,1 @@
-const TOKEN = '8uyOx0ieVEsNqAS2KQNesUNJMSF7wCT08DAT3fGS-813';
-var URLDOMAIN = window.origin+'/supropiedad/';
-
-console.log(window.location);
+const TOKEN = 'VdhnZ3itZ5Ycg1G8Tmk7PkGPu3iclc6RjTF1M908-583';
