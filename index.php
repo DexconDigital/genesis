@@ -99,7 +99,8 @@ $page = 'Inicio'; ?>
                     </div>
                     <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="precio_minimo_buscar" onkeyup="format(this)" onchange="format(this)" placeholder=" Precio Mínimo"></div>
                     <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="precio_maximo_buscar" onkeyup="format(this)" onchange="format(this)" placeholder=" Precio Máximo"></div>
-                    <div class="col-3 margen_busca"><button style="background-color:#99cf16;  padding: 6px;" type="button" class="btn rounded-0 col-12" id="buscar"><span style="color:white">Buscar</span></button></div>
+                    <div class="col-3 margen_busca">
+                    <button style="background-color:#99cf16;  padding: 6px;" type="button" class="btn rounded-0 col-12" id="buscar"><span style="color:white">Buscar</span></button></div>
                 </div>
             </div>
         </section>
@@ -295,7 +296,7 @@ $page = 'Inicio'; ?>
         </section>
 
     </div>
-
+    <script>var pagina = 'inicio'</script>
     <?php include('layout/archivosfooter.php'); ?>
 
 </body>

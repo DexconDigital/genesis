@@ -2,7 +2,6 @@
 require 'modelo_inmueble.php';
 require 'vendor/autoload.php';
 use JasonGrimes\Paginator;
-
 require_once 'variables/config.php';
 $url_pagina = $_SERVER["REQUEST_URI"];
 $ciudad = 0;
@@ -12,6 +11,12 @@ $inmueble = 0;
 $precio_minimo = 0;
 $precio_maximo = 0;
 $pag = 1;
+$area_minima= 0;
+$area_maxima = 0;
+$alcobas_buscar = 0;
+$banio_buscar= 0;
+$garaje_buscar =0;
+
 
 if (isset($_GET['pag'])) {
     $pag = $_GET['pag'];
@@ -26,9 +31,17 @@ if (isset($_GET['ci'])) {
     $precio_maximo = $_GET['premax'];
 }
 
+if(isset($_GET['aremin'])){
+    $area_minima = $_GET['aremin'];
+    $area_maxima = $_GET['aremax'];
+    $alcobas_buscar = $_GET['alcobas'];
+    $banio_buscar = $_GET['banios'];
+    $garaje_buscar = $_GET['garajes'];
+}
+
 $ch = curl_init();
 $headers =  'Authorization:' . TOKEN;
-curl_setopt($ch, CURLOPT_URL, 'http://www.simi-api.com/ApiSimiweb/response/v2.1.3/filtroInmueble/limite/' . $pag . '/total/12/departamento/0/ciudad/' . $ciudad . '/zona/0/barrio/' . $barrio . '/tipoInm/' . $inmueble . '/tipOper/' . $gestion . '/areamin/0/areamax/0/valmin/'.$precio_minimo.'/valmax/'.$precio_maximo.'/campo/0/order/desc/banios/0/alcobas/0/garajes/0/sede/0/usuario/0');
+curl_setopt($ch, CURLOPT_URL, 'http://www.simi-api.com/ApiSimiweb/response/v2.1.3/filtroInmueble/limite/' . $pag . '/total/12/departamento/0/ciudad/' . $ciudad . '/zona/0/barrio/' . $barrio . '/tipoInm/' . $inmueble . '/tipOper/' . $gestion . '/areamin/'.$area_minima.'/areamax/'.$area_maxima.'/valmin/'.$precio_minimo.'/valmax/'.$precio_maximo.'/campo/0/order/desc/banios/'.$banio_buscar.'/alcobas/'.$alcobas_buscar.'/garajes/'.$garaje_buscar.'/sede/0/usuario/0');
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);

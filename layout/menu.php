@@ -101,7 +101,7 @@
                                 <li class="nav-item marge_li_nav <?php if ($page == 'inmueble') {
                                         echo 'active';
                                     } ?> ">
-                                    <a id="color_nav" class="nav-link" href="inmuebles.php">Inmuebles</a>
+                                    <a id="color_nav" class="nav-link" href="inmuebles.php?">Inmuebles</a>
                                 </li>
                                 <li class="nav-item dropdown marge_li_nav">
                                     <a id="color_nav" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Clientes</a>
