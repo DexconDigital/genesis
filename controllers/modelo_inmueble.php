@@ -134,7 +134,7 @@ function modelo_inmueble_listar($r)
         $imagen = existeImagen(($r[$i]['foto1']));
 
         // Eliminar el id de la inmobiliaria
-        $codigo = str_ireplace("254-", "", $r[$i]['Codigo_Inmueble']);
+        $codigo = str_ireplace("583-", "", $r[$i]['Codigo_Inmueble']);
 
 
         // a la variable "api" le asignamos el array con la iteraccion
@@ -189,7 +189,7 @@ function modelo_inmueble_listar($r)
             <div class="cont_precio">
                 <ul class="list_aline">
                     <li class="estilo_letra_list"><a class="precio_style">'.$precio.'</a></li>
-                    <li class="cont_bott_noticia"><a class="boton_style" href="detalle_inmueble.php?co="'.$codigo.'">Ver Más</a></li>
+                    <li class="cont_bott_noticia"><a class="boton_style" href="detalle_inmueble.php?co='.$codigo.'">Ver Más</a></li>
                 </ul>
             </div>
         </div>
