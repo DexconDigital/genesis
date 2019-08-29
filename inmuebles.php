@@ -23,10 +23,27 @@ $page = 'inmueble' ?>
             <div class="container">
                 <div class=" row col-12">
                     <div class="col-3 margen_busca top_busca"><input type="text" class="form-control rounded-0" id="" placeholder="Código"></div>
-                    <div class="col-3 margen_busca top_busca"><input type="text" class="form-control rounded-0" id="" placeholder="Ciudad"></div>
-                    <div class="col-3 margen_busca top_busca"><input type="text" class="form-control rounded-0" id="" placeholder="Barrio"></div>
-                    <div class="col-3 margen_busca top_busca"><input type="text" class="form-control rounded-0" id="" placeholder="Tipo de Gestión"></div>
-                    <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="" placeholder="Tipo de Inmueble"></div>
+                    <div class="col-3 margen_busca top_busca">
+                        <select id="ciudad_buscar" class="form-control rounded-0">
+                            <option selected="" value="0">Ciudad</option>
+                        </select>
+                    </div>
+
+                    <div class="col-3 margen_busca top_busca">
+                        <select id="" class="form-control rounded-0">
+                            <option selected="barrio_buscar" value="0">Barrio</option>
+                        </select>
+                    </div>
+                    <div class="col-3 margen_busca top_busca">
+                        <select id="" class="form-control rounded-0">
+                            <option selected="tipo_gestion_buscar" value="0">Tipo de Gestión</option>
+                        </select>
+                    </div>
+                    <div class="col-3 margen_busca">
+                    <select id="" class="form-control rounded-0">
+                            <option selected="tipo_inmueble_buscar" value="0">Tipo de Inmueble</option>
+                        </select>
+                    </div>
                     <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="" placeholder=" Precio Mínimo"></div>
                     <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="" placeholder=" Precio Máximo"></div>
                     <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="" placeholder=" Baños"></div>
@@ -34,7 +51,7 @@ $page = 'inmueble' ?>
                     <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="" placeholder=" Garajes"></div>
                     <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="" placeholder=" Área Mínima"></div>
                     <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="" placeholder=" Área Máxima"></div>
-                    <div class="col-12 margen_busca"><button  type="button" class="btn rounded-0 col-6 botoon_inmueble" name=""><span style="color:white">Buscar</span></button></div>
+                    <div class="col-12 margen_busca"><button type="button" class="btn rounded-0 col-6 botoon_inmueble" name=""><span style="color:white">Buscar</span></button></div>
                 </div>
             </div>
         </section>
@@ -55,7 +72,7 @@ $page = 'inmueble' ?>
                         <div class="contenido_noti">
                             <h3 class="mrge_noti">
                                 <a>Tipo de inmueble / Tipo de gestión</a></h3>
-                                <li class="tamaño_icon_not"><i class="fas fa-map-marker-alt icon_noti"></i>Ubicación</li>
+                            <li class="tamaño_icon_not"><i class="fas fa-map-marker-alt icon_noti"></i>Ubicación</li>
                             <p>Pequeña descripción</p>
                         </div>
                     </div>
