@@ -112,8 +112,8 @@ $page = 'Inicio'; ?>
                     <h1 class="text-center gruesor_letra espacio_propi">Propiedades Destacadas</h1>
                     <div class="linea_decora"></div>
                 </div>
-                <div class="col-md-12">
-                    <div class="owl-carousel owl-theme" id="owl-destacadas">
+                <div class="col-md-12 row">
+                    <div class="owl-carousel owl-theme cuadro_margen" id="owl-destacadas">
                         <!-- Imprimir propiedades destacadas
                         Edicion desde Controllers/modelo_inmueble.php
                         Funcion modelo_inmueble destacados -->
@@ -196,28 +196,28 @@ $page = 'Inicio'; ?>
                         <div class="col-3 text-center color_estadis" style="">
                             <div>
                                 <i class="far fa-address-card color_icono_banner"></i>
-                                <h1>100</h1>
+                                <h1 class="counter-experence"></h1>
                                 <h5 class="color_result"><?php echo $texto_contador_estadisticas['parrafos'][0] ?></h5>
                             </div>
                         </div>
                         <div class="col-3 text-center color_estadis" style="">
                             <div>
                                 <i class="far fa-address-card color_icono_banner"></i>
-                                <h1>100</h1>
+                                <h1 class="counter-propertys"></h1>
                                 <h5 class="color_result"><?php echo $texto_contador_estadisticas['parrafos'][1] ?></h5>
                             </div>
                         </div>
                         <div class="col-3 text-center color_estadis" style="">
                             <div>
                                 <i class="far fa-address-card color_icono_banner"></i>
-                                <h1>100</h1>
+                                <h1 class="counter-rent"></h1>
                                 <h5 class="color_result"><?php echo $texto_contador_estadisticas['parrafos'][2] ?></h5>
                             </div>
                         </div>
                         <div class="col-3 text-center color_estadis" style="">
                             <div>
                                 <i class="far fa-address-card color_icono_banner"></i>
-                                <h1>100</h1>
+                                <h1 class="counter-sale"></h1>
                                 <h5 class="color_result"><?php echo $texto_contador_estadisticas['parrafos'][3] ?></h5>
                             </div>
                         </div>
@@ -235,12 +235,12 @@ $page = 'Inicio'; ?>
                 </div>
             </div>
             <div class="col-md-12">
-                <div class="col-md-8 text-center container_libert">
-                    <img style="height: 100%; object-fit: contain;" src="images/LOGO SIMI.png" alt="">
+                <div class="col-md-8 text-center container_simi">
+                    <img class="logo_simi" src="images/LOGO SIMI.png" alt="">
                 </div>
 
                 <div class="col-md-8 text-center container_libert">
-                    <img style="height: 100%; object-fit: none;" src="images/LOGO EL LIBERTADOR.png" alt="">
+                    <img class="logo_liber" src="images/LOGO EL LIBERTADOR.png" alt="">
                 </div>
 
             </div>
@@ -298,6 +298,7 @@ $page = 'Inicio'; ?>
     </div>
     <script>var pagina = 'inicio'</script>
     <?php include('layout/archivosfooter.php'); ?>
+    <script src="js/counter-propertys.js"></script>
 
 </body>
 

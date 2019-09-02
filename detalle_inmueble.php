@@ -166,16 +166,22 @@ require 'controllers/detalleInmuebleController.php' ?>
                                 <h5 class="titulo_similares" class="mb-0">Contacto con el asesor</h5>
                             </div>
 
-                            <div class="contenedor_contact mt-3">
-                                <figure class="cont_img">
-                                    <img class="estulo_img_cont" src="<?php echo $asesor['FotoAsesor']?>" alt="">
-                                </figure>
-                                <ul class="icon_cont">
-                                    <li><i class="fa fa-map-marker"></i> <?php echo $asesor['ntercero']?></li>
-                                    <li><i class="fa fa-phone"></i> <?php echo $asesor['celular']?></li>
-                                    <li><a><i class="fa fa-envelope"></i><?php echo $asesor['correo']?></a></li>
-                                </ul>
+                            <div class="col-md-12">
+                      
+                        <div class="side-bar-agent-detail mt-3">
+                            <figure>
+                                <img class="cont_img" src="<?php echo $asesor['FotoAsesor']; ?>" alt="">
+                            </figure>
+                            <div class="col-12  mt-2 text-center">
+                                <div><?php echo $asesor['ntercero']; ?></div>
+                                <div><i class=""></i><a class="color_verde" href="tel:+57<?php echo $asesor['celular']; ?>"><?php echo $asesor['celular']; ?></a></div>
+                                <div><i class=""></i><a class="color_verde" href="mailto:"><?php echo $asesor['correo']; ?></a></div>
+                    
                             </div>
+                            
+                        </div>
+
+                    </div>
                         </div>
                     </div>
 

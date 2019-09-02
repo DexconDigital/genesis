@@ -52,21 +52,21 @@ function modelo_inmueble_destacadas($r, $cantidad_inmuebles)
         $venta2 = $api2['Venta'];
 
         echo '
-            <div class="item ">
+            <div class="item contenedor_mayor">
             <div class="item margen_targe">
                 <!-- ***********************Primera Propiedad *****************************-->
                 <div class="col-md-12 row" style="margin-bottom: 40px;">
-                    <div class="col-md-7 row ">
+                    <div class="col-md-7 row dimencion_imagen"> 
                         <img style="object-fit: cover;width: 100%;height: 100%;" src="' . $imagen . '" alt="">
                         <span class="style_span_tipo_inmueble">' . $tipo_inmueble . '</span>
                     </div>
-                    <div class="col-md-5 ">
-                        <div class="col-12 ">
-                            <h5> <strong>' . $gestion . '</strong></h5>
+                    <div class="col-md-5 marge_contenido">
+                        <div class="col-12">
+                            <h5 class="text-center"> <strong>' . $gestion . '</strong></h5>
                         </div>
                         <div class="row p-2">
                             <div class="col-md-12">
-                                <li class="fas fa-map-marker-alt mr-2 mb-2 ">' . $barrio . ', ' . $ciudad . '</li>
+                                <li class="fas fa-map-marker-alt mr-3 mb-2 "> ' . $barrio . ', ' . $ciudad . '</li>
                             </div>
                             <div class="col-md-12">
                                 <li class="fas fa-chart-area mr-2 mb-2 "> Área: ' . $area_construida . ' m<sup>2</sup></li>
@@ -81,7 +81,7 @@ function modelo_inmueble_destacadas($r, $cantidad_inmuebles)
                                 <li class="fas fa-bed  mr-2 mb-2 "> Codigo: ' . $codigo . '</li>
                             </div>
                         </div>
-                        <div class="col-md-12">
+                        <div class="col-md-12 position_btn">
                             <span class="style_span_precio">' . $precio . '</span>
                         </div>
                     </div>
@@ -92,9 +92,9 @@ function modelo_inmueble_destacadas($r, $cantidad_inmuebles)
                     <img style="object-fit: cover;width: 100%;height: 100%;" src="' . $imagen2 . '" alt="">
                     <span class="style_span_tipo_inmueble">' . $tipo_inmueble2 . '</span>
                     </div>
-                    <div class="col-md-5 ">
+                    <div class="col-md-5 marge_contenido">
                         <div class="col-12 ">
-                            <h5> <strong>' . $gestion2 . '</strong></h5>
+                            <h5 class="text-center"> <strong>' . $gestion2 . '</strong></h5>
                         </div>
                         <div class="col-md-12    p-2">
                         <div class="col-md-12">
@@ -113,7 +113,7 @@ function modelo_inmueble_destacadas($r, $cantidad_inmuebles)
                         <li class="fas fa-bed  mr-2 mb-2 "> Codigo: ' . $codigo2 . '</li>
                     </div>
                         </div>
-                        <div class="col-md-12">
+                        <div class="col-md-12 position_btn">
                             <span class="style_span_precio">' . $precio2 . '</span>
                         </div>
                     </div>
@@ -170,19 +170,19 @@ function modelo_inmueble_listar($r)
         <div class="col-md-3  cont_general">
             <div class="img_noticia">
                 <a class="a_img" href="detalle_inmueble.php?co='.$codigo.'">
-                    <img style="width: 100%;" src="'.$imagen.'" alt="">
+                    <img class="tamaño_img_detalle" src="'.$imagen.'" alt="">
                 </a>
             </div>
 
         </div>
-        <div class="col-md-5  cont_general">
+        <div class="col-md-5 marge_contenido  cont_general">
             <div class="contenido_noti">
                 <h3 class="mrge_noti">
                     <a>'.$tipo_inmueble.' en '.$gestion.'</a></h3>
                 <li class="tamaño_icon_not"><i class="fas fa-map-marker-alt icon_noti"></i>
                     '.$barrio.', '.$ciudad.'
                 </li>
-                <p>'.$descripcion.'</p>
+                <p class="mt-3">'.$descripcion.'</p>
             </div>
         </div>
         <div class="col-md-2  cont_general">
