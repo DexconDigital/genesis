@@ -35,7 +35,7 @@ $page = 'Inicio'; ?>
                             <h1 id="style_slide_uno" class="h3-responsive"><?php echo $frases_slide_principal[0] ?></h1>
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item ">
                         <!--Mask color-->
                         <div class="view">
                             <img class="d-block w-100" src="images/slide2.jpg" alt="Second slide">
@@ -100,7 +100,7 @@ $page = 'Inicio'; ?>
                     <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="precio_minimo_buscar" onkeyup="format(this)" onchange="format(this)" placeholder=" Precio Mínimo"></div>
                     <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="precio_maximo_buscar" onkeyup="format(this)" onchange="format(this)" placeholder=" Precio Máximo"></div>
                     <div class="col-3 margen_busca">
-                    <button style="background-color:#99cf16;  padding: 6px;" type="button" class="btn rounded-0 col-12" id="buscar"><span style="color:white">Buscar</span></button></div>
+                        <button style="background-color:#99cf16;  padding: 6px;" type="button" class="btn rounded-0 col-12" id="buscar"><span style="color:white">Buscar</span></button></div>
                 </div>
             </div>
         </section>
@@ -145,10 +145,10 @@ $page = 'Inicio'; ?>
             <div class="container" style="margin-bottom: 33px;">
                 <div class="d-flex justify-content-between col-md-12 row ">
                     <div class="col-md-4 row ">
-                        <div class="col-md-3">
+                        <div class="col-xl-3 col-md-3 col-4">
                             <i class="fas fa-tags color_venta"></i>
                         </div>
-                        <div class="col-md-9">
+                        <div class="col-xl-9 col-md-9 col-8">
                             <div>
                                 <h4><strong><?php echo $texto_servicios['ventas']['titulo'] ?></strong></h4>
                             </div>
@@ -158,10 +158,10 @@ $page = 'Inicio'; ?>
                         </div>
                     </div>
                     <div class="col-md-4 row ">
-                        <div class="col-md-3">
+                        <div class="col-xl-3 col-md-3 col-4">
                             <i class="fas fa-sign color_venta"></i>
                         </div>
-                        <div class="col-md-9">
+                        <div class="col-xl-9 col-md-9 col-8">
                             <div>
                                 <h4><strong><?php echo $texto_servicios['arriendos']['titulo'] ?></strong></h4>
                             </div>
@@ -171,10 +171,10 @@ $page = 'Inicio'; ?>
                         </div>
                     </div>
                     <div class="col-md-4 row ">
-                        <div class="col-md-3">
+                        <div class="col-xl-3 col-md-3 col-4">
                             <i class="fas fa-balance-scale color_venta"></i>
                         </div>
-                        <div class="col-md-9">
+                        <div class="col-xl-9 col-md-9 col-8">
                             <div>
                                 <h4><strong><?php echo $texto_servicios['avaluos']['titulo'] ?></strong></h4>
                             </div>
@@ -193,31 +193,31 @@ $page = 'Inicio'; ?>
                 <div class="container  contenedor_banner">
 
                     <div class="row d-flex justify-content-between" style="padding: 73px;">
-                        <div class="col-3 text-center color_estadis" style="">
+                        <div class="espacio_div col-xl-3 col-md-3 col-12 text-center color_estadis" style="">
                             <div>
                                 <i class="far fa-address-card color_icono_banner"></i>
-                                <h1 class="counter-experence"></h1>
+                                <h1 id="counter-experence"></h1>
                                 <h5 class="color_result"><?php echo $texto_contador_estadisticas['parrafos'][0] ?></h5>
                             </div>
                         </div>
-                        <div class="col-3 text-center color_estadis" style="">
+                        <div class=" espacio_div col-xl-3 col-md-3 col-12 text-center color_estadis" style="">
                             <div>
                                 <i class="far fa-address-card color_icono_banner"></i>
-                                <h1 class="counter-propertys"></h1>
+                                <h1 id="counter-propertys"></h1>
                                 <h5 class="color_result"><?php echo $texto_contador_estadisticas['parrafos'][1] ?></h5>
                             </div>
                         </div>
-                        <div class="col-3 text-center color_estadis" style="">
+                        <div class=" espacio_div col-xl-3 col-md-3 col-12 text-center color_estadis" style="">
                             <div>
                                 <i class="far fa-address-card color_icono_banner"></i>
-                                <h1 class="counter-rent"></h1>
+                                <h1 id="counter-rent"></h1>
                                 <h5 class="color_result"><?php echo $texto_contador_estadisticas['parrafos'][2] ?></h5>
                             </div>
                         </div>
-                        <div class="col-3 text-center color_estadis" style="">
+                        <div class=" espacio_div col-xl-3 col-md-3 col-12 text-center color_estadis" style="">
                             <div>
                                 <i class="far fa-address-card color_icono_banner"></i>
-                                <h1 class="counter-sale"></h1>
+                                <h1 id="counter-sale"></h1>
                                 <h5 class="color_result"><?php echo $texto_contador_estadisticas['parrafos'][3] ?></h5>
                             </div>
                         </div>
@@ -240,14 +240,14 @@ $page = 'Inicio'; ?>
                 </div>
 
                 <div class="col-md-8 text-center container_libert">
-                    <img class="logo_liber" src="images/LOGO EL LIBERTADOR.png" alt="">
+                    <img class="logo_libert" src="images/libertador.png" alt="">
                 </div>
 
             </div>
         </section>
 
         <section id="noticias">
-            <div class="container mt-5">
+            <div class="container mt-2">
                 <div class="col-12">
                     <h1 class="text-center mt-5 gruesor_letra">Últimas Noticias</h1>
                     <div class="linea_decora"></div>
@@ -296,8 +296,11 @@ $page = 'Inicio'; ?>
         </section>
 
     </div>
-    <script>var pagina = 'inicio'</script>
+    <script>
+        var pagina = 'inicio'
+    </script>
     <?php include('layout/archivosfooter.php'); ?>
+    <script src='js/countUp.min.js'></script>
     <script src="js/counter-propertys.js"></script>
 
 </body>

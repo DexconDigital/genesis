@@ -56,13 +56,13 @@ function modelo_inmueble_destacadas($r, $cantidad_inmuebles)
             <div class="item margen_targe">
                 <!-- ***********************Primera Propiedad *****************************-->
                 <div class="col-md-12 row" style="margin-bottom: 40px;">
-                    <div class="col-md-7 row dimencion_imagen"> 
+                    <div class="col-xl-7 col-md-6 row dimencion_imagen"> 
                         <img style="object-fit: cover;width: 100%;height: 100%;" src="' . $imagen . '" alt="">
                         <span class="style_span_tipo_inmueble">' . $tipo_inmueble . '</span>
                     </div>
-                    <div class="col-md-5 marge_contenido">
+                    <div class="col-xl-5 col-md-6 marge_contenido">
                         <div class="col-12">
-                            <h5 class="text-center"> <strong>' . $gestion . '</strong></h5>
+                            <h5 class="margen_gestion"> <strong>' . $gestion . '</strong></h5>
                         </div>
                         <div class="row p-2">
                             <div class="col-md-12">
@@ -88,17 +88,17 @@ function modelo_inmueble_destacadas($r, $cantidad_inmuebles)
                 </div>
                 <!-- ****************************Segunda Propiedad******************************* -->
                 <div class="col-md-12 row ">
-                    <div class="col-md-7 row ">
+                <div class="col-xl-7 col-md-6 row dimencion_imagen"> 
                     <img style="object-fit: cover;width: 100%;height: 100%;" src="' . $imagen2 . '" alt="">
                     <span class="style_span_tipo_inmueble">' . $tipo_inmueble2 . '</span>
                     </div>
-                    <div class="col-md-5 marge_contenido">
+                    <div class="col-xl-5 col-md-6 marge_contenido">
                         <div class="col-12 ">
-                            <h5 class="text-center"> <strong>' . $gestion2 . '</strong></h5>
+                            <h5 class="margen_gestion"> <strong>' . $gestion2 . '</strong></h5>
                         </div>
-                        <div class="col-md-12    p-2">
+                        <div class="row   p-2">
                         <div class="col-md-12">
-                        <li class="fas fa-map-marker-alt mr-2 mb-2 ">' . $barrio2 . ', ' . $ciudad2 . '</li>
+                        <li class="fas fa-map-marker-alt mr-2 mb-2 "> ' . $barrio2 . ', ' . $ciudad2 . '</li>
                     </div>
                     <div class="col-md-12">
                         <li class="fas fa-chart-area mr-2 mb-2 "> Área: ' . $area_construida2 . ' m<sup>2</sup></li>
