@@ -1,5 +1,6 @@
 <?php require 'variables/variables.php';
 require 'controllers/indexController.php';
+require 'controllers/noticiasController.php';
 $page = 'Inicio'; ?>
 
 <!DOCTYPE html>
@@ -252,40 +253,15 @@ $page = 'Inicio'; ?>
                     <h1 class="text-center mt-5 gruesor_letra">Últimas Noticias</h1>
                     <div class="linea_decora"></div>
                 </div>
-                <div class="col-md-12 row mt-5">
-                    <div class="col-md-4">
-                        <div class="card" style="border-color: white;">
-                            <img src="images/no_image.png" class="card-img-top" alt="...">
-                            <div class="card-body espacio_tageta mt-4">
-                                <h4 class="card-title"><strong>Titulo Noticia</strong></h4>
-                                <p>23 Agosto 2019 / Admin</p>
-                                <p style="border-bottom: 1px dashed #646464; margin-bottom: 30px;padding-bottom: 30px;" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <button style="background-color:#99cf16;padding: 1px;" type="button" class="btn rounded-0 col-6" name=""><span style="color:white">ver más</span></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card" style="border-color: white;">
-                            <img src="images/no_image.png" class="card-img-top" alt="...">
-                            <div class="card-body espacio_tageta mt-4">
-                                <h4 class="card-title"><strong>Titulo Noticia</strong></h4>
-                                <p>23 Agosto 2019 / Admin</p>
-                                <p style="border-bottom: 1px dashed #646464; margin-bottom: 30px;padding-bottom: 30px;" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <button style="background-color:#99cf16;padding: 1px;" type="button" class="btn rounded-0 col-6" name=""><span style="color:white">ver más</span></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card" style="border-color: white;">
-                            <img src="images/no_image.png" class="card-img-top" alt="...">
-                            <div class="card-body espacio_tageta mt-4">
-                                <h4 class="card-title"><strong>Titulo Noticia</strong></h4>
-                                <p>23 Agosto 2019 / Admin</p>
-                                <p style="border-bottom: 1px dashed #646464; margin-bottom: 30px;padding-bottom: 30px;" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <button style="background-color:#99cf16;padding: 1px;" type="button" class="btn rounded-0 col-6" name=""><span style="color:white">ver más</span></button>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-md-12 row mt-5  espcio_contain">
+                    <?php if (isset($noticias_array)) {
+                        modelo_ultima_noticia($noticias_array);
+                    } else {
+                        echo '<div class="col 12">
+                        <h3 class="text-center">Muy pronto publicaremos contenido para ti<h3>
+                        </div>';
+                    }
+                    ?>
                 </div>
             </div>
 

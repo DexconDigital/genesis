@@ -2,12 +2,13 @@
 require("seguridad.php");
 require_once("conexion.php");
 include 'layout/layout.php';
-$user = $_SESSION["usuarioactual"];
+$user =$_SESSION["usuarioactual"];
 $con = Conect();
-$qry = "SELECT * FROM usuarios where usuario ='$user'";
+$qry = "SELECT * FROM `usuarios` WHERE id_user = '$user'";
 $sql = mysqli_query($con, $qry);
 $usuario =  mysqli_fetch_array($sql);
 ?>
+
 <style>
     input[type]:focus {
         border-color: #99cf16;

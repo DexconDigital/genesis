@@ -1,4 +1,5 @@
 <?php require 'variables/variables.php';
+require 'controllers/asesor_detalle.php';
 $page = 'quienes' ?>
 <!doctype html>
 <html lang="en">
@@ -112,78 +113,14 @@ $page = 'quienes' ?>
                 <div class="linea_decora"></div>
             </div>
             <div class="col-md-12 row mt-5">
-                <div class="col-md-4">
-                    <div class="single-agent property">
-                        <div class="property-image">
-                            <a><img style="object-fit: contain;width: 100%;" src="images/no_image.png" alt=""></a>
-                        </div>
-                        <div class=" ">
-                            <div class="overlay">
-                                <ul class="additional-info">
-                                    <li>
-                                        <header>Celular:</header>
-
-                                    </li>
-                                    <li>
-                                        <header>Correo:</header>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="asesor_style mt-3">
-                        <h3><a>Nombre Apellido</a></h3>
-                        <p class="designation">Cargo</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="single-agent property">
-                        <div class="property-image">
-                            <a><img style="object-fit: contain;width: 100%;" src="images/no_image.png" alt=""></a>
-                        </div>
-                        <div class=" ">
-                            <div class="overlay">
-                                <ul class="additional-info">
-                                    <li>
-                                        <header>Celular:</header>
-
-                                    </li>
-                                    <li>
-                                        <header>Correo:</header>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="asesor_style mt-3">
-                        <h3><a>Nombre Apellido</a></h3>
-                        <p class="designation">Cargo</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="single-agent property">
-                        <div class="property-image">
-                            <a><img style="object-fit: contain;width: 100%;" src="images/no_image.png" alt=""></a>
-                        </div>
-                        <div class=" ">
-                            <div class="overlay">
-                                <ul class="additional-info">
-                                    <li>
-                                        <header>Celular:</header>
-
-                                    </li>
-                                    <li>
-                                        <header>Correo:</header>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="asesor_style mt-3">
-                        <h3><a>Nombre Apellido</a></h3>
-                        <p class="designation">Cargo</p>
-                    </div>
-                </div>
+                <?php if (isset($asesor_array)) {
+                    modelo_asesor($asesor_array);
+                } else {
+                    echo '<div class="col 12">
+                        <h3 class="text-center">No hay asesores para mostrar<h3>
+                        </div>';
+                }
+                ?>
             </div>
         </div>
     </section>
