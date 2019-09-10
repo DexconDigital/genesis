@@ -222,6 +222,9 @@ a:hover{
     background-color:#99cf16; 
      padding: 7px;
 }
+.cont_completa{
+    margin-left: 2.333333%;
+}
 .property .property-image{
     height: 205px;
     overflow: hidden;
@@ -633,11 +636,22 @@ color: black;
     display: inline-block;
     width: 100%;
 }
+.margen_simialres{
+    margin-top: 8%;
+}
 .cont_img{
-    width: 57%;
+    width: 40%;
     margin-left: auto;
     margin-right: auto;
     
+}
+.margen_card{
+    margin-top: -7%;
+}
+.alto_img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 .estulo_img_cont{
     height: auto;

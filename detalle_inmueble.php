@@ -1,5 +1,5 @@
 <?php require 'variables/variables.php';
-$page = 'detalle_inm';
+$page = 'Inmuebles';
 require 'controllers/detalleInmuebleController.php' ?>
 <!doctype html>
 <html lang="es">
@@ -75,10 +75,10 @@ require 'controllers/detalleInmuebleController.php' ?>
                         <!-- script para iniciar el caousel -->
                         <div id="referencia_inmueble" class="col-md-12 mt-3  ">
                             <h4 class="property-single-detail-title"><strong>Descripción</strong></h4>
-                            <p style="text-align: justify;"><?php echo $descripcion?></p>
+                            <p style="text-align: justify;"><?php echo $descripcion ?></p>
                         </div>
-                         <!-- descripcion -->
-                         <div class="col-md-12" style="margin-bottom: 12px;">
+                        <!-- descripcion -->
+                        <div class="col-md-12" style="margin-bottom: 12px;">
                             <h4 class="property-single-detail-title"><strong>Características</strong></h4>
                             <ul class="pl-4">
                                 <li>Código: <?php echo $co; ?></li>
@@ -105,7 +105,7 @@ require 'controllers/detalleInmuebleController.php' ?>
                                 $caracteristicas = ltrim($r['caracteristicasInternas'][$i]['Descripcion']);
                                 echo '<li>' . $caracteristicas . '</li>';
                             }
-                                echo  '</ul>
+                            echo  '</ul>
                                 </div>
                             ';
                         }
@@ -120,7 +120,7 @@ require 'controllers/detalleInmuebleController.php' ?>
                                 $caracteristicas = ltrim($r['caracteristicasExternas'][$i]['Descripcion']);
                                 echo '<li>' . $caracteristicas . '</li>';
                             }
-                                echo  '</ul>
+                            echo  '</ul>
                                 </div>
                             ';
                         }
@@ -136,13 +136,13 @@ require 'controllers/detalleInmuebleController.php' ?>
                                 $caracteristicas = ltrim($r['caracteristicasAlrededores'][$i]['Descripcion']);
                                 echo '<li>' . $caracteristicas . '</li>';
                             }
-                                echo  '</ul>
+                            echo  '</ul>
                                 </div>
                             ';
                         }
                         ?>
-                        
-                        
+
+
                         <div class="col-md-12">
                             <!-- Video -->
                         </div>
@@ -156,39 +156,38 @@ require 'controllers/detalleInmuebleController.php' ?>
 
                         </div>
                     </div>
-                    <div class="col-md-4 offset-md-1">
-                        <div>
-                            <div class="search-box daily-email bg2 text-center">
-                                <h5 class="titulo_similares" class="mb-0">Propiedades similares</h5>
-                            </div>
-                            <div class="row justify-content-center">
-                            <div class="col-12">
-                                <?php similares($r['IdCiudad'], $r['IdTpInm']); ?>
-                            </div>
-                        </div>
-                        </div>
-
+                    <div class="col-md-5">
                         <div class="search-box daily-email bg2 text-center">
                             <div>
                                 <h5 class="titulo_similares" class="mb-0">Contacto con el asesor</h5>
                             </div>
 
                             <div class="col-md-12">
-                      
-                        <div class="side-bar-agent-detail mt-3">
-                            <figure>
-                                <img class="cont_img" src="<?php echo $asesor['FotoAsesor']; ?>" alt="">
-                            </figure>
-                            <div class="col-12  mt-2 text-center">
-                                <div><?php echo $asesor['ntercero']; ?></div>
-                                <div><i class=""></i><a class="color_verde" href="tel:+57<?php echo $asesor['celular']; ?>"><?php echo $asesor['celular']; ?></a></div>
-                                <div><i class=""></i><a class="color_verde" href="mailto:"><?php echo $asesor['correo']; ?></a></div>
-                    
-                            </div>
-                            
-                        </div>
 
-                    </div>
+                                <div class="side-bar-agent-detail mt-3">
+                                    <figure>
+                                        <img class="cont_img" src="<?php echo $asesor['FotoAsesor']; ?>" alt="">
+                                    </figure>
+                                    <div class="col-12  mt-2 text-center">
+                                        <div><?php echo $asesor['ntercero']; ?></div>
+                                        <div><i class=""></i><a class="color_verde" href="tel:+57<?php echo $asesor['celular']; ?>"><?php echo $asesor['celular']; ?></a></div>
+                                        <div><i class=""></i><a class="color_verde" href="mailto:"><?php echo $asesor['correo']; ?></a></div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="margen_simialres">
+                            <div class="search-box daily-email bg2 text-center mb-3">
+                                <h5 class="titulo_similares" class="mb-0">Propiedades similares</h5>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-12">
+                                    <?php similares($r['IdCiudad'], $r['IdTpInm']); ?>
+                                </div>
+                            </div>
                         </div>
                     </div>
 

@@ -213,21 +213,57 @@ function modelo_inmueble_listar($r)
         }
 }
 
-
-function modelo_inmueble_similares($r)
+function modelo_inmueble_similare($r, $cantidad_inmuebles)
 {
-    for ($i = 0; $i < count($r); $i++) {
-        $imagen = existeImagen(($r[$i]['foto1']));
-        $codigo = str_ireplace("254-", "", $r[$i]['Codigo_Inmueble']);
-        $api = $r[$i];
-        $precio = price_validate($api);
-        // Renombrar variables
-        $ciudad = $api['Ciudad'];
-        $barrio = $api['Barrio'];
-        $gestion = $api['Gestion'];
-        $tipo_inmueble = $api['Tipo_Inmueble'];
-    }
+  for ($i = 0; $i < $cantidad_inmuebles; $i++) {
+    $imagen = existeImagen(($r[$i]['foto1']));
+    $codigo = str_ireplace("583-", "", $r[$i]['Codigo_Inmueble']);
+    $api = $r[$i];
+
+    echo '
+            <div class="item mb-4">
+            <div class="card" style="">
+              <div class="property">
+                <a href="detalle_inmueble.php?co=' . $codigo . '">
+                  <div class="property-image">
+                    <img class="alto_img" alt="" src="' . $imagen . '"></div>
+                  <div class="precio">';
+    if ($api['Gestion'] == 'Arriendo/venta') {
+      echo '$' . $api['Canon'] . ' <br>$' . $api['Venta'];
+    } else if ($api['Gestion'] == 'Arriendo') {
+      echo '$' . $api['Canon'];
+    } else {
+      echo '$' . $api['Venta'];
+    } 
+    echo '
+                  </div>
+                  <div class="overlay">
+                   
+                  </div>
+                </a>
+              </div>
+              <div class=" row col-12 margen_card">
+                <div class="col-12">
+                  <p class="mb-1"><b>' . $api['Tipo_Inmueble'] . ' en ' . $api['Gestion'] . '</b></p>
+                </div>
+                <div class="col-12">
+                  <p class="mb-1"><i class="fas fa-map-marker-alt mr-2"></i>' . $api['Barrio'] . ', ' . $api['Ciudad'] . '</p>
+                </div>
+                <hr>
+                <div class="col-12">
+                  <p class="mb-1"> <small>
+                      Código:' . $codigo . '
+                    </small>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+            ';
+  }
 }
+
 
 // Funciones para los modelos de propiedades
 function existeImagen($r)
