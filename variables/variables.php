@@ -148,6 +148,17 @@ $texto_quienes_somos = [
 	],	
 ];
 
+//imagenes slider quienes somos
+$slider_quienes_somos =[
+	"imagenes" => [
+			 0 => "images/no_image.png",
+			 1 => "images/no_image.png",
+			 2 => "images/no_image.png",
+			 3 => "images/no_image.png",
+			 4 => "images/no_image.png",
+	],
+];
+
 //textos y banner contador de estadisticas
 $texto_contador_estadisticas = [
 	"parrafos" => [

@@ -3,6 +3,29 @@ require("seguridad.php");
 require_once("conexion.php");
 include 'layout/layout.php';
 ?>
+<style>
+.color_boton{
+    background-color: #99cf16;
+    color: white;
+    
+}
+.color_boton:hover{
+    color: white;
+}
+.conct_botton{
+    text-align: center;
+    
+}
+.container{
+    background-color: white;
+}
+input[type]:focus{
+    border-color: #99cf16; !important;
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px #99cf16; !important;
+    outline: 0 none;
+    }
+
+</style>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-9" style="    margin-top: 27px;">
@@ -45,8 +68,8 @@ include 'layout/layout.php';
 
                 <input type="hidden" id="fecha" name="fecha">
                 <div class="form-group row">
-                    <div class="col-8 offset-2">
-                        <button class="btn btn-danger" value="crear">Crear Publicación</button>
+                    <div class="col-8 offset-2 conct_botton">
+                        <button class="btn color_boton" value="crear">Crear Publicación</button>
                     </div>
                 </div>
             </form>

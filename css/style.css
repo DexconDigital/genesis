@@ -117,6 +117,9 @@ a:hover {
   display: block;
   margin: 10px 0; }
 
+.color_comparit {
+  background-color: #77c720; }
+
 .color_verde {
   color: #77c720; }
 
@@ -603,6 +606,50 @@ footer {
   vertical-align: middle;
   border: 0px;
   width: 100%; }
+
+.color_face {
+  color: #0c50a7; }
+
+.color_whapp {
+  color: #00ce65; }
+
+.icon_foot {
+  font-size: 25px;
+  padding: 0px; }
+
+.compartir {
+  margin-top: 16px;
+  margin-left: 32px; }
+
+.compartir_boton {
+  margin-top: 18px;
+  padding: 3%;
+  margin-left: -46%; }
+
+.container_icon_compartir {
+  margin-left: 2%;
+  margin-top: 2%;
+  padding: 0px; }
+
+.color_blanco_url {
+  color: white; }
+
+.color_blanco_url:hover {
+  color: white; }
+
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+.contenerdor_booton_conta {
+  text-align: center; }
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px; }
 
 .nav-item.active .nav-link {
   position: relative; }

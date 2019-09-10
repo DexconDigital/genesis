@@ -77,29 +77,29 @@ $page = 'Inicio'; ?>
         <section id="buscador">
             <div class="container" style="margin-top: 34px;">
                 <div class=" row col-12">
-                    <div class="col-3 margen_busca">
+                    <div class="col-xl-3 col-md-3 col-12  margen_busca">
                         <input type="text" class="form-control rounded-0" id="codigo_buscar" placeholder="Código"></div>
 
-                    <div class="col-3 margen_busca">
+                    <div class="col-xl-3 col-md-3 col-12  margen_busca">
                         <select id="ciudad_buscar" class="form-control rounded-0">
                             <option selected="" value="0">Ciudad</option>
                         </select>
                     </div>
-                    <div class="col-3 margen_busca"><select id="barrio_buscar" class="form-control rounded-0">
+                    <div class="col-xl-3 col-md-3 col-12  margen_busca"><select id="barrio_buscar" class="form-control rounded-0">
                             <option selected="" value="0">Barrio</option>
                         </select>
                     </div>
-                    <div class="col-3 margen_busca"><select id="tipo_gestion_buscar" class="form-control rounded-0">
+                    <div class="col-xl-3 col-md-3 col-12  margen_busca"><select id="tipo_gestion_buscar" class="form-control rounded-0">
                             <option selected="" value="0">Tipo de gestión</option>
                         </select>
                     </div>
-                    <div class="col-3 margen_busca"><select id="tipo_inmueble_buscar" class="form-control rounded-0">
+                    <div class="col-xl-3 col-md-3 col-12  margen_busca"><select id="tipo_inmueble_buscar" class="form-control rounded-0">
                             <option selected="" value="0">Tipo de inmueble</option>
                         </select>
                     </div>
-                    <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="precio_minimo_buscar" onkeyup="format(this)" onchange="format(this)" placeholder=" Precio Mínimo"></div>
-                    <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="precio_maximo_buscar" onkeyup="format(this)" onchange="format(this)" placeholder=" Precio Máximo"></div>
-                    <div class="col-3 margen_busca">
+                    <div class="col-xl-3 col-md-3 col-12  margen_busca"><input type="text" class="form-control rounded-0" id="precio_minimo_buscar" onkeyup="format(this)" onchange="format(this)" placeholder=" Precio Mínimo"></div>
+                    <div class="col-xl-3 col-md-3 col-12  margen_busca"><input type="text" class="form-control rounded-0" id="precio_maximo_buscar" onkeyup="format(this)" onchange="format(this)" placeholder=" Precio Máximo"></div>
+                    <div class="col-xl-3 col-md-3 col-12  margen_busca">
                         <button style="background-color:#99cf16;  padding: 6px;" type="button" class="btn rounded-0 col-12" id="buscar"><span style="color:white">Buscar</span></button></div>
                 </div>
             </div>

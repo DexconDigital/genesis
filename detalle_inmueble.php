@@ -58,6 +58,20 @@ require 'controllers/detalleInmuebleController.php' ?>
                             }
                             ?>
                         </section>
+                        <div class="col-md-12 row  ">
+                            <div class="col-md-6 col-lg-6 col-12 contenerdor_booton_conta">
+                                <button type="button" class="btn color_comparit rounded-0 col-6 compartir_boton" name=""><a class="color_blanco_url" href="https://simicrm.app/mcomercialweb/fichas_tecnicas/fichatec3.php?reg=583-<?php echo $co ?>" target="_blank">Imprimir ficha</a></button>
+                            </div>
+                            <div class="col-md-4 col-lg-4 col-6 col-sm-1 mr-2 icon_foot row">
+                                <h5 class="compartir">Compartir por :</h5>
+                            </div>
+                            <div class="col-md-2 row  d-flex flex-row-reverse bd-highlight container_icon_compartir">
+                                <div class="col-md-5 col-2 col-sm-1 mr-1 icon_foot   row"><a class="color_whapp" href="<?php echo 'https://wa.me/?text=' . $r['Tipo_Inmueble'] . '%20en%20' . $r['Gestion'] . '%20en%20' . $r['ciudad'] . '-' . $r['depto'] . '%20http://www..com.co/detalleInmueble.php?codigo%3d' . $co ?>" target="_blank"><i class="fab fa-whatsapp"></i></a></div>
+                                <div class="col-md-5 col-2 col-sm-1 mr-2 icon_foot   row"><a href="<?php echo 'https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.gainmobiliariasas.com%2Fdetalle_inmueble.php%3Fco%3D' . $co . '&text=' . $r['Tipo_Inmueble'] . '%20en%20' . $r['Gestion'] . '%20en%20' . $r['ciudad'] . '-' . $r['depto'] ?>" target="_blank"><i class="fab fa-twitter "></i></a></div>
+                                <div class="col-md-5 col-2 col-sm-1 mr-1 icon_foot   row"><a class="color_face" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.gainmobiliariasas.com%2FdetalleInmueble%3Fcodigo%3D<?php echo $co; ?>" target="_blank"><i class="fab fa-facebook-f "></i></a></div>
+                            </div>
+
+                        </div>
                         <!-- script para iniciar el caousel -->
                         <div id="referencia_inmueble" class="col-md-12 mt-3  ">
                             <h4 class="property-single-detail-title"><strong>Descripción</strong></h4>
@@ -67,7 +81,7 @@ require 'controllers/detalleInmuebleController.php' ?>
                         if (count($r['caracteristicasInternas']) > 0) {
                             echo
                                 '<div class="col-md-12" style="margin-bottom: 12px;">
-                                    <h4 class="property-single-detail-title"><strong>Caracteristicas Internas</strong></h4>
+                                    <h4 class="property-single-detail-title"><strong>Características Internas</strong></h4>
                                         <ul>';
                             for ($i = 0; $i < count($r['caracteristicasInternas']); $i++) {
                                 $caracteristicas = ltrim($r['caracteristicasInternas'][$i]['Descripcion']);
@@ -82,7 +96,7 @@ require 'controllers/detalleInmuebleController.php' ?>
                         if (count($r['caracteristicasExternas']) > 0) {
                             echo
                                 '<div class="col-md-12" style="margin-bottom: 12px;">
-                                    <h4 class="property-single-detail-title"><strong>Caracteristicas Externas</strong></h4>
+                                    <h4 class="property-single-detail-title"><strong>Características Externas</strong></h4>
                                         <ul>';
                             for ($i = 0; $i < count($r['caracteristicasExternas']); $i++) {
                                 $caracteristicas = ltrim($r['caracteristicasExternas'][$i]['Descripcion']);

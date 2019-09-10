@@ -4,7 +4,7 @@ $con = Conect();
 $qry = "SELECT * FROM usuarios where usuario ='$user'";
 $sql = mysqli_query($con, $qry);
 $usuario =  mysqli_fetch_array($sql);
-$imagen_inicio = $usuario[7];
+$imagen_inicio = $usuario[9];
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -19,7 +19,7 @@ $imagen_inicio = $usuario[7];
     <link rel="stylesheet" href="../../css/all.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../../css/all.min.css">
-    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="../css/style_admin.css">
     <script src="tinymce/tinymce.min.js"></script>

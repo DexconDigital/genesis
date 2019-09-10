@@ -46,10 +46,10 @@
     });
 </script>
 <!-- Fin de codigo preloader -->
-<header class="main-header sticky-header">
+<header class="main-header sticky-header" >
     <div class="coltainer-fluit">
         <div class="row ">
-            <div class="container">
+            <div class="container contact-information">
                 <div class="col-md-12">
                     <div class="d-flex bd-highlight">
                         <div class=" col-lg-6 col-md-6 col-sm-12 row mr-auto  bd-highlight ">

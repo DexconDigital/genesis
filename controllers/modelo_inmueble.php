@@ -57,8 +57,10 @@ function modelo_inmueble_destacadas($r, $cantidad_inmuebles)
                 <!-- ***********************Primera Propiedad *****************************-->
                 <div class="col-md-12 row" style="margin-bottom: 40px;">
                     <div class="col-xl-7 col-md-6 row dimencion_imagen"> 
-                        <img style="object-fit: cover;width: 100%;height: 100%;" src="' . $imagen . '" alt="">
-                        <span class="style_span_tipo_inmueble">' . $tipo_inmueble . '</span>
+                    <a href="detalle_inmueble.php?co='.$codigo.'">
+                      <img style="object-fit: cover;width: 100%;height: 100%;" src="' . $imagen . '" alt="">
+                      <span class="style_span_tipo_inmueble">' . $tipo_inmueble . '</span>
+                    </a> 
                     </div>
                     <div class="col-xl-5 col-md-6 marge_contenido">
                         <div class="col-12">
@@ -78,7 +80,7 @@ function modelo_inmueble_destacadas($r, $cantidad_inmuebles)
                                 <li class="fas fa-bed  mr-2 mb-2 "> Alcobas: ' . $alcobas . '</li>
                             </div>
                             <div class="col-md-12">
-                                <li class="fas fa-bed  mr-2 mb-2 "> Codigo: ' . $codigo . '</li>
+                                <li class="fas fa-barcode  mr-2 mb-2 "> Codigo: ' . $codigo . '</li>
                             </div>
                         </div>
                         <div class="col-md-12 position_btn">
@@ -89,8 +91,10 @@ function modelo_inmueble_destacadas($r, $cantidad_inmuebles)
                 <!-- ****************************Segunda Propiedad******************************* -->
                 <div class="col-md-12 row ">
                 <div class="col-xl-7 col-md-6 row dimencion_imagen"> 
+                <a href="detalle_inmueble.php?co='.$codigo.'">
                     <img style="object-fit: cover;width: 100%;height: 100%;" src="' . $imagen2 . '" alt="">
                     <span class="style_span_tipo_inmueble">' . $tipo_inmueble2 . '</span>
+                </a>    
                     </div>
                     <div class="col-xl-5 col-md-6 marge_contenido">
                         <div class="col-12 ">
@@ -110,7 +114,7 @@ function modelo_inmueble_destacadas($r, $cantidad_inmuebles)
                         <li class="fas fa-bed  mr-2 mb-2 "> Alcobas: ' . $alcobas2 . '</li>
                     </div>
                     <div class="col-md-12">
-                        <li class="fas fa-bed  mr-2 mb-2 "> Codigo: ' . $codigo2 . '</li>
+                        <li class="fas fa-barcode  mr-2 mb-2 "> Codigo: ' . $codigo2 . '</li>
                     </div>
                         </div>
                         <div class="col-md-12 position_btn">
