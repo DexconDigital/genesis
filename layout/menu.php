@@ -46,23 +46,22 @@
     });
 </script>
 <!-- Fin de codigo preloader -->
-<header class="main-header sticky-header">
+<header class="main-header sticky-header" >
     <div class="coltainer-fluit">
         <div class="row ">
-            <div class="container">
-                <div class=" col-md-12">
+            <div class="container contact-information">
+                <div class="col-md-12">
                     <div class="d-flex bd-highlight">
-                        <div class=" row mr-auto  bd-highlight ">
-                            <a class="color_a_nav  a_linea p-2" href="tel:<?php echo $datos_contacto['telefono_fijo']['link'] ?>"><i class="fa fa-phone m-2 li_color"></i><?php echo $datos_contacto['telefono_fijo']['imprimir'] ?></a>
-                            <a class="color_a_nav p-2" href="tel:<?php echo $datos_contacto['celular']['link'] ?>"><i class="fas fa-mobile-alt m-2 li_color"></i><?php echo $datos_contacto['celular']['imprimir'] ?></a>
+                        <div class=" col-lg-6 col-md-6 col-sm-12 row mr-auto  bd-highlight ">
+                          <a class="color_a_nav  a_linea " href="tel:<?php echo $datos_contacto['telefono_fijo']['link'] ?> "><i class="fa fa-phone m-2 li_color"></i><?php echo $datos_contacto['telefono_fijo']['imprimir'] ?>&nbsp </a>  
+                          <a class="color_a_nav " href="tel:<?php echo $datos_contacto['celular']['link'] ?>"><i class="fas fa-mobile-alt m-2 li_color"></i><?php echo $datos_contacto['celular']['imprimir'] ?></a>  
                         </div>
 
-                        <div class="bd-highlight a_linea2 d-flex align-items-end ">
-                            <a class="color_a_nav p-2" target="_blank" href="<?php echo $datos_contacto['whatsapp']['link'] ?>"><i class="fab fa-whatsapp m-2 li_color"></i><?php echo $datos_contacto['whatsapp']['imprimir'] ?></a>
+                        <div id="menu_sec_2" class=" col-lg-6 col-md-6 col-sm-12 row  bd-highlight  d-flex align-items-end">
+                            <a class="color_a_nav  a_linea2" target="_blank" href="<?php echo $datos_contacto['whatsapp']['link'] ?>"><i class="fab fa-whatsapp m-2 li_color"></i><?php echo $datos_contacto['whatsapp']['imprimir'] ?>&nbsp</a>
+                            <a class="color_a_nav " href="mailto:<?php echo $datos_contacto['correo']['correo'] ?>"><i class="far fa-envelope m-2 li_color "></i><?php echo $datos_contacto['correo']['correo'] ?></a>
                         </div>
-                        <div class=" bd-highlight d-flex align-items-end ">
-                            <a class="color_a_nav p-2" href="mailto:<?php echo $datos_contacto['correo']['correo'] ?>"><i class="far fa-envelope m-2 li_color "></i><?php echo $datos_contacto['correo']['correo'] ?></a>
-                        </div>
+             
                     </div>
                 </div>
             </div>

@@ -1,9 +1,9 @@
 <?php
 require 'modelo_inmueble.php';
 require 'vendor/autoload.php';
-use JasonGrimes\Paginator;
 require_once 'variables/config.php';
 
+use JasonGrimes\Paginator;
 $url_pagina = $_SERVER["REQUEST_URI"];
 $ciudad = 0;
 $barrio = 0;

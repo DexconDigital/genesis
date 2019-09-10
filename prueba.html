@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script src="js/jquery.min.js"></script>
+    <script>
+    $.ajax({
+ url: 'http://www.simi-api.com/ApiSimiweb/response/v21/inmueblesDestacados/total/10/limite/1',
+	type: 'GET',
+	beforeSend: function (xhr) {
+	xhr.setRequestHeader(
+	   'Authorization',
+	   'Basic ' + btoa('Authorization:rf234BcAxcy9PbCDxxLRO752bzQlU547vKES0zPF-583'));
+	},
+	'dataType': "json",
+	success:function(response)
+	{
+	   console.log(response);
+	}
+				
+});
+    </script>
+</body>
+</html>

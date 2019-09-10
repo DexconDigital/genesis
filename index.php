@@ -1,5 +1,6 @@
 <?php require 'variables/variables.php';
 require 'controllers/indexController.php';
+require 'controllers/noticiasController.php';
 $page = 'Inicio'; ?>
 
 <!DOCTYPE html>
@@ -35,7 +36,7 @@ $page = 'Inicio'; ?>
                             <h1 id="style_slide_uno" class="h3-responsive"><?php echo $frases_slide_principal[0] ?></h1>
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item ">
                         <!--Mask color-->
                         <div class="view">
                             <img class="d-block w-100" src="images/slide2.jpg" alt="Second slide">
@@ -77,30 +78,31 @@ $page = 'Inicio'; ?>
         <section id="buscador">
             <div class="container" style="margin-top: 34px;">
                 <div class=" row col-12">
-                    <div class="col-3 margen_busca">
+                    <div class="col-xl-3 col-md-3 col-12  margen_busca">
                         <input type="text" class="form-control rounded-0" id="codigo_buscar" placeholder="Código"></div>
 
-                    <div class="col-3 margen_busca">
+                    <div class="col-xl-3 col-md-3 col-12  margen_busca">
                         <select id="ciudad_buscar" class="form-control rounded-0">
                             <option selected="" value="0">Ciudad</option>
                         </select>
                     </div>
-                    <div class="col-3 margen_busca"><select id="barrio_buscar" class="form-control rounded-0">
+                    <div class="col-xl-3 col-md-3 col-12  margen_busca"><select id="barrio_buscar" class="form-control rounded-0">
                             <option selected="" value="0">Barrio</option>
                         </select>
                     </div>
-                    <div class="col-3 margen_busca"><select id="tipo_gestion_buscar" class="form-control rounded-0">
+                    <div class="col-xl-3 col-md-3 col-12  margen_busca"><select id="tipo_gestion_buscar" class="form-control rounded-0">
                             <option selected="" value="0">Tipo de gestión</option>
                         </select>
                     </div>
-                    <div class="col-3 margen_busca"><select id="tipo_inmueble_buscar" class="form-control rounded-0">
+                    <div class="col-xl-3 col-md-3 col-12  margen_busca"><select id="tipo_inmueble_buscar" class="form-control rounded-0">
                             <option selected="" value="0">Tipo de inmueble</option>
                         </select>
                     </div>
-                    <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="precio_minimo_buscar" onkeyup="format(this)" onchange="format(this)" placeholder=" Precio Mínimo"></div>
-                    <div class="col-3 margen_busca"><input type="text" class="form-control rounded-0" id="precio_maximo_buscar" onkeyup="format(this)" onchange="format(this)" placeholder=" Precio Máximo"></div>
-                    <div class="col-3 margen_busca">
-                    <button style="background-color:#99cf16;  padding: 6px;" type="button" class="btn rounded-0 col-12" id="buscar"><span style="color:white">Buscar</span></button></div>
+                    <div class="col-xl-3 col-md-3 col-12  margen_busca"><input type="text" class="form-control rounded-0" id="precio_minimo_buscar" onkeyup="format(this)" onchange="format(this)" placeholder=" Precio Mínimo"></div>
+                    <div class="col-xl-3 col-md-3 col-12  margen_busca"><input type="text" class="form-control rounded-0" id="precio_maximo_buscar" onkeyup="format(this)" onchange="format(this)" placeholder=" Precio Máximo"></div>
+                    <div class="col-xl-3 col-md-3 col-12  margen_busca">
+                        <button style="" type="button" class="btn rounded-0 col-12 boton_buscar" id="buscar"><span style="color:white">Buscar</span></button></div>
+                        
                 </div>
             </div>
         </section>
@@ -112,8 +114,8 @@ $page = 'Inicio'; ?>
                     <h1 class="text-center gruesor_letra espacio_propi">Propiedades Destacadas</h1>
                     <div class="linea_decora"></div>
                 </div>
-                <div class="col-md-12">
-                    <div class="owl-carousel owl-theme" id="owl-destacadas">
+                <div class="col-md-12 row">
+                    <div class="owl-carousel owl-theme cuadro_margen" id="owl-destacadas">
                         <!-- Imprimir propiedades destacadas
                         Edicion desde Controllers/modelo_inmueble.php
                         Funcion modelo_inmueble destacados -->
@@ -145,10 +147,10 @@ $page = 'Inicio'; ?>
             <div class="container" style="margin-bottom: 33px;">
                 <div class="d-flex justify-content-between col-md-12 row ">
                     <div class="col-md-4 row ">
-                        <div class="col-md-3">
+                        <div class="col-xl-3 col-md-3 col-4">
                             <i class="fas fa-tags color_venta"></i>
                         </div>
-                        <div class="col-md-9">
+                        <div class="col-xl-9 col-md-9 col-8">
                             <div>
                                 <h4><strong><?php echo $texto_servicios['ventas']['titulo'] ?></strong></h4>
                             </div>
@@ -158,10 +160,10 @@ $page = 'Inicio'; ?>
                         </div>
                     </div>
                     <div class="col-md-4 row ">
-                        <div class="col-md-3">
+                        <div class="col-xl-3 col-md-3 col-4">
                             <i class="fas fa-sign color_venta"></i>
                         </div>
-                        <div class="col-md-9">
+                        <div class="col-xl-9 col-md-9 col-8">
                             <div>
                                 <h4><strong><?php echo $texto_servicios['arriendos']['titulo'] ?></strong></h4>
                             </div>
@@ -171,10 +173,10 @@ $page = 'Inicio'; ?>
                         </div>
                     </div>
                     <div class="col-md-4 row ">
-                        <div class="col-md-3">
+                        <div class="col-xl-3 col-md-3 col-4">
                             <i class="fas fa-balance-scale color_venta"></i>
                         </div>
-                        <div class="col-md-9">
+                        <div class="col-xl-9 col-md-9 col-8">
                             <div>
                                 <h4><strong><?php echo $texto_servicios['avaluos']['titulo'] ?></strong></h4>
                             </div>
@@ -193,31 +195,31 @@ $page = 'Inicio'; ?>
                 <div class="container  contenedor_banner">
 
                     <div class="row d-flex justify-content-between" style="padding: 73px;">
-                        <div class="col-3 text-center color_estadis" style="">
+                        <div class="espacio_div col-xl-3 col-md-3 col-12 text-center color_estadis" style="">
                             <div>
-                                <i class="far fa-address-card color_icono_banner"></i>
-                                <h1>100</h1>
+                               
+                                <h1 id="counter-experence"></h1>
                                 <h5 class="color_result"><?php echo $texto_contador_estadisticas['parrafos'][0] ?></h5>
                             </div>
                         </div>
-                        <div class="col-3 text-center color_estadis" style="">
+                        <div class=" espacio_div col-xl-3 col-md-3 col-12 text-center color_estadis" style="">
                             <div>
-                                <i class="far fa-address-card color_icono_banner"></i>
-                                <h1>100</h1>
+                               
+                                <h1 id="counter-propertys"></h1>
                                 <h5 class="color_result"><?php echo $texto_contador_estadisticas['parrafos'][1] ?></h5>
                             </div>
                         </div>
-                        <div class="col-3 text-center color_estadis" style="">
+                        <div class=" espacio_div col-xl-3 col-md-3 col-12 text-center color_estadis" style="">
                             <div>
-                                <i class="far fa-address-card color_icono_banner"></i>
-                                <h1>100</h1>
+                               
+                                <h1 id="counter-rent"></h1>
                                 <h5 class="color_result"><?php echo $texto_contador_estadisticas['parrafos'][2] ?></h5>
                             </div>
                         </div>
-                        <div class="col-3 text-center color_estadis" style="">
+                        <div class=" espacio_div col-xl-3 col-md-3 col-12 text-center color_estadis" style="">
                             <div>
-                                <i class="far fa-address-card color_icono_banner"></i>
-                                <h1>100</h1>
+                               
+                                <h1 id="counter-sale"></h1>
                                 <h5 class="color_result"><?php echo $texto_contador_estadisticas['parrafos'][3] ?></h5>
                             </div>
                         </div>
@@ -235,57 +237,32 @@ $page = 'Inicio'; ?>
                 </div>
             </div>
             <div class="col-md-12">
-                <div class="col-md-8 text-center container_libert">
-                    <img style="height: 100%; object-fit: contain;" src="images/LOGO SIMI.png" alt="">
+                <div class="col-md-8 text-center container_simi">
+                    <img class="logo_simi" src="images/LOGO SIMI.png" alt="">
                 </div>
 
                 <div class="col-md-8 text-center container_libert">
-                    <img style="height: 100%; object-fit: none;" src="images/LOGO EL LIBERTADOR.png" alt="">
+                    <img class="logo_libert" src="images/libertador.png" alt="">
                 </div>
 
             </div>
         </section>
 
         <section id="noticias">
-            <div class="container mt-5">
+            <div class="container mt-2">
                 <div class="col-12">
                     <h1 class="text-center mt-5 gruesor_letra">Últimas Noticias</h1>
                     <div class="linea_decora"></div>
                 </div>
-                <div class="col-md-12 row mt-5">
-                    <div class="col-md-4">
-                        <div class="card" style="border-color: white;">
-                            <img src="images/no_image.png" class="card-img-top" alt="...">
-                            <div class="card-body espacio_tageta mt-4">
-                                <h4 class="card-title"><strong>Titulo Noticia</strong></h4>
-                                <p>23 Agosto 2019 / Admin</p>
-                                <p style="border-bottom: 1px dashed #646464; margin-bottom: 30px;padding-bottom: 30px;" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <button style="background-color:#99cf16;padding: 1px;" type="button" class="btn rounded-0 col-6" name=""><span style="color:white">ver más</span></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card" style="border-color: white;">
-                            <img src="images/no_image.png" class="card-img-top" alt="...">
-                            <div class="card-body espacio_tageta mt-4">
-                                <h4 class="card-title"><strong>Titulo Noticia</strong></h4>
-                                <p>23 Agosto 2019 / Admin</p>
-                                <p style="border-bottom: 1px dashed #646464; margin-bottom: 30px;padding-bottom: 30px;" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <button style="background-color:#99cf16;padding: 1px;" type="button" class="btn rounded-0 col-6" name=""><span style="color:white">ver más</span></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card" style="border-color: white;">
-                            <img src="images/no_image.png" class="card-img-top" alt="...">
-                            <div class="card-body espacio_tageta mt-4">
-                                <h4 class="card-title"><strong>Titulo Noticia</strong></h4>
-                                <p>23 Agosto 2019 / Admin</p>
-                                <p style="border-bottom: 1px dashed #646464; margin-bottom: 30px;padding-bottom: 30px;" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <button style="background-color:#99cf16;padding: 1px;" type="button" class="btn rounded-0 col-6" name=""><span style="color:white">ver más</span></button>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-md-12 row mt-5  espcio_contain">
+                    <?php if (isset($noticias_array)) {
+                        modelo_ultima_noticia($noticias_array);
+                    } else {
+                        echo '<div class="col 12">
+                        <h3 class="text-center">Muy pronto publicaremos contenido para ti<h3>
+                        </div>';
+                    }
+                    ?>
                 </div>
             </div>
 
@@ -296,8 +273,12 @@ $page = 'Inicio'; ?>
         </section>
 
     </div>
-    <script>var pagina = 'inicio'</script>
+    <script>
+        var pagina = 'inicio'
+    </script>
     <?php include('layout/archivosfooter.php'); ?>
+    <script src='js/countUp.min.js'></script>
+    <script src="js/counter-propertys.js"></script>
 
 </body>
 

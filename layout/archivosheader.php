@@ -1,5 +1,5 @@
 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-
+<link rel="stylesheet" href="css/swiper.min.css">   
 <link rel="stylesheet" href="css/owl.carousel.min.css">
 <link rel="stylesheet" href="css/owl.theme.default.min.css">
 <link rel="stylesheet" href="css/bootstrap.css">

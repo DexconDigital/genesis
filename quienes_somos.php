@@ -1,4 +1,5 @@
 <?php require 'variables/variables.php';
+require 'controllers/asesor_detalle.php';
 $page = 'quienes' ?>
 <!doctype html>
 <html lang="en">
@@ -31,150 +32,102 @@ $page = 'quienes' ?>
                 </div>
                 <div class="container">
                     <div class="col-md-12 row">
-                        <div class="col-md-4">
-                            <div class="card" style="width: 18rem;">
-                                <img class="card-img-top" src="images/no_image.png" alt="Card image cap">
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card" style="width: 18rem;">
-                                <img class="card-img-top" src="images/no_image.png" alt="Card image cap">
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card" style="width: 18rem;">
-                                <img class="card-img-top" src="images/no_image.png" alt="Card image cap">
+                        </head>
+
+                        <!-- Swiper -->
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><?php $r = $slider_quienes_somos['imagenes'];
+                                                            echo '
+                                  <img style="width: 100%; height: 100% ; object-fit: cover;" src="' . $r[0] . '" alt="">'; ?>
+                                </div>
+                                <div class="swiper-slide"><?php $r = $slider_quienes_somos['imagenes'];
+                                                            echo '
+                                  <img style="width: 100%; height: 100% ; object-fit: cover;" src="' . $r[1] . '" alt="">'; ?>
+                                </div>
+                                <div class="swiper-slide"><?php $r = $slider_quienes_somos['imagenes'];
+                                                            echo '
+                                  <img style="width: 100%; height: 100% ; object-fit: cover;" src="' . $r[2] . '" alt="">'; ?>
+                                </div>
+                                <div class="swiper-slide"><?php $r = $slider_quienes_somos['imagenes'];
+                                                            echo '
+                                  <img style="width: 100%; height: 100% ; object-fit: cover;" src="' . $r[3] . '" alt="">'; ?>
+                                </div>
+                                <div class="swiper-slide"><?php $r = $slider_quienes_somos['imagenes'];
+                                                            echo '
+                                  <img style="width: 100%; height: 100% ; object-fit: cover;" src="' . $r[4] . '" alt="">'; ?>
+                                </div>
 
                             </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
                         </div>
+
                     </div>
                 </div>
             </div>
-        </section>
+    </div>
+    </section>
 
-        <section id="hacemos">
-            <div class=" container  mt-5 wow fadeInRight">
-                <div class="col-12 ">
-                    <h1 class="text-center gruesor_letra"><?php echo $texto_quienes_somos['que_hacemos']['titulo'] ?></h1>
-                    <div class="linea_decora"></div>
-                </div>
-                <div class="col-md-12 row mt-5">
-                    <div class="col-md-8">
-                        <div id="cuadro_cards" class="extra-info-text margin-control col-lg-12 col-md-12 col-sm-12 ">
-                            <p><?php echo $texto_quienes_somos['que_hacemos']['parrafo'] ?></p>
-                        </div>
+    <section id="hacemos">
+        <div class=" container  mt-5 wow fadeInRight">
+            <div class="col-12 ">
+                <h1 class="text-center gruesor_letra"><?php echo $texto_quienes_somos['que_hacemos']['titulo'] ?></h1>
+                <div class="linea_decora"></div>
+            </div>
+            <div class="col-md-12 row mt-5">
+                <div class="col-md-8">
+                    <div id="cuadro_cards" class="extra-info-text margin-control col-lg-12 col-md-12 col-sm-12 ">
+                        <p><?php echo $texto_quienes_somos['que_hacemos']['parrafo'] ?></p>
                     </div>
-                    <div class="col-md-4 wow fadeInRight">
-                        <?php $r = $texto_quienes_somos['que_hacemos'];
-                        echo '
+                </div>
+                <div class="col-md-4 wow fadeInRight">
+                    <?php $r = $texto_quienes_somos['que_hacemos'];
+                    echo '
                <img src="' . $r['imagen'] . '" class="w-100" alt="">'; ?>
-                    </div>
                 </div>
             </div>
-            <div class=" container  mt-5 wow fadeInLeft">
-                <div class="col-12">
-                    <h1 class="text-center gruesor_letra"><?php echo $texto_quienes_somos['hacia_donde_vamos']['titulo'] ?></h1>
-                    <div class="linea_decora"></div>
-                </div>
-                <div class="col-md-12 row mt-5">
-                    <div class="col-md-4">
-                        <?php $r = $texto_quienes_somos['hacia_donde_vamos'];
-                        echo '
+        </div>
+        <div class=" container  mt-5 wow fadeInLeft">
+            <div class="col-12">
+                <h1 class="text-center gruesor_letra"><?php echo $texto_quienes_somos['hacia_donde_vamos']['titulo'] ?></h1>
+                <div class="linea_decora"></div>
+            </div>
+            <div class="col-md-12 row mt-5">
+                <div class="col-md-4">
+                    <?php $r = $texto_quienes_somos['hacia_donde_vamos'];
+                    echo '
                <img src="' . $r['imagen'] . '" class="w-100" alt="">'; ?>
 
-                    </div>
-                    <div class="col-md-8">
-                        <div id="cuadro_cards" class="extra-info-text margin-control col-lg-12 col-md-12 col-sm-12">
-                            <p><?php echo $texto_quienes_somos['hacia_donde_vamos']['parrafo'] ?></p>
-                        </div>
+                </div>
+                <div class="col-md-8">
+                    <div id="cuadro_cards" class="extra-info-text margin-control col-lg-12 col-md-12 col-sm-12">
+                        <p><?php echo $texto_quienes_somos['hacia_donde_vamos']['parrafo'] ?></p>
                     </div>
                 </div>
             </div>
-            <div class=" container  mt-5">
-                <div class="col-12  ">
-                    <h1 class="text-center gruesor_letra">Nuestros Asesores</h1>
-                    <div class="linea_decora"></div>
-                </div>
-                <div class="col-md-12 row mt-5">
-                    <div class="col-md-4">
-                        <div class="single-agent property">
-                            <div class="property-image">
-                                <a><img style="object-fit: contain;width: 100%;" src="images/no_image.png" alt=""></a>
-                            </div>
-                            <div class=" ">
-                                <div class="overlay">
-                                    <ul class="additional-info">
-                                        <li>
-                                            <header>Celular:</header>
-
-                                        </li>
-                                        <li>
-                                            <header>Correo:</header>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="asesor_style mt-3">
-                            <h3><a>Nombre Apellido</a></h3>
-                            <p class="designation">Cargo</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="single-agent property">
-                            <div class="property-image">
-                                <a><img style="object-fit: contain;width: 100%;" src="images/no_image.png" alt=""></a>
-                            </div>
-                            <div class=" ">
-                                <div class="overlay">
-                                    <ul class="additional-info">
-                                        <li>
-                                            <header>Celular:</header>
-
-                                        </li>
-                                        <li>
-                                            <header>Correo:</header>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="asesor_style mt-3">
-                            <h3><a>Nombre Apellido</a></h3>
-                            <p class="designation">Cargo</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="single-agent property">
-                            <div class="property-image">
-                                <a><img style="object-fit: contain;width: 100%;" src="images/no_image.png" alt=""></a>
-                            </div>
-                            <div class=" ">
-                                <div class="overlay">
-                                    <ul class="additional-info">
-                                        <li>
-                                            <header>Celular:</header>
-
-                                        </li>
-                                        <li>
-                                            <header>Correo:</header>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="asesor_style mt-3">
-                            <h3><a>Nombre Apellido</a></h3>
-                            <p class="designation">Cargo</p>
-                        </div>
-                    </div>
-                </div>
+        </div>
+        <div class=" container  mt-5">
+            <div class="col-12  ">
+                <h1 class="text-center gruesor_letra">Nuestros Asesores</h1>
+                <div class="linea_decora"></div>
             </div>
-        </section>
+            <div class="col-md-12 row mt-5">
+                <?php if (isset($asesor_array)) {
+                    modelo_asesor($asesor_array);
+                } else {
+                    echo '<div class="col 12">
+                        <h3 class="text-center">No hay asesores para mostrar<h3>
+                        </div>';
+                }
+                ?>
+            </div>
+        </div>
+    </section>
 
-        <section id="footer">
-            <?php include 'layout/footer.php' ?>
-        </section>
+    <section id="footer">
+        <?php include 'layout/footer.php' ?>
+    </section>
 
     </div>
 
