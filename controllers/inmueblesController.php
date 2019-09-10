@@ -52,10 +52,15 @@ $result = curl_exec($ch);
 curl_close($ch);
 $r = json_decode($result, true);
 
+
+$totalinmuebles=0;
+if(is_array($r)){
+    $totalinmuebles = $r['datosGrales']['totalInmuebles'];
+}
 // Paginador
 $valor_reemplazar = '&pag='.$pag.'';
 $url_pagina = str_ireplace($valor_reemplazar, '', $url_pagina);
-$totalItems = $r['datosGrales']['totalInmuebles'];
+$totalItems = $totalinmuebles;
 $itemsPerPage = 12;
 $currentPage = $pag;
 $urlPattern = $url_pagina.'&pag=(:num)';
