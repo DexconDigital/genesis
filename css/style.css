@@ -629,6 +629,10 @@ footer {
 .margen_card {
   margin-top: -7%; }
 
+.mapa_tamaño {
+  margin: 20px 0;
+  border-color: #99cf16; }
+
 .alto_img {
   height: 100%;
   width: 100%;
