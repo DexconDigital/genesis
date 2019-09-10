@@ -77,6 +77,24 @@ require 'controllers/detalleInmuebleController.php' ?>
                             <h4 class="property-single-detail-title"><strong>Descripción</strong></h4>
                             <p style="text-align: justify;"><?php echo $descripcion?></p>
                         </div>
+                         <!-- descripcion -->
+                         <div class="col-md-12" style="margin-bottom: 12px;">
+                            <h4 class="property-single-detail-title"><strong>Características</strong></h4>
+                            <ul class="pl-4">
+                                <li>Código: <?php echo $co; ?></li>
+                                <li>Alcobas: <?php echo $alcobas; ?></li>
+                                <li>Baños: <?php echo $banios; ?></li>
+                                <li>Área Construida: <?php echo $area_construida; ?>m<sup>2<sup></li>
+                                <li>Área Privada: <?php echo $area_privada; ?>m<sup>2<sup></li>
+                                <li>Garaje: <?php echo $garaje; ?></li>
+                                <li>Estrato: <?php echo $estrato; ?></li>
+                                <li>Edad Inmueble: <?php echo $edad_inmueble; ?> años</li>
+                                <?php if ($administracion != "") {
+                                    echo '<li>Administración: $' . $administracion . '</li>';
+                                } ?>
+                            </ul>
+                        </div>
+                        <!-- fin de descripcion -->
                         <?php
                         if (count($r['caracteristicasInternas']) > 0) {
                             echo
