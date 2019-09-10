@@ -143,36 +143,11 @@ require 'controllers/detalleInmuebleController.php' ?>
                             <div class="search-box daily-email bg2 text-center">
                                 <h5 class="titulo_similares" class="mb-0">Propiedades similares</h5>
                             </div>
-                            <div class="lista_similares">
-                                <ul class="marge_list_simi">
-                                    <li class="li_similares">
-                                        <div class="single-field">
-                                            <div class="input-box">
-                                                <input type="text" class="form-control" placeholder="Ciudad">
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="li_similares">
-                                        <div class="single-field">
-                                            <div class="input-box">
-                                                <input type="text" class="form-control" placeholder="Tipo de inmueble">
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="li_similares">
-                                        <div class="single-field">
-                                            <div class="input-box">
-                                                <input type="text" class="form-control" placeholder="Tipo de gestión">
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="cont_Boton_similares">
-                                            <button style="padding: 4px;" type="button" class="btn btn-lg boton_similares">Buscar</button>
-                                        </div>
-                                    </li>
-                                </ul>
+                            <div class="row justify-content-center">
+                            <div class="col-12">
+                                <?php similares($r['IdCiudad'], $r['IdTpInm']); ?>
                             </div>
+                        </div>
                         </div>
 
                         <div class="search-box daily-email bg2 text-center">
