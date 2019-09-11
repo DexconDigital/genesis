@@ -112,6 +112,7 @@ $page = 'quienes' ?>
                 <h1 class="text-center gruesor_letra">Nuestros Asesores</h1>
                 <div class="linea_decora"></div>
             </div>
+            <!-- Imagen requerida de 200 x 200 -->
             <div class="col-md-12 row mt-5">
                 <?php if (isset($asesor_array)) {
                     modelo_asesor($asesor_array);

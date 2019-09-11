@@ -53,8 +53,8 @@ function modelo_asesor($r)
                         </div>
                     </div>
                     <div class="asesor_style mt-3">
-                        <h3><a><strong>Nombres:</strong> ' . $r[$i]['nombre'] .'</a></h3>
-                        <p class="designation">Cargo: ' . $r[$i]['cargo'] .'</p>
+                        <h3><a><strong></strong> ' . $r[$i]['nombre'] .'</a></h3>
+                        <p class="designation">' . $r[$i]['cargo'] .'</p>
                     </div>
                 </div>
     ';
