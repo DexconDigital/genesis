@@ -228,14 +228,14 @@ function modelo_inmueble_similare($r)
                   <div class="property-image">
                     <img class="alto_img" alt="" src="' . $imagen . '"></div>
                   <div class="precio">';
-    if ($api['Gestion'] == 'Arriendo/venta') {
-      echo '$' . $api['Canon'] . ' <br>$' . $api['Venta'];
-    } else if ($api['Gestion'] == 'Arriendo') {
-      echo '$' . $api['Canon'];
-    } else {
-      echo '$' . $api['Venta'];
-    } 
-    echo '
+                     if ($api['Gestion'] == 'Arriendo/venta') {
+                    echo '$' . $api['Canon'] . ' <br>$' . $api['Venta'];
+                           } else if ($api['Gestion'] == 'Arriendo') {
+                                 echo '$' . $api['Canon'];
+                           } else {
+                               echo '$' . $api['Venta'];
+                            } 
+              echo '
                   </div>
                   <div class="overlay">
                    
