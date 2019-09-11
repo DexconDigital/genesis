@@ -202,7 +202,7 @@ function modelo_inmueble_listar($r)
                 <ul class="magen_icon_list">
                     <li class="tamaño_icon_not"><i class="fa fa-bed icon_noti"></i>'.$alcobas.'</li>
                     <li class="tamaño_icon_not"><i class="fas fa-bath icon_noti"></i>'.$banios.'</li>
-                    <li class="tamaño_icon_not"><i class="fas fa-ruler icon_noti"></i>'.$area_construida.'m<sup>2</sup></li>
+                    <li class="tamaño_icon_not"><i class="fas fa-chart-area icon_noti"></i>'.$area_construida.'m<sup>2</sup></li>
                     <li class="tamaño_icon_not"><i class="fa fa-car icon_noti"></i>'.$garaje.'</li>
                     <li class="tamaño_icon_not"><i class="fas fa-barcode icon_noti"></i>'.$codigo.'</li>
                 </ul>

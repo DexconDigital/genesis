@@ -184,18 +184,18 @@ require 'controllers/detalleInmuebleController.php' ?>
                             <div class="col-md-12">
                                 <!-- Video -->
                             </div>
-                            <div class="row">
-                                <div class="col-md-12 p-0 pt-4">
+                            
+                                <div class="col-md-12">
+                                <h4 class="property-single-detail-title"><strong>Mapa de Ubicación</strong></h4>
                                     <div class="card mapa_tamaño">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Mapa</h5>
+                                        <div class="">
                                             <div id="map" class="w-100"></div>
                                         </div>
                                     </div>
 
 
                                 </div>
-                            </div>
+                            
                         </div>
                         <div class="col-md-5">
                             <div class="search-box daily-email bg2 text-center">

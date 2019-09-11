@@ -51,7 +51,12 @@ include 'layout/layout.php';
                         <input type="text" class="form-control" name="cor_asesor" id="cor_asesor" placeholder="ejemplo@dominio.com" required>
                     </div>
                 </div>
-                
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-3 col-form-label">Cargo:</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" name="cargo" id="cargo" placeholder="Asesor comercial" required>
+                    </div>
+                </div>
                 <div class="form-group row">
                     <label for="" class="col-sm-3 col-form-label">Foto del asesor</label>
                     <div class="col-sm-9">

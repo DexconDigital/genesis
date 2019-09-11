@@ -14,6 +14,7 @@ while ($field = mysqli_fetch_array($result1)) {
     $correo = $field['correo'];
     $imagen = $field['imagen'];
     $fecha = $field['fecha'];
+    $cargo = $field['cargo'];
    
     $asesor_array[] = array(
         'nombre' => $nombre,
@@ -22,6 +23,7 @@ while ($field = mysqli_fetch_array($result1)) {
         'correo' => $correo,
         'imagen' => $imagen,
         'fecha' => $fecha,
+        'cargo' => $cargo,
     );
 }
 
@@ -52,7 +54,7 @@ function modelo_asesor($r)
                     </div>
                     <div class="asesor_style mt-3">
                         <h3><a><strong>Nombres:</strong> ' . $r[$i]['nombre'] .'</a></h3>
-                        <p class="designation">Cargo: Asesor Comercial</p>
+                        <p class="designation">Cargo: ' . $r[$i]['cargo'] .'</p>
                     </div>
                 </div>
     ';

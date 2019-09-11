@@ -166,6 +166,7 @@ $texto_contador_estadisticas = [
 		1 => "Total Inmuebles",
 		2 => "Inmuebles en Arriendo",
 		3 => "Inmuebles en Venta",
+		4 => "Inmuebles en Arriendo/Venta",
 		],
 	"imagen" => "images/"
 ];

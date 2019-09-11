@@ -11,7 +11,7 @@ $ruta=$_FILES["imagen"]["tmp_name"];
 $nombre_foto = str_replace(" ","",$image);
 $destino="asesores/".$nombre_foto;
 $comparador_fotos="asesores/";
-
+$cargo=$_REQUEST["cargo"];
 
 // No actualizar ni archivos ni imagenes
 if($destino == $comparador_fotos){
@@ -22,7 +22,7 @@ if($destino == $comparador_fotos){
             
             $destino = $res[4];
     $con = Conect();
-    $qry=("update asesores set nombre='$nom_asesor', telefono='$cel_asesor', correo='$cor_asesor' where id='$id '");
+    $qry=("update asesores set nombre='$nom_asesor', telefono='$cel_asesor', correo='$cor_asesor', cargo='$cargo' where id='$id '");
     $sql=mysqli_query($con,$qry);
         if(!$sql){
     }else{

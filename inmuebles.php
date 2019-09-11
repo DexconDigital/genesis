@@ -66,7 +66,7 @@ $page = 'inmueble' ?>
                     <?php  if(is_array($r)){
                         modelo_inmueble_listar($r['Inmuebles']);
                     }else{
-                        echo '<h2 class="text-center">No se encontraron inmuebles con su solictud</h2>';
+                        echo '<div class="col-12"><h2 class="text-center">No se encontraron inmuebles con su solictud</h2></div>';
                     }
                     ?>
                 </div>

@@ -67,6 +67,12 @@ $res =  mysqli_fetch_array($sql);
                     </div>
                 </div>
                 <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-3 col-form-label">Cargo Actual:</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" name="cargo" id="cargo" value="<?php echo $res[7]; ?>">
+                    </div>
+                </div>
+                <div class="form-group row">
                     <label for="" class="col-sm-3 col-form-label">Imagen Actual</label>
                     <div class="col-sm-9">
                         <img src="<?php echo $res[4]; ?>" alt="" width="200px" height="auto">
