@@ -43,10 +43,10 @@ function modelo_asesor($r)
                             <div class="overlay">
                                 <ul class="additional-info">
                                     <li>
-                                        <header><strong>Celular: </strong>   <a id="color_info_asesor" href="tel:' . $r[$i]['telefono'] .'" target="_blank"> ' . $r[$i]['telefono'] .'</a></header>
+                                        <header><i class="fas fa-mobile-alt color_iconos_asestel" ></i><br><i class="far fa-envelope color_iconos_ases"></i></header>
                                     </li>
-                                    <li>
-                                        <header><strong>Correo: </strong> <a id="color_info_asesor" href="mailto:' . $r[$i]['correo'] .'" target="_blank"> ' . $r[$i]['correo'] .'</a></header>
+                                    <li class="row">
+                                        <header>   <a id="color_info_asesor" href="tel:' . $r[$i]['telefono'] .'" target="_blank"> ' . $r[$i]['telefono'] .'</a><a id="color_info_asesor" href="mailto:' . $r[$i]['correo'] .'" target="_blank"> ' . $r[$i]['correo'] .'</a></header>
                                     </li>
                                 </ul>
                             </div>
