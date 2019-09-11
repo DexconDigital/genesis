@@ -213,9 +213,9 @@ function modelo_inmueble_listar($r)
         }
 }
 
-function modelo_inmueble_similare($r, $cantidad_inmuebles)
+function modelo_inmueble_similare($r)
 {
-  for ($i = 0; $i < $cantidad_inmuebles; $i++) {
+  for ($i = 0; $i < count($r); $i++) {
     $imagen = existeImagen(($r[$i]['foto1']));
     $codigo = str_ireplace("583-", "", $r[$i]['Codigo_Inmueble']);
     $api = $r[$i];

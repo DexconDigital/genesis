@@ -19,21 +19,25 @@ while ($field = mysqli_fetch_array($result)) {
         'titulo' => $nombre,
         'id' => $id,
         'descripcion' => $descripcion,
-        'imagen' => $imagen,
+        'imagen' => 'Genesis-Admin/admin/'.$imagen,
         'noticia' => $noticia,
         'fecha' => $fecha,
         'archivo' => $archivo
     );
 }
 function modelo_ultima_noticia($r)
-{
-    $cantidad_noticias = 1;
-    for ($i = 0; $i < $cantidad_noticias; $i++) {
-        $ruta_imagen = "./Genesis-Admin/admin/" . $r[$i]['imagen'];
-        echo '
+{      
+    if(count($r) > 2){
+        $cantidad_noticias = 3;
+    }else{
+        $cantidad_noticias = count($r);
+    }
+    for($i=0; $i<$cantidad_noticias; $i++){
+       $limite_de_cadena = 100;
+       echo'
         <div class="col-md-4">
         <div class="card" style="border-color: white;">
-        <img style="object-fit: cover;width: 100%;height: 255px;" src="' . $ruta_imagen . '" class="card-img-top" alt="...">  
+        <img style="object-fit: cover;width: 100%;height: 255px;" src="'.$r[$i]['imagen'].'" class="card-img-top" alt="...">  
             <div class="card-body espacio_tageta mt-4">
                 <h4 class="card-title"><strong>' . $r[$i]['titulo'] .'</strong></h4>
                 <p>' . $r[$i]['fecha'] .'</p>
@@ -51,11 +55,10 @@ function modelo_ultima_noticia($r)
 function modelo_noticia($r)
 {
     for ($i = 0; $i < count($r); $i++) {
-        $ruta_imagen = "./Genesis-Admin/admin/" . $r[$i]['imagen'];
         echo '
-        <div class="col-md-4">
+        <div class="col-md-4 mb-3">
         <div class="card" style="border-color: white;">
-        <img style="object-fit: cover;width: 100%;height: 255px;" src="' . $ruta_imagen . '" class="card-img-top" alt="...">  
+        <img style="object-fit: cover;width: 100%;height: 255px;" src="'.$r[$i]['imagen'].'" class="card-img-top" alt="...">  
             <div class="card-body espacio_tageta mt-4">
                 <h4 class="card-title"><strong>' . $r[$i]['titulo'] .'</strong></h4>
                 <p>' . $r[$i]['fecha'] .'</p>
