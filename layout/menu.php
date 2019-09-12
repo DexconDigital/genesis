@@ -47,6 +47,15 @@
 </script>
 <!-- Fin de codigo preloader -->
 <header class="main-header sticky-header">
+    <div class="col-12 row contact-information d-none d-md-block" style="    text-align: center;margin-bottom: -17px;">
+        <ul style="display: inline-flex; list-style:none ;    justify-content: flex-end;">
+            <li class=""> <a class="color_a_nav  a_linea tamaño_tel_nav " href="tel:<?php echo $datos_contacto['telefono_fijo']['link'] ?> "><i class="fa fa-phone m-2 li_color"></i><?php echo $datos_contacto['telefono_fijo']['imprimir'] ?>&nbsp </a></li>
+            <li class="espacio_mitad"> <a class="color_a_nav tamaño_tel_tel " href="tel:<?php echo $datos_contacto['celular']['link'] ?>"><i class="fas fa-mobile-alt m-2 li_color"></i><?php echo $datos_contacto['celular']['imprimir'] ?></a></li>
+            <li class=""> <a class="color_a_nav  a_linea2 tamaño_tel_wapp" target="_blank" href="<?php echo $datos_contacto['whatsapp']['link'] ?>"><i class="fab fa-whatsapp m-2 li_color"></i><?php echo $datos_contacto['whatsapp']['imprimir'] ?>&nbsp</a></li>
+            <li class="b-none"> <a class="color_a_nav tamaño_tel_corr" href="mailto:<?php echo $datos_contacto['correo']['correo'] ?>"><i class="far fa-envelope m-2 li_color "></i><?php echo $datos_contacto['correo']['correo'] ?></a></li>
+        </ul>
+    </div>
+    <!--
     <div class="container-fluit">
         <div class="container contact-information ">
             <div class="col-md-12 d-md-block">
@@ -64,7 +73,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div class="coltainer-fluit">
         <div class="row ">

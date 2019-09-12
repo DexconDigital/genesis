@@ -21,8 +21,8 @@ $page = 'quienes' ?>
         </section>
 
         <section id="somos" class="margen_servicios">
-            <div class="col-md-12 mt-5">
-                <div class="col-12">
+            <div class="col-md-12 mt-5 ">
+                <div class="col-12 margen_quinessomos">
                     <h1 class="text-center gruesor_letra"><?php echo $texto_quienes_somos['quienes_somos']['titulo'] ?></h1>
                     <div class="linea_decora"></div>
                 </div>

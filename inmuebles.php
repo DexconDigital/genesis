@@ -21,12 +21,12 @@ $page = 'inmueble' ?>
         </section>
 
         <section id="buscador" class="contenedor_busca margen_inmueble">
-            <div class="container">
-                <div class=" row col-12">
-                    <div class="col-lg-3 col-md-6 col-12 margen_busca top_busca mt-3">
+            <div class="container" id="cont_inmuebles_margen">
+                <div class=" row col-12 top_buscar">
+                    <div class="col-lg-3 col-md-6 col-12 margen_busca top_busca top_md inicio_top">
                         <input type="text" class="form-control rounded-0" id="codigo_buscar" placeholder="Código">
                     </div>
-                    <div class="col-lg-3 col-md-6 col-12 margen_busca top_busca mt-3">
+                    <div class="col-lg-3 col-md-6 col-12 margen_busca top_busca top_md">
                         <select id="ciudad_buscar" class="form-control rounded-0">
                             <option selected="" value="0">Ciudad</option>
                         </select>

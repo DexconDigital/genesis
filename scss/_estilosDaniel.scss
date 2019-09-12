@@ -573,7 +573,7 @@ color: black;
     margin-top: 10%;
 }
 .margen_blok{
-    margin-top: 10%;
+    margin-top: 16%;
 }
 .margen_imagen_detalle{
     margin-top: 9%;
@@ -769,9 +769,9 @@ body::-webkit-scrollbar-thumb{
         margin-top: 23%;
     }
     .logo_principal{
-        height: 121%;
-        width: 90%;
-       object-fit: contain;
+        height: 135%;
+        width: 105%;
+        object-fit: contain;
     }
     #style_slide_tres{
         font-size: 20px;
@@ -859,18 +859,17 @@ body::-webkit-scrollbar-thumb{
         content: "";
         background: #77c720;
     }
-    .tamaño_tel_nav{
-        font-size: 12px;
+    .margen_quinessomos{
+        margin-top: 34%;
     }
-    .tamaño_tel_tel{
-        font-size: 15px;
+    .top_buscar{
+        margin-top: 32%;
     }
-    .tamaño_tel_wapp{
-        font-size: 13px;
+    .inicio_top{
+        margin-top: 7%;
     }
-    .tamaño_tel_corr{
-        font-size: 11px;
-    }
+    
+  
     
 
 }
@@ -889,6 +888,10 @@ body::-webkit-scrollbar-thumb{
         font-size: 44px;
         margin-top: 18px;
     }
+    .margen_quinessomos{
+        margin-top: 21%;
+    }
+    
     
 }
 
@@ -899,6 +902,21 @@ body::-webkit-scrollbar-thumb{
         color: #ffffff;
         font-weight: 800;
         margin-top: -7%;
+    }
+    .margen_quinessomos{
+        margin-top: 21%;
+    }
+    .tamaño_tel_nav{
+        font-size: 15px;
+    }
+    .tamaño_tel_tel{
+        font-size: 15px;
+    }
+    .tamaño_tel_wapp{
+        font-size: 15px;
+    }
+    .tamaño_tel_corr{
+        font-size: 15px;
     }
     
     .icon_foot{
@@ -1037,6 +1055,13 @@ body::-webkit-scrollbar-thumb{
         content: "";
         background: #77c720;
     }
+    #cont_inmuebles_margen{
+        margin-top: 18%;
+    }
+    .top_md{
+        margin-top: 5%;
+    }
+    
  }
 
 // Large devices (desktops, 992px and up)
@@ -1046,6 +1071,18 @@ body::-webkit-scrollbar-thumb{
         color: #ffffff;
         font-weight: 800;
         margin-top: -5%;
+    }
+    .top_md{
+        margin-top: 0%;
+    }
+    #cont_inmuebles_margen{
+        margin-top: 14%;
+    }
+    .margen_quinessomos{
+        margin-top: 0%;
+    }
+    .espacio_mitad{
+        margin-right: 112px;
     }
     #cont_img_hacemos{
         margin-top: 12%;
@@ -1134,6 +1171,18 @@ body::-webkit-scrollbar-thumb{
     }
     .margen_card{
         margin-top: -7%;
+    }
+    .tamaño_tel_nav{
+        font-size: 17px;
+    }
+    .tamaño_tel_tel{
+        font-size: 17px;
+    }
+    .tamaño_tel_wapp{
+        font-size: 17px;
+    }
+    .tamaño_tel_corr{
+        font-size: 17px;
     }
  }
 
