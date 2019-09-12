@@ -123,6 +123,7 @@ a:hover{
 .li_footer{
     display: block;
     margin: 10px 0;
+    font-family: "releway";
     
 }
 .color_iconos_ases{
@@ -171,12 +172,7 @@ a:hover{
     font-family: releway;
     
 }
-.botoon_inmueble{
-    background-color:#99cf16;
-     padding: 6px;
-     margin-left: 262px;
-     margin-right: auto;
-}
+
 .color_a_foot_imper{
     color: white;
     font-weight: bold;
@@ -286,20 +282,7 @@ a:hover{
     display: table-cell;
     width: 25%;
 }
-.img_venta{
-    width: 93%;
-    height: 73%;
-    margin-top: 20%;
-}
-.img_arriendo{
-    width: 96%;
-    margin-left: 16%;
-    margin-top: 13%;
-}
-.img_avaluos{
-    width: 92%; 
-    margin-top: 18%;
-}
+
 .texto_servi{
     text-align: justify;
     padding: 37px;
@@ -351,12 +334,7 @@ a:hover{
   .list_aline{
     text-align: left;
   }
-  .estilo_letra_list{
-    display: block;
-    position: relative;
-    padding-top: 30px;
-    margin-left: -35px;
-  }
+ 
   .precio_style{
     color: gray;
     font-size: 24px;
@@ -368,34 +346,12 @@ a:hover{
     padding-top: 30px;
     margin-left: -35px;
   }
-  .boton_style{
-    font-size: 12px;
-    background: #77c720;
-    color: #ffffff;
-    padding: 5px 18px;
-    display: block;
-    text-align: center;
-    position: absolute;
-    top: 100px;
-    left: 0;
-    transition: all 0.35s ease-out;
-  }
-  .boton_style:hover{
-      color: white;
-  }
+ 
   .cont_ico_noti{
     float: left;
     margin: -15px;
   }
-  .list_icon_noti{
-    padding: 32px 0 40px 20px;
-    background: #ffffff;
-  }
-  .magen_icon_list{
-    text-align: left;list-style: outside none none;
-    margin: 0;
-    padding: 0;
-  }
+
   .tamaño_icon_not{
     font-size: 13px;
     color: #333333;
@@ -535,15 +491,6 @@ footer{
     
 }
 
-.h3_contac::after{
-    position: absolute;
-    left: 0;
-    top: 50px;
-    width: 80px;
-    height: 5px;
-    content: "";
-    background: #77c720;
-}
 .color_a_foot_black{
     color: #77c720;
 }
@@ -564,9 +511,6 @@ color: black;
 }
 .espacio_propi{
     margin-bottom: 10px;
-}
-.top_busca{
-    margin-top: 40px;
 }
 .contenedor_busca{
     background-color: #ded3d373;
@@ -671,9 +615,7 @@ color: black;
     margin-right: auto;
     
 }
-.margen_card{
-    margin-top: -7%;
-}
+
 .mapa_tamaño{
     margin: 20px 0;
     border-color: #99cf16;
@@ -703,25 +645,11 @@ color: black;
     font-size: 25px;
     padding: 0px;
 }
-.compartir{
-    margin-top: 16px;
-    margin-left: 32px;
-}
+
 .compartir_boton{
     margin-top: 18px;
     padding: 3%;
     margin-left: -46%;
-}
-.container_icon_compartir{
-    margin-left: 2%;
-    margin-top: 2%;
-    padding: 0px;
-}
-.color_blanco_url{
-    color: white;
-}
-.color_blanco_url:hover{
-    color: white;
 }
 
 .swiper-container {
@@ -781,7 +709,37 @@ body::-webkit-scrollbar-thumb{
     .marge_contenido{
         padding-left: 0px;
         margin-left: -6px;
-        margin-top: 7%;
+        margin-top: -7%;
+    }
+    .estilo_letra_list{
+        display: block;
+        position: relative;
+        margin-left: -15px;
+    }
+    .list_aline{
+        margin-top: -30px;
+    }
+    .cont_ico_noti{
+        margin-top: -36%;
+        margin-left: 39px;
+    }
+    .cont_bott_noticia{
+        padding-top: 74px;
+        display: block;
+    }
+    .cont_precio{
+        border-right: 0px solid #dddddd;
+    }
+    .boton_style{
+        font-size: 12px;
+        background: #77c720;
+        color: #ffffff;
+        padding: 5px 18px;
+        display: block;
+        text-align: center;
+        left: 34px;
+        transition: all 0.35s ease-out;
+        position: absolute;
     }
     .margen_gestion{
             margin-left: -1%;
@@ -798,16 +756,127 @@ body::-webkit-scrollbar-thumb{
     .espacio_div{
         margin-bottom: 27px;
     }
-
-}
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { 
     #style_slide_uno{
-        font-size: 33px;
+        font-size: 24px;
         color: #ffffff;
         font-weight: 800;
         margin-top: -16%;
     }
+    #style_slide_dos{
+        font-size: 18px;
+        color: #ffffff;
+        font-weight: 800;
+        margin-top: 23%;
+    }
+    .logo_principal{
+        height: 121%;
+        width: 90%;
+       object-fit: contain;
+    }
+    #style_slide_tres{
+        font-size: 20px;
+        color: #ffffff;
+        font-weight: 800;
+        margin-top: 19%;
+    }
+    .img_venta{
+        width: 100%;
+        
+    }
+    .img_arriendo{
+        
+        width: 100%;
+        margin-left: 5%;
+    }
+    .espacio_ubicanos{
+        margin-bottom: 17%;
+    }
+    .botoon_inmueble{
+        background-color:#99cf16;
+         padding: 6px;
+         margin-left: 92px;
+         margin-right: auto;
+    }
+    .top_busca{
+        margin-top: 0px;
+    }
+    .magen_icon_list{
+        text-align: left;list-style: outside none none;
+        margin: 0;
+        padding: 0;
+        display: -webkit-box;
+      }
+      .color_blanco_url{
+        color: white;
+        
+    }
+    .color_blanco_url:hover{
+        color: white;
+    }
+    .contenerdor_booton_conta{
+        margin-left: 28%;
+    }
+    .icon_foot {
+        font-size: 22px;
+        padding: 0px;
+        margin-left: 5px;
+        margin-top: 11%;
+    }
+    .container_icon_compartir{
+        margin-top: -16%;
+        margin-left: 58%;
+        margin-bottom: 6%;
+    }
+    .h3_contac2{
+        font-size: 30px;
+        font-weight: bold;
+        position: relative;
+        margin-bottom: 32px;
+        margin-left: 15px;
+    }
+    .h3_contac2::after{
+        position: absolute;
+        left: 0;
+        top: 85px;
+        width: 80px;
+        height: 5px;
+        content: "";
+        background: #77c720;
+    }
+    .h3_contac{
+        font-size: 30px;
+        font-weight: bold;
+        position: relative;
+        margin-bottom: 32px;
+        margin-left: 15px;
+    }
+    .h3_contac::after{
+        position: absolute;
+        left: 0;
+        top: 50px;
+        width: 80px;
+        height: 5px;
+        content: "";
+        background: #77c720;
+    }
+    .tamaño_tel_nav{
+        font-size: 12px;
+    }
+    .tamaño_tel_tel{
+        font-size: 15px;
+    }
+    .tamaño_tel_wapp{
+        font-size: 13px;
+    }
+    .tamaño_tel_corr{
+        font-size: 11px;
+    }
+    
+
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+   
     #menu_sec_2{
         margin-left: 69px;
        
@@ -820,6 +889,7 @@ body::-webkit-scrollbar-thumb{
         font-size: 44px;
         margin-top: 18px;
     }
+    
 }
 
 // Medium devices (tablets, 768px and up)
@@ -828,19 +898,36 @@ body::-webkit-scrollbar-thumb{
         font-size: 33px;
         color: #ffffff;
         font-weight: 800;
-        margin-top: -16%;
+        margin-top: -7%;
+    }
+    
+    .icon_foot{
+        font-size: 24px;
+        padding: 0px;
+    }
+    .container_icon_compartir{
+        margin-left: 2%;
+        margin-top: 2%;
+       padding: 0px;
+    }
+    .compartir {
+        margin-top: 16px;
+        margin-left: 6px;
+    }
+    #cont_img_hacemos{
+        margin-top: 36%;
     }
     #style_slide_dos{
         font-size: 30px;
         color: #ffffff;
         font-weight: 800;
-        margin-top: -19%;
+        margin-top: 8%;
     }
     #style_slide_tres{
-        font-size: 26px;
+        font-size: 30px;
         color: #ffffff;
         font-weight: 800;
-        margin-top: -15%;
+        margin-top: 9%;
     }
     #menu_sec_2{
         margin-left: 69px;
@@ -856,6 +943,100 @@ body::-webkit-scrollbar-thumb{
         font-size: 32px;
         margin-top: 18px;
     }
+    .logo_principal{
+        height: 124%;
+        width: 108%;
+        object-fit: contain;
+    }
+    .img_venta{
+        width: 100%;
+        height: 54%;
+        margin-top: 44%;
+    }
+    .img_arriendo{
+        height: 47%;
+        width: 100%;
+        margin-left: 16%;
+        margin-top: 70%;
+    }
+    .img_avaluos{
+        width: 92%; 
+        margin-top: 18%;
+    }
+    .estilo_letra_list{
+        display: block;
+        position: relative;
+        padding-top: 30px;
+        margin-left: -73px;
+      }
+      .botoon_inmueble{
+        background-color:#99cf16;
+         padding: 6px;
+         margin-left: 154px;
+         margin-right: auto;
+    }
+      .boton_style{
+        font-size: 12px;
+        background: #77c720;
+        color: #ffffff;
+        padding: 5px 18px;
+        display: block;
+        text-align: center;
+        position: absolute;
+        top: 150px;
+        left: -30px;
+        transition: all 0.35s ease-out;
+      }
+      .boton_style:hover{
+          color: white;
+      }
+      .list_icon_noti{
+        padding: 32px 0 40px 6px;
+        background: #ffffff;
+      }
+      .top_busca{
+        margin-top: 0px;
+    }
+    .magen_icon_list{
+        text-align: left;list-style: outside none none;
+        margin: 0;
+        padding: 0;
+      }
+      .color_blanco_url{
+        color: white;
+        font-size: 10px;
+    }
+    .color_blanco_url:hover{
+        color: white;
+    }
+    .margen_card{
+        margin-top: -4%;
+    }
+    .h3_contac::after{
+        position: absolute;
+        left: 0;
+        top: 50px;
+        width: 80px;
+        height: 5px;
+        content: "";
+        background: #77c720;
+    }
+    .h3_contac2{
+        font-size: 30px;
+        font-weight: bold;
+        position: relative;
+        margin-bottom: 32px;
+        margin-left: 15px;
+    }
+    .h3_contac2::after{
+        position: absolute;
+        left: 0;
+        top: 85px;
+        width: 80px;
+        height: 5px;
+        content: "";
+        background: #77c720;
+    }
  }
 
 // Large devices (desktops, 992px and up)
@@ -866,18 +1047,39 @@ body::-webkit-scrollbar-thumb{
         font-weight: 800;
         margin-top: -5%;
     }
+    #cont_img_hacemos{
+        margin-top: 12%;
+    }
+    .top_busca{
+        margin-top: 40px;
+    }
     #style_slide_dos{
         font-size: 40px;
         color: #ffffff;
         font-weight: 800;
-        margin-top: -9%;
+        margin-top: 3%;
     }
     #style_slide_tres{
-        font-size: 35px;
+        font-size: 40px;
         color: #ffffff;
         font-weight: 800;
-        margin-top: -6%;
+        margin-top: 6%;
     
+    }
+    .h3_contac::after{
+        position: absolute;
+        left: 0;
+        top: 50px;
+        width: 80px;
+        height: 5px;
+        content: "";
+        background: #77c720;
+    }
+    .img_arriendo{
+        width: 99%;
+        margin-left: 16%;
+        margin-top: 34%;
+        height: 56%;
     }
     #menu_sec_2{
         margin-left: 41px;
@@ -891,6 +1093,48 @@ body::-webkit-scrollbar-thumb{
         padding-right: 0px;
         margin-left: 30px;
     }
+    .logo_principal{
+        height: 109%;
+        width: 100%;
+        object-fit: contain;
+    }
+    .img_venta{
+        width: 93%;
+        height: 73%;
+        margin-top: 20%;
+    }
+    .list_icon_noti{
+        padding: 32px 0 40px 20px;
+        background: #ffffff;
+      }
+      .botoon_inmueble{
+        background-color:#99cf16;
+         padding: 6px;
+         margin-left: 221px;
+         margin-right: auto;
+    }
+    .compartir{
+        margin-top: 16px;
+        margin-left: 6px;
+    }
+    .container_icon_compartir{
+        margin-left: 2%;
+        margin-top: 2%;
+        padding: 0px;
+    }
+    .icon_foot{
+        font-size: 24px;
+        padding: 0px;
+    }
+    .color_blanco_url{
+        color: white;
+    }
+    .color_blanco_url:hover{
+        color: white;
+    }
+    .margen_card{
+        margin-top: -7%;
+    }
  }
 
 // Extra large devices (large desktops, 1200px and up)
@@ -899,6 +1143,21 @@ body::-webkit-scrollbar-thumb{
         font-size: 50px;
         color: #ffffff;
         font-weight: 800;
+    }
+    #cont_img_hacemos{
+        margin-top: 0%;
+    }
+    .img_arriendo{
+        width: 89%;
+        margin-left: 16%;
+        margin-top: 23%;
+        height: 62%;
+    }
+    .botoon_inmueble{
+        background-color:#99cf16;
+         padding: 6px;
+         margin-left: 262px;
+         margin-right: auto;
     }
     #style_slide_dos{
         font-size: 50px;
@@ -915,6 +1174,11 @@ body::-webkit-scrollbar-thumb{
     #menu_sec_2{
         margin-left: 12%;
        
+    }
+    .img_venta{
+        width: 93%;
+        height: 73%;
+        margin-top: 20%;
     }
     .marge_li_nav{
         margin: 0px 14px;
@@ -933,5 +1197,20 @@ body::-webkit-scrollbar-thumb{
         height: 130%;
         width: 130%;
         object-fit:contain;
+    }
+    .compartir{
+        margin-top: 16px;
+        margin-left: 32px;
+    }
+    .container_icon_compartir{
+        margin-left: 2%;
+        margin-top: 2%;
+        padding: 0px;
+    }
+    .color_blanco_url{
+        color: white;
+    }
+    .color_blanco_url:hover{
+        color: white;
     }
  }

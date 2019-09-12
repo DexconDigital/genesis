@@ -171,7 +171,7 @@ function modelo_inmueble_listar($r)
 
         echo '
         <div class="col-md-12 row ">
-        <div class="col-md-3  cont_general">
+        <div class="col-lg-3 col-md-3 col-12 cont_general">
             <div class="img_noticia">
                 <a class="a_img" href="detalle_inmueble.php?co='.$codigo.'">
                     <img class="tamaño_img_detalle" src="'.$imagen.'" alt="">
@@ -179,7 +179,7 @@ function modelo_inmueble_listar($r)
             </div>
 
         </div>
-        <div class="col-md-5 marge_contenido  cont_general">
+        <div class="col-lg-5 col-md-5 col-12 marge_contenido  cont_general">
             <div class="contenido_noti">
                 <h3 class="mrge_noti">
                     <a>'.$tipo_inmueble.' en '.$gestion.'</a></h3>
@@ -189,7 +189,7 @@ function modelo_inmueble_listar($r)
                 <p class="mt-3">'.$descripcion.'</p>
             </div>
         </div>
-        <div class="col-md-2  cont_general">
+        <div class="col-lg-2 col-md-2 col-12  cont_general tamaño_cont">
             <div class="cont_precio">
                 <ul class="list_aline">
                     <li class="estilo_letra_list"><a class="precio_style">'.$precio.'</a></li>
@@ -197,7 +197,7 @@ function modelo_inmueble_listar($r)
                 </ul>
             </div>
         </div>
-        <div class="col-md-2 cont_ico_noti">
+        <div class="col-lg-2 col-md-2 col-12 cont_ico_noti">
             <div class="list_icon_noti">
                 <ul class="magen_icon_list">
                     <li class="tamaño_icon_not"><i class="fa fa-bed icon_noti"></i>'.$alcobas.'</li>

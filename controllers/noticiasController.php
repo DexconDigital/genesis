@@ -35,7 +35,7 @@ function modelo_ultima_noticia($r)
     for($i=0; $i<$cantidad_noticias; $i++){
        $limite_de_cadena = 100;
        echo'
-        <div class="col-md-4">
+        <div class="col-lg-4 col-md-6 col-12 mb-3">
         <div class="card" style="border-color: white;">
         <img style="object-fit: cover;width: 100%;height: 255px;" src="'.$r[$i]['imagen'].'" class="card-img-top" alt="...">  
             <div class="card-body espacio_tageta mt-4">
@@ -56,7 +56,7 @@ function modelo_noticia($r)
 {
     for ($i = 0; $i < count($r); $i++) {
         echo '
-        <div class="col-md-4 mb-3">
+        <div class="col-lg-4 col-md-6 col-12 mb-3">
         <div class="card" style="border-color: white;">
         <img style="object-fit: cover;width: 100%;height: 255px;" src="'.$r[$i]['imagen'].'" class="card-img-top" alt="...">  
             <div class="card-body espacio_tageta mt-4">

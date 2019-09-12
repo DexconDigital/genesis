@@ -36,7 +36,7 @@
                                     </nav>
                                 </div>
                             </div>
-                            <div class=" col-xl-3 col-md-6 col-12 ">
+                            <div class=" col-xl-3 col-md-6 col-12 espacio_ubicanos">
                                 <div>
                                     <h2 class="footer_elem_uno" >Ubícanos</h2>
 

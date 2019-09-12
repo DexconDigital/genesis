@@ -34,7 +34,7 @@ function modelo_asesor($r)
         $ruta_imagen = "./Genesis-Admin/admin/" . $r[$i]['imagen'];
         echo '
          
-        <div class="col-md-4">
+        <div class="col-lg-4 col-md-6 col-12">
                     <div class="single-agent property">
                         <div class="property-image">
                             <a> <img style="object-fit: contain;width: 100%;height: 100%;"; src="' . $ruta_imagen . '" class="card-img-top"></a>

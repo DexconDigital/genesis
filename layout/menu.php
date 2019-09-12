@@ -46,32 +46,34 @@
     });
 </script>
 <!-- Fin de codigo preloader -->
-<header class="main-header sticky-header" >
-    <div class="coltainer-fluit">
-        <div class="row ">
-            <div class="container contact-information">
-                <div class="col-md-12">
-                    <div class="d-flex bd-highlight">
-                        <div class=" col-lg-6 col-md-6 col-sm-12 row mr-auto  bd-highlight ">
-                          <a class="color_a_nav  a_linea " href="tel:<?php echo $datos_contacto['telefono_fijo']['link'] ?> "><i class="fa fa-phone m-2 li_color"></i><?php echo $datos_contacto['telefono_fijo']['imprimir'] ?>&nbsp </a>  
-                          <a class="color_a_nav " href="tel:<?php echo $datos_contacto['celular']['link'] ?>"><i class="fas fa-mobile-alt m-2 li_color"></i><?php echo $datos_contacto['celular']['imprimir'] ?></a>  
-                        </div>
-
-                        <div id="menu_sec_2" class=" col-lg-6 col-md-6 col-sm-12 row  bd-highlight  d-flex align-items-end">
-                            <a class="color_a_nav  a_linea2" target="_blank" href="<?php echo $datos_contacto['whatsapp']['link'] ?>"><i class="fab fa-whatsapp m-2 li_color"></i><?php echo $datos_contacto['whatsapp']['imprimir'] ?>&nbsp</a>
-                            <a class="color_a_nav " href="mailto:<?php echo $datos_contacto['correo']['correo'] ?>"><i class="far fa-envelope m-2 li_color "></i><?php echo $datos_contacto['correo']['correo'] ?></a>
-                        </div>
-             
+<header class="main-header sticky-header">
+    <div class="container-fluit">
+        <div class="container contact-information ">
+            <div class="col-md-12 d-md-block">
+                <div class="d-flex bd-highlight ">
+                    <div class=" col-lg-6 col-md-6 col-sm-2 row mr-auto  bd-highlight ">
+                        <a class="color_a_nav  a_linea tamaño_tel_nav " href="tel:<?php echo $datos_contacto['telefono_fijo']['link'] ?> "><i class="fa fa-phone m-2 li_color"></i><?php echo $datos_contacto['telefono_fijo']['imprimir'] ?>&nbsp </a>
+                        <a class="color_a_nav tamaño_tel_tel " href="tel:<?php echo $datos_contacto['celular']['link'] ?>"><i class="fas fa-mobile-alt m-2 li_color"></i><?php echo $datos_contacto['celular']['imprimir'] ?></a>
                     </div>
+
+                    <div id="menu_sec_2" class=" col-lg-6 col-md-6 col-sm-22 row  bd-highlight  d-flex align-items-end">
+                        <a class="color_a_nav  a_linea2 tamaño_tel_wapp" target="_blank" href="<?php echo $datos_contacto['whatsapp']['link'] ?>"><i class="fab fa-whatsapp m-2 li_color"></i><?php echo $datos_contacto['whatsapp']['imprimir'] ?>&nbsp</a>
+                        <a class="color_a_nav tamaño_tel_corr" href="mailto:<?php echo $datos_contacto['correo']['correo'] ?>"><i class="far fa-envelope m-2 li_color "></i><?php echo $datos_contacto['correo']['correo'] ?></a>
+                    </div>
+
                 </div>
             </div>
+        </div>
+    </div>
 
+    <div class="coltainer-fluit">
+        <div class="row ">
             <div class="col-12 border-top">
                 <nav id="" class="navbar navbar-expand-lg navbar-light mi_nav" style="padding: 0px 1rem;">
                     <div class="container">
                         <div class="" style="margin-bottom: 18px;">
                             <a class="navbar-brand contenedor_logo" href="index.php">
-                                <img src="<?php echo $Logo;?>" class="d-inline-block align-top logo_principal" alt="">
+                                <img src="<?php echo $Logo; ?>" class="d-inline-block align-top logo_principal" alt="">
                             </a>
                         </div>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -83,7 +85,7 @@
                                     <?php if ($page == 'Inicio') {
                                         echo 'active';
                                     } ?>">
-                                    <a id="color_nav" class= "nav-link " href="index.php"  >Inicio <span class="sr-only">(current)</span></a>
+                                    <a id="color_nav" class="nav-link " href="index.php">Inicio <span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item marge_li_nav
                                     <?php if ($page == 'quienes') {
@@ -98,8 +100,8 @@
                                     <a id="color_nav" class="nav-link" href="servicios.php">Servicios</a>
                                 </li>
                                 <li class="nav-item marge_li_nav <?php if ($page == 'inmueble') {
-                                        echo 'active';
-                                    } ?> ">
+                                                                        echo 'active';
+                                                                    } ?> ">
                                     <a id="color_nav" class="nav-link" href="inmuebles.php?">Inmuebles</a>
                                 </li>
                                 <li class="nav-item dropdown marge_li_nav">
@@ -146,7 +148,7 @@
 </div>
 
 <script>
-  var altomenu = document.getElementById('medida_nav').offsetHeight;
-  altomenu = altomenu + 'px';
-  var espacio_menu = document.getElementById('espacio-menu').style.height = altomenu;
+    var altomenu = document.getElementById('medida_nav').offsetHeight;
+    altomenu = altomenu + 'px';
+    var espacio_menu = document.getElementById('espacio-menu').style.height = altomenu;
 </script>

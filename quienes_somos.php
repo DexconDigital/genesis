@@ -53,10 +53,12 @@ $page = 'quienes' ?>
                                                             echo '
                                   <img style="width: 100%; height: 100% ; object-fit: cover;" src="' . $r[3] . '" alt="">'; ?>
                                 </div>
-                                
+
                             </div>
                             <!-- Add Pagination -->
-                            <div class="swiper-pagination"></div>
+                            <div class="swiper-pagination "></div>
+                            
+                            
                         </div>
 
                     </div>
@@ -72,31 +74,31 @@ $page = 'quienes' ?>
                 <div class="linea_decora"></div>
             </div>
             <div class="col-md-12 row mt-5">
-                <div class="col-md-8">
+                <div class="col-lg-8 col-md-7 mb-3">
                     <div id="cuadro_cards" class="extra-info-text margin-control col-lg-12 col-md-12 col-sm-12 ">
                         <p><?php echo $texto_quienes_somos['que_hacemos']['parrafo'] ?></p>
                     </div>
                 </div>
-                <div class="col-md-4 wow fadeInRight">
+                <div class="col-lg-4 col-md-5 wow fadeInRight">
                     <?php $r = $texto_quienes_somos['que_hacemos'];
                     echo '
-               <img src="' . $r['imagen'] . '" class="w-100" alt="">'; ?>
+               <img id="cont_img_hacemos" src="' . $r['imagen'] . '" class="w-100" alt="">'; ?>
                 </div>
             </div>
         </div>
-        <div class=" container  mt-5 wow fadeInLeft">
+        <div class=" container mt-3 espacion_contenedor wow fadeInLeft">
             <div class="col-12">
                 <h1 class="text-center gruesor_letra"><?php echo $texto_quienes_somos['hacia_donde_vamos']['titulo'] ?></h1>
                 <div class="linea_decora"></div>
             </div>
             <div class="col-md-12 row mt-5">
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-5 mb-3">
                     <?php $r = $texto_quienes_somos['hacia_donde_vamos'];
                     echo '
-               <img src="' . $r['imagen'] . '" class="w-100" alt="">'; ?>
+               <img id="cont_img_hacemos" src="' . $r['imagen'] . '" class="w-100" alt="">'; ?>
 
                 </div>
-                <div class="col-md-8">
+                <div class="col-lg-8 col-md-7">
                     <div id="cuadro_cards" class="extra-info-text margin-control col-lg-12 col-md-12 col-sm-12">
                         <p><?php echo $texto_quienes_somos['hacia_donde_vamos']['parrafo'] ?></p>
                     </div>

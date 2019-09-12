@@ -64,7 +64,7 @@ require 'controllers/detalleInmuebleController.php' ?>
             <section class="margen_detalle_inm">
                 <div class="container" style="margin-top: 40px;">
                     <div class="col-md-12 row">
-                        <div class="col-md-7">
+                        <div class="col-lg-7 col-md-12 col-12">
                             <!-- main slider carousel items -->
                             <section class="mt-3" id="slide-detalle">
                                 <?php
@@ -197,7 +197,7 @@ require 'controllers/detalleInmuebleController.php' ?>
                                 </div>
                             
                         </div>
-                        <div class="col-md-5">
+                        <div class="col-lg-5 col-md-12 col-12">
                             <div class="search-box daily-email bg2 text-center">
                                 <div>
                                     <h5 class="titulo_similares" class="mb-0">Contacto con el asesor</h5>

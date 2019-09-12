@@ -38,7 +38,7 @@ $page = 'contacto' ?>
                 <div class="col md-12 row ">
                     <div class="col-md-5 ">
                         <div>
-                            <h3 class="h3_contac">Información de Contacto</h3>
+                            <h3 class="h3_contac2">Información de Contacto</h3>
                             <nav class="nav_list">
                                 <ul class="form_contac">
                                     <li class="info_contac"><i class="fas fa-map-marker-alt icono_contac"><a class="color_a_foot_white"></i><?php echo $datos_contacto['direccion']['direccion'] ?></li></a>

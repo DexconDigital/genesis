@@ -17,7 +17,7 @@ setTimeout(() => {
       var fecha = new Date();
       var ano = fecha.getFullYear();
       //  Colocar el año de creacion de la empresa
-      const CREATECOMPANY = 1989;
+      const CREATECOMPANY = 2011;
       var total = ano - CREATECOMPANY;
       
       // buscar el id en el dom y imprimir el resultado

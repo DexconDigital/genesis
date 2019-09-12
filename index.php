@@ -27,7 +27,7 @@ $page = 'Inicio'; ?>
 
                 <!--Slides-->
                 <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
+                    <div class="carousel-item  active">
                         <div class="view">
                             <img class="d-block w-100" id="style_slider_img" src="images/BOGOTA-min.jpg" alt="First slide">
                             <div class="mask rgba-black-strong"></div>
@@ -36,7 +36,7 @@ $page = 'Inicio'; ?>
                             <h1 id="style_slide_uno" class="h3-responsive"><?php echo $frases_slide_principal[0] ?></h1>
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item ">
                         <!--Mask color-->
                         <div class="view">
                             <img class="d-block w-100" id="style_slider_img" src="images/MOSTRANDO_APTO-min.jpg" alt="Second slide">
