@@ -29,20 +29,20 @@ $page = 'Inicio'; ?>
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
                         <div class="view">
-                            <img class="d-block w-100" src="images/slide1.jpg" alt="First slide">
+                            <img class="d-block w-100" id="style_slider_img" src="images/BOGOTA-min.jpg" alt="First slide">
                             <div class="mask rgba-black-strong"></div>
                         </div>
-                        <div class="carousel-caption wow fadeInUp" data-wow-delay="0.6s" style="top:183px;">
+                        <div class="carousel-caption wow fadeInUp" data-wow-delay="0.6s" style="top:260px;">
                             <h1 id="style_slide_uno" class="h3-responsive"><?php echo $frases_slide_principal[0] ?></h1>
                         </div>
                     </div>
-                    <div class="carousel-item ">
+                    <div class="carousel-item">
                         <!--Mask color-->
                         <div class="view">
-                            <img class="d-block w-100" src="images/slide2.jpg" alt="Second slide">
+                            <img class="d-block w-100" id="style_slider_img" src="images/MOSTRANDO_APTO-min.jpg" alt="Second slide">
                             <div class="mask rgba-black-strong"></div>
                         </div>
-                        <div class="carousel-caption wow fadeInLeft" data-wow-delay="0.6s" style="top:183px;">
+                        <div class="carousel-caption wow fadeInLeft" data-wow-delay="0.6s" style="top:153px;">
                             <h1 id="style_slide_dos" class="h3-responsive"><?php echo $frases_slide_principal[1] ?></h1>
 
                         </div>
@@ -50,10 +50,10 @@ $page = 'Inicio'; ?>
                     <div class="carousel-item">
                         <!--Mask color-->
                         <div class="view">
-                            <img class="d-block w-100" src="images/slide3.jpg" alt="Third slide">
+                            <img class="d-block w-100" id="style_slider_img" src="images/FAMILIA-CASA-min.jpg" alt="Third slide">
                             <div class="mask rgba-black-strong"></div>
                         </div>
-                        <div class="carousel-caption wow fadeInDown" data-wow-delay="0.6s" style="top:183px;">
+                        <div class="carousel-caption wow fadeInDown" data-wow-delay="0.6s" style="top:155px;">
                             <h1 id="style_slide_tres" class="h3-responsive"><?php echo $frases_slide_principal[2] ?></h1>
 
                         </div>

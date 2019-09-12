@@ -115,7 +115,7 @@ $imagen_inicio = $usuario[9];
 
     <nav class="navbar navbar-expand static-top color_nv">
         <div style="width: 15%;">
-            <a class="navbar-brand mr-1" href="layout.html"><img style="object-fit: contain;width: 100%;height: 100%;" src="images/logo_b.png" alt=""></a>
+            <a class="navbar-brand mr-1" href="layout.html"><img style="object-fit: contain;width: 100%;height: 100%;" src="images/Logo_b.png" alt=""></a>
         </div>
 
 

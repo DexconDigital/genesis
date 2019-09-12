@@ -164,11 +164,11 @@ a:hover{
 .style_correo{
     font-size: 14px;
     color: white;
-    font-family: Roboto;
+    font-family: releway;
 }
 .color_a_foot{
     color: white;
-    font-family: Roboto;
+    font-family: releway;
     
 }
 .botoon_inmueble{
@@ -285,6 +285,20 @@ a:hover{
     color: #fff;
     display: table-cell;
     width: 25%;
+}
+.img_venta{
+    width: 93%;
+    height: 73%;
+    margin-top: 20%;
+}
+.img_arriendo{
+    width: 96%;
+    margin-left: 16%;
+    margin-top: 13%;
+}
+.img_avaluos{
+    width: 92%; 
+    margin-top: 18%;
 }
 .texto_servi{
     text-align: justify;
@@ -586,6 +600,10 @@ color: black;
     display: inline-block;
     width: 100%;
 }
+#style_slider_img{
+    object-fit: cover;
+    height: 537px;
+}
 .boton_similares{
     border: 0;
     background: #77c720;
@@ -878,12 +896,12 @@ body::-webkit-scrollbar-thumb{
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { 
     #style_slide_uno{
-        font-size: 62px;
+        font-size: 50px;
         color: #ffffff;
         font-weight: 800;
     }
     #style_slide_dos{
-        font-size: 56px;
+        font-size: 50px;
         color: #ffffff;
         font-weight: 800;
         margin-top: -1%;
@@ -899,7 +917,7 @@ body::-webkit-scrollbar-thumb{
        
     }
     .marge_li_nav{
-        margin: 0px 17px;
+        margin: 0px 14px;
     }
     .marge_contenido{
         padding-left: 0px;
@@ -910,5 +928,10 @@ body::-webkit-scrollbar-thumb{
         color: #77c720;
         font-size: 44px;
         margin-top: 18px;
+    }
+    .logo_principal{
+        height: 130%;
+        width: 130%;
+        object-fit:contain;
     }
  }

@@ -34,7 +34,7 @@ $page = 'Servicios' ?>
                         <div class="col-md-4 row  wow fadeInRight" style="margin-left: 15px;" data-wow-delay="0.6s">
                             <?php $r = $texto_servicios['ventas'];
                             echo '
-                      <img style="width: 92%;" src="' . $r['imagen'] . '" alt="">'; ?>
+                      <img class="img_venta" src="' . $r['imagen'] . '" alt="">'; ?>
                         </div>
                     </div>
                 </section>
@@ -43,7 +43,7 @@ $page = 'Servicios' ?>
                         <div class="col-md-4  wow fadeInLeft" data-wow-delay="0.6s">
                             <?php $r = $texto_servicios['arriendos'];
                             echo '
-                       <img style="width: 92%;margin-left: 16%;" src="' . $r['imagen'] . '" alt="">'; ?>
+                       <img class="img_arriendo" src="' . $r['imagen'] . '" alt="">'; ?>
                         </div>
                         <div class="col-md-8  magen_container_servi wow fadeInRight" data-wow-delay="0.6s">
                             <div class="col-md-12  text-center">
@@ -69,7 +69,7 @@ $page = 'Servicios' ?>
                         <div class="col-md-4  wow fadeInRight" data-wow-delay="0.9s">
                             <?php $r = $texto_servicios['avaluos'];
                             echo '
-                     <img style="width: 92%;" src="' . $r['imagen'] . '" alt="">'; ?>
+                     <img class="img_avaluos" src="' . $r['imagen'] . '" alt="">'; ?>
                         </div>
                     </div>
                 </section>

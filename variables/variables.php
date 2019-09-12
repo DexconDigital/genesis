@@ -23,7 +23,7 @@ $redes_sociales = [
 		"imagen" => "images/facebook.png"
 	],
 	"instagram" => [
-		"link" => "https://www.instagram.com/",
+		"link" => "https://www.instagram.com/gainmobiliariasas/?hl=es-la",
 		"icono" => "fab fa-instagram",
 		"imagen" => "images/instagram.png"
 	],
@@ -151,11 +151,11 @@ $texto_quienes_somos = [
 //imagenes slider quienes somos
 $slider_quienes_somos =[
 	"imagenes" => [
-			 0 => "images/no_image.png",
-			 1 => "images/no_image.png",
-			 2 => "images/no_image.png",
-			 3 => "images/no_image.png",
-			 4 => "images/no_image.png",
+			 0 => "images/CASA-min.jpg",
+			 1 => "images/PAREJA-CASA-min.jpg",
+			 2 => "images/PAREJA-min.jpg",
+			 3 => "images/FAMILIA-min.jpg",
+			
 	],
 ];
 
@@ -178,21 +178,21 @@ $texto_servicios = [
 		"parrafos" => [
 			0 => "Nuestra experiencia en la venta de inmuebles nos permite brindar un servicio de alta calidad así como dar una promesa de cumplimiento que asegura tu satisfacción de compra.",
 		],
-		"imagen" => "images/ventas.jpg"
+		"imagen" => "images/LLAVES-min.jpg"
 	],
 	"arriendos" => [
 		"titulo" => "Arriendos",
 		"parrafos" => [
 			0 => "La vivienda es una necesidad básica humana, por eso al serlo se convierte en un elemento primordial para el bienestar tuyo y de tu familia; en G.A. Inmobiliaria queremos lo mejor para nuestros clientes, por eso pensamos en tu familia y ofrecemos inmuebles en arriendo ajustados a tus necesidades.",
 		],
-		"imagen" => "images/arriendos.jpg"
+		"imagen" => "images/DOCUMENTOS-min.jpg"
 	],
 	"avaluos" => [
 		"titulo" => "Avalúos",
 		"parrafos" => [
 			0 => "Saber el valor correcto de un inmueble es importante tanto para el comprador como para el vendedor y en ese orden de ideas se convierte en un requerimiento para la realización de negociaciones en finca raíz. Cuenta con nosotros para la realización de avalúos tanto urbanos como rurales.",
 		],
-		"imagen" => "images/avaluos.jpg"
+		"imagen" => "images/PLANOS-min.jpg"
 	],
 ];
 ?>

@@ -69,16 +69,16 @@
             <div class="col-12 border-top">
                 <nav id="" class="navbar navbar-expand-lg navbar-light mi_nav" style="padding: 0px 1rem;">
                     <div class="container">
-                        <div class="">
+                        <div class="" style="margin-bottom: 18px;">
                             <a class="navbar-brand contenedor_logo" href="index.php">
-                                <img style="height: 100%;width: 100%;object-fit:contain;" src="<?php echo $Logo;?>" class="d-inline-block align-top" alt="">
+                                <img src="<?php echo $Logo;?>" class="d-inline-block align-top logo_principal" alt="">
                             </a>
                         </div>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse " id="navbarNav">
-                            <ul class="  navbar-nav mt-4 ">
+                            <ul class=" ml-auto navbar-nav mt-4 ">
                                 <li class="nav-item marge_li_nav
                                     <?php if ($page == 'Inicio') {
                                         echo 'active';
@@ -125,7 +125,7 @@
 
 
                             </ul>
-                            <div class="" style="margin-left: auto;">
+                            <div class="">
 
                                 <a class="nav-link contenedor_pse" target="_blank" href="https://www.mipagoamigo.com/MPA_WebSite/">
                                     <img style="height: 100%;width: 100%;object-fit:contain;" src="images/logopse.png" class="d-inline-block align-top" alt="">

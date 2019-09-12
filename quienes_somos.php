@@ -53,11 +53,7 @@ $page = 'quienes' ?>
                                                             echo '
                                   <img style="width: 100%; height: 100% ; object-fit: cover;" src="' . $r[3] . '" alt="">'; ?>
                                 </div>
-                                <div class="swiper-slide"><?php $r = $slider_quienes_somos['imagenes'];
-                                                            echo '
-                                  <img style="width: 100%; height: 100% ; object-fit: cover;" src="' . $r[4] . '" alt="">'; ?>
-                                </div>
-
+                                
                             </div>
                             <!-- Add Pagination -->
                             <div class="swiper-pagination"></div>

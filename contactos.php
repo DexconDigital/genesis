@@ -94,7 +94,7 @@ $page = 'contacto' ?>
                                 <div class="col-md-12">
                                     <div class="custom-control custom-checkbox mb-4">
                                         <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
-                                        <label class="custom-control-label" for="defaultContactFormCopy">Confimo que he leído, entendido y acepto la<a class="color_a_foot_black" href=""> política de tratamiento de datos personales.</a></label>
+                                        <label class="custom-control-label" for="defaultContactFormCopy">Confimo que he leído, entendido y acepto la<a class="color_a_foot_black" href="Politica_de_datos.pdf" download="Politica de tratamiento de infromación.pdf"> política de tratamiento de datos personales.</a></label>
                                     </div>
                                 </div>
                                 <div class="col-sm-12">
