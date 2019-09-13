@@ -179,7 +179,7 @@ function modelo_inmueble_listar($r)
             </div>
 
         </div>
-        <div class="col-lg-5 col-md-5 col-12 marge_contenido  cont_general">
+        <div class="col-lg-5 col-md-5 col-12 container marge_contenido2  cont_general">
             <div class="contenido_noti">
                 <h3 class="mrge_noti">
                     <a>'.$tipo_inmueble.' en '.$gestion.'</a></h3>

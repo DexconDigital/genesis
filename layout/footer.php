@@ -8,7 +8,7 @@
                                     <h2 class="footer_elem_uno"  > G.A. Inmobiliaria</h2>
                                     <p style="    text-align: inherit;color: white;"><?php echo $texto_quienes_somos['quienes_somos']['parrafos'][0]?></p>
                                 </div>
-                                <div style="    margin-top: 35px;">
+                                <div class="cont_iconos" style="margin-top: 35px;">
                                     <ul>
                                         <a href="<?php echo $redes_sociales ['facebook']['link']?>" target="_blank" >
                                             <li class="fab fa-facebook-f estilo_icono_foot " style="display: inline-block;margin-right: 5px;"></li>

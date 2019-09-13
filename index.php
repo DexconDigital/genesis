@@ -27,8 +27,8 @@ $page = 'Inicio'; ?>
 
                 <!--Slides-->
                 <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item  active">
-                        <div class="view">
+                    <div class="carousel-item active">
+                        <div class="view container_movil">
                             <img class="d-block w-100" id="style_slider_img" src="images/BOGOTA-min.jpg" alt="First slide">
                             <div class="mask rgba-black-strong"></div>
                         </div>
@@ -36,9 +36,9 @@ $page = 'Inicio'; ?>
                             <h1 id="style_slide_uno" class="h3-responsive"><?php echo $frases_slide_principal[0] ?></h1>
                         </div>
                     </div>
-                    <div class="carousel-item ">
+                    <div class="carousel-item">
                         <!--Mask color-->
-                        <div class="view">
+                        <div class="view  container_movil">
                             <img class="d-block w-100" id="style_slider_img" src="images/MOSTRANDO_APTO-min.jpg" alt="Second slide">
                             <div class="mask rgba-black-strong"></div>
                         </div>
@@ -49,7 +49,7 @@ $page = 'Inicio'; ?>
                     </div>
                     <div class="carousel-item">
                         <!--Mask color-->
-                        <div class="view">
+                        <div class="view  container_movil">
                             <img class="d-block w-100" id="style_slider_img" src="images/FAMILIA-CASA-min.jpg" alt="Third slide">
                             <div class="mask rgba-black-strong"></div>
                         </div>
@@ -78,29 +78,29 @@ $page = 'Inicio'; ?>
         <section id="buscador">
             <div class="container" style="margin-top: 34px;">
                 <div class=" row col-12">
-                    <div class="col-xl-3 col-md-3 col-12  margen_busca">
+                    <div class="col-xl-3 col-md-4 col-12  margen_busca">
                         <input type="text" class="form-control rounded-0" id="codigo_buscar" placeholder="Código"></div>
 
-                    <div class="col-xl-3 col-md-3 col-12  margen_busca">
+                    <div class="col-xl-3 col-md-4 col-12  margen_busca">
                         <select id="ciudad_buscar" class="form-control rounded-0">
                             <option selected="" value="0">Ciudad</option>
                         </select>
                     </div>
-                    <div class="col-xl-3 col-md-3 col-12  margen_busca"><select id="barrio_buscar" class="form-control rounded-0">
+                    <div class="col-xl-3 col-md-4 col-12  margen_busca"><select id="barrio_buscar" class="form-control rounded-0">
                             <option selected="" value="0">Barrio</option>
                         </select>
                     </div>
-                    <div class="col-xl-3 col-md-3 col-12  margen_busca"><select id="tipo_gestion_buscar" class="form-control rounded-0">
+                    <div class="col-xl-3 col-md-4 col-12  margen_busca"><select id="tipo_gestion_buscar" class="form-control rounded-0">
                             <option selected="" value="0">Tipo de gestión</option>
                         </select>
                     </div>
-                    <div class="col-xl-3 col-md-3 col-12  margen_busca"><select id="tipo_inmueble_buscar" class="form-control rounded-0">
+                    <div class="col-xl-3 col-md-4 col-12  margen_busca"><select id="tipo_inmueble_buscar" class="form-control rounded-0">
                             <option selected="" value="0">Tipo de inmueble</option>
                         </select>
                     </div>
-                    <div class="col-xl-3 col-md-3 col-12  margen_busca"><input type="text" class="form-control rounded-0" id="precio_minimo_buscar" onkeyup="format(this)" onchange="format(this)" placeholder=" Precio Mínimo"></div>
-                    <div class="col-xl-3 col-md-3 col-12  margen_busca"><input type="text" class="form-control rounded-0" id="precio_maximo_buscar" onkeyup="format(this)" onchange="format(this)" placeholder=" Precio Máximo"></div>
-                    <div class="col-xl-3 col-md-3 col-12  margen_busca">
+                    <div class="col-xl-3 col-md-4 col-12  margen_busca"><input type="text" class="form-control rounded-0" id="precio_minimo_buscar" onkeyup="format(this)" onchange="format(this)" placeholder=" Precio Mínimo"></div>
+                    <div class="col-xl-3 col-md-6 col-12  margen_busca"><input type="text" class="form-control rounded-0" id="precio_maximo_buscar" onkeyup="format(this)" onchange="format(this)" placeholder=" Precio Máximo"></div>
+                    <div class="col-xl-3 col-md-6 col-12  margen_busca">
                         <button style="" type="button" class="btn rounded-0 col-12 boton_buscar" id="buscar"><span style="color:white">Buscar</span></button></div>
                         
                 </div>
@@ -146,7 +146,7 @@ $page = 'Inicio'; ?>
         <section id="servicios">
             <div class="container" style="margin-bottom: 33px;">
                 <div class="d-flex justify-content-between col-md-12 row ">
-                    <div class="col-md-4 row ">
+                    <div class="col-lg-4 col-md-6 col-12 row ">
                         <div class="col-xl-3 col-md-3 col-4">
                             <i class="fas fa-tags color_venta"></i>
                         </div>
@@ -159,7 +159,7 @@ $page = 'Inicio'; ?>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 row ">
+                    <div class="col-lg-4 col-md-6 col-12 row ">
                         <div class="col-xl-3 col-md-3 col-4">
                             <i class="fas fa-sign color_venta"></i>
                         </div>
@@ -172,7 +172,7 @@ $page = 'Inicio'; ?>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 row ">
+                    <div class="col-lg-4 col-md-6 cont_avaluos col-12 row ">
                         <div class="col-xl-3 col-md-3 col-4">
                             <i class="fas fa-balance-scale color_venta"></i>
                         </div>

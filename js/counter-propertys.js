@@ -5,7 +5,7 @@
 
 // *****************************variables de la animacion****************************
 // tiempo en segundos
-const TIME = 5; 
+const TIME = 6; 
 // empezar el contador desde
 const N_INIT = 0;
 

@@ -283,10 +283,7 @@ a:hover{
     width: 25%;
 }
 
-.texto_servi{
-    text-align: justify;
-    padding: 37px;
-}
+
 .magen_container_servi{
     margin-top: 70px;
 }
@@ -635,6 +632,10 @@ color: black;
 .icon_cont{
    
 }
+.texto_servi{
+    text-align: justify;
+    padding: 37px;
+}
 .color_face{
     color: #0c50a7;
 }
@@ -677,7 +678,7 @@ color: black;
     left: 0;
     right: 0;
     bottom: 0;
-    width: 98%;
+    width: 13%;
     height: 2px;
     background-color: #99cf16;
 }
@@ -704,12 +705,34 @@ body::-webkit-scrollbar-thumb{
     height: 250px;
     object-fit: contain;
 }
+.cont_iconos{
+    margin-left: 17%;
+}
 
 @media (max-width: 575.98px) { 
     .marge_contenido{
         padding-left: 0px;
         margin-left: -6px;
-        margin-top: -7%;
+        margin-top: 4%;
+        
+    }
+    .img_noticia{
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 30px;
+        margin: 6%;
+      }
+    .texto_servi{
+        text-align: justify;
+        padding: 0px;
+        margin-top: 7%;
+        margin-bottom: 22px;
+    }
+    
+    .marge_contenido2{
+        padding-left: 0px;
+        margin-left: -6px;
+        margin-top: -10%;
     }
     .estilo_letra_list{
         display: block;
@@ -760,13 +783,16 @@ body::-webkit-scrollbar-thumb{
         font-size: 24px;
         color: #ffffff;
         font-weight: 800;
-        margin-top: -16%;
+        margin-top: -43%;
+    }
+    .container_movil{
+        height: 346px;
     }
     #style_slide_dos{
         font-size: 18px;
         color: #ffffff;
         font-weight: 800;
-        margin-top: 23%;
+        margin-top: -12%;
     }
     .logo_principal{
         height: 135%;
@@ -777,7 +803,7 @@ body::-webkit-scrollbar-thumb{
         font-size: 20px;
         color: #ffffff;
         font-weight: 800;
-        margin-top: 19%;
+        margin-top: -14%;
     }
     .img_venta{
         width: 100%;
@@ -868,6 +894,15 @@ body::-webkit-scrollbar-thumb{
     .inicio_top{
         margin-top: 7%;
     }
+    .nav-item.active .nav-link:before{
+        content: '';
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 13%;
+        height: 2px;
+        background-color: #99cf16;
+        }
     
   
     
@@ -879,6 +914,9 @@ body::-webkit-scrollbar-thumb{
     #menu_sec_2{
         margin-left: 69px;
        
+    }
+    .cont_iconos{
+        margin-left: 0%;
     }
     .margen_gestion{
         margin-left: 7%;
@@ -905,6 +943,9 @@ body::-webkit-scrollbar-thumb{
     }
     .margen_quinessomos{
         margin-top: 21%;
+    }
+    .dimencion_imagen{
+        height: 172px;
     }
     .tamaño_tel_nav{
         font-size: 15px;
@@ -952,6 +993,11 @@ body::-webkit-scrollbar-thumb{
        
     }
     .marge_contenido{
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 30px;
+    }
+    .marge_contenido2{
         padding-left: 0px;
         padding-right: 0px;
         margin-left: 30px;
@@ -1061,6 +1107,24 @@ body::-webkit-scrollbar-thumb{
     .top_md{
         margin-top: 5%;
     }
+    .nav-item.active .nav-link:before {
+        position: absolute;
+        content: '';
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 8%;
+        height: 2px;
+        background-color: #99cf16;
+    }
+    .tamaño_img_detalle{
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+    .cont_avaluos{
+        margin-left: 25%;
+    }
     
  }
 
@@ -1071,6 +1135,9 @@ body::-webkit-scrollbar-thumb{
         color: #ffffff;
         font-weight: 800;
         margin-top: -5%;
+    }
+    .dimencion_imagen{
+        height: 230px;
     }
     .top_md{
         margin-top: 0%;
@@ -1103,6 +1170,18 @@ body::-webkit-scrollbar-thumb{
         margin-top: 6%;
     
     }
+    .cont_avaluos{
+        margin-left: 0%;
+    }
+    .nav-item.active .nav-link:before{
+        content: '';
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 98%;
+        height: 2px;
+        background-color: #99cf16;
+        }
     .h3_contac::after{
         position: absolute;
         left: 0;
@@ -1126,6 +1205,11 @@ body::-webkit-scrollbar-thumb{
         margin: 0px 5px;
     }
     .marge_contenido{
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 30px;
+    }
+    .marge_contenido2{
         padding-left: 0px;
         padding-right: 0px;
         margin-left: 30px;
@@ -1184,6 +1268,11 @@ body::-webkit-scrollbar-thumb{
     .tamaño_tel_corr{
         font-size: 17px;
     }
+    .tamaño_img_detalle{
+        width: 100%;
+        height: 250px;
+        object-fit: contain;
+    }
  }
 
 // Extra large devices (large desktops, 1200px and up)
@@ -1233,6 +1322,11 @@ body::-webkit-scrollbar-thumb{
         margin: 0px 14px;
     }
     .marge_contenido{
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 30px;
+    }
+    .marge_contenido2{
         padding-left: 0px;
         padding-right: 0px;
         margin-left: 30px;
