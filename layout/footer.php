@@ -64,7 +64,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="footer-bottom-area" style="background: #000000;">
+                <div class="footer-bottom-area" style="background: #000000; margin-top: 3%;">
                     <div class="container  text-center p-2">
                         <p class="copy_style">Copyright © 2019 <a class="color_a_foot_imper" href="https://www.dexcondigital.com">Dexcon Digital.</a>Todos los derechos reservados.</p>
                     </div>

@@ -88,7 +88,7 @@ $page = 'contacto' ?>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <textarea style="max-width: 540px;" cols="28" rows="10" class="textarea form-control" placeholder="Mensaje"></textarea>
+                                        <textarea  cols="28" rows="10" class="textarea form-control tamaño_tex_area" placeholder="Mensaje"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-md-12">

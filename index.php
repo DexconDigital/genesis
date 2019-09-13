@@ -99,8 +99,8 @@ $page = 'Inicio'; ?>
                         </select>
                     </div>
                     <div class="col-xl-3 col-md-4 col-12  margen_busca"><input type="text" class="form-control rounded-0" id="precio_minimo_buscar" onkeyup="format(this)" onchange="format(this)" placeholder=" Precio Mínimo"></div>
-                    <div class="col-xl-3 col-md-6 col-12  margen_busca"><input type="text" class="form-control rounded-0" id="precio_maximo_buscar" onkeyup="format(this)" onchange="format(this)" placeholder=" Precio Máximo"></div>
-                    <div class="col-xl-3 col-md-6 col-12  margen_busca">
+                    <div class="col-xl-3 col-md-4 col-12  margen_busca"><input type="text" class="form-control rounded-0" id="precio_maximo_buscar" onkeyup="format(this)" onchange="format(this)" placeholder=" Precio Máximo"></div>
+                    <div class="col-xl-3 col-md-8 col-12  margen_busca">
                         <button style="" type="button" class="btn rounded-0 col-12 boton_buscar" id="buscar"><span style="color:white">Buscar</span></button></div>
                         
                 </div>
@@ -190,7 +190,7 @@ $page = 'Inicio'; ?>
             </div>
         </section>
 
-        <section id="estadisticas" onmouseover="estadistic()">
+        <section id="estadisticas">
             <div class="banner_estadi ">
                 <div class="container  contenedor_banner">
 

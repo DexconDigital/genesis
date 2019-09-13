@@ -541,10 +541,7 @@ color: black;
     display: inline-block;
     width: 100%;
 }
-#style_slider_img{
-    object-fit: cover;
-    height: 537px;
-}
+
 .boton_similares{
     border: 0;
     background: #77c720;
@@ -903,6 +900,14 @@ body::-webkit-scrollbar-thumb{
         height: 2px;
         background-color: #99cf16;
         }
+        .tamaño_tex_area{
+            width: 90%;
+        }
+        #style_slider_img{
+            object-fit: cover;
+            height: 350px;
+        }
+        
     
   
     
@@ -929,7 +934,10 @@ body::-webkit-scrollbar-thumb{
     .margen_quinessomos{
         margin-top: 21%;
     }
-    
+    #style_slider_img{
+        object-fit: cover;
+        height: 537px;
+    }
     
 }
 
@@ -1125,6 +1133,9 @@ body::-webkit-scrollbar-thumb{
     .cont_avaluos{
         margin-left: 25%;
     }
+    .tamaño_tex_area{
+        width: 91%;
+    }
     
  }
 
@@ -1272,6 +1283,9 @@ body::-webkit-scrollbar-thumb{
         width: 100%;
         height: 250px;
         object-fit: contain;
+    }
+    .tamaño_tex_area{
+        width: 95%;
     }
  }
 
