@@ -1,4 +1,3 @@
-//function estadistic(){
 // Requiere que el archivo "conexion_api/token_api.js" se llame primero
 // Requiere jquery
 // Requiere el archivo countUp.js
@@ -6,7 +5,7 @@
 
 // *****************************variables de la animacion****************************
 // tiempo en segundos
-const TIME = 6; 
+const TIME = 5;
 // empezar el contador desde
 const N_INIT = 0;
 
@@ -14,19 +13,25 @@ const N_INIT = 0;
 
 // ************************Años de experiencia***************************
 setTimeout(() => {
-   var experence = () =>{
+   var experence = () => {
       var fecha = new Date();
       var ano = fecha.getFullYear();
       //  Colocar el año de creacion de la empresa
       const CREATECOMPANY = 2011;
       var total = ano - CREATECOMPANY;
-      
-      // buscar el id en el dom y imprimir el resultado
-      let contador = new CountUp("counter-experence",0,total,N_INIT,TIME);
 
-      contador.start();
+      let contador = new CountUp("counter-experence", 0, total, 0, 5);
+      //  Hacer efecto segun la posicion del scroll
+      var ubicacion = $("body").offset().top;
 
-      //  Iniciar el  efecto segun la posicion del scroll
+      console.log(ubicacion + 'hp');
+      $(window).scroll(function (event) {
+         var ubicacion = $("#estadisticas").offset().top;
+         var scroll = $(window).scrollTop();
+         if (scroll > ubicacion - 450) {
+            contador.start();
+         }
+      });
    }
    experence();
 
@@ -43,12 +48,23 @@ setTimeout(() => {
       'dataType': "json",
       success: function (response) {
          var inmuebles_count = 0;
-         if(response != 'Sin resultados'){
+         if (response != 'Sin resultados') {
             var inmuebles_count = response.datosGrales.totalInmuebles;
          }
          // buscar el id en el dom y imprimir el resultado
-         let contador1 = new CountUp("counter-propertys",0,inmuebles_count,N_INIT,TIME);
-         contador1.start();
+         let contador1 = new CountUp("counter-propertys", 0, inmuebles_count, N_INIT, TIME);
+         //  Hacer efecto segun la posicion del scroll
+         var ubicacion = $("body").offset().top;
+
+         console.log(ubicacion + 'hp');
+         $(window).scroll(function (event) {
+            var ubicacion = $("#estadisticas").offset().top;
+            var scroll = $(window).scrollTop();
+            if (scroll > ubicacion - 450) {
+               contador1.start();
+            }
+         });
+
       }
    });
 
@@ -64,12 +80,23 @@ setTimeout(() => {
       'dataType': "json",
       success: function (response) {
          var inmuebles_count = 0;
-         if(response != 'Sin resultados'){
+         if (response != 'Sin resultados') {
             var inmuebles_count = response.datosGrales.totalInmuebles;
          }
          // buscar el id en el dom y imprimir el resultado
-         let contador2= new CountUp("counter-rent",0,inmuebles_count, N_INIT, TIME);
-         contador2.start();
+         let contador2 = new CountUp("counter-rent", 0, inmuebles_count, N_INIT, TIME);
+         //  Hacer efecto segun la posicion del scroll
+         var ubicacion = $("body").offset().top;
+
+         console.log(ubicacion + 'hp');
+         $(window).scroll(function (event) {
+            var ubicacion = $("#estadisticas").offset().top;
+            var scroll = $(window).scrollTop();
+            if (scroll > ubicacion - 450) {
+               contador2.start();
+            }
+         });
+         
 
       }
 
@@ -87,12 +114,24 @@ setTimeout(() => {
       'dataType': "json",
       success: function (response) {
          var inmuebles_count = 0;
-         if(response != 'Sin resultados'){
+         if (response != 'Sin resultados') {
             var inmuebles_count = response.datosGrales.totalInmuebles;
          }
          // buscar el id en el dom y imprimir el resultado
-         let contador3 = new CountUp("counter-sale",0,inmuebles_count,N_INIT,TIME);
-         contador3.start();
+         let contador3 = new CountUp("counter-sale", 0, inmuebles_count, N_INIT, TIME);
+          //  Hacer efecto segun la posicion del scroll
+      var ubicacion = $("body").offset().top;
+
+      console.log(ubicacion + 'hp');
+       $(window).scroll(function (event) {
+         var ubicacion = $("#estadisticas").offset().top;
+           var scroll = $(window).scrollTop();
+             if(scroll > ubicacion-450){
+                  contador3.start();
+               }  
+       });
+         
+
       }
    });
 
@@ -109,17 +148,26 @@ setTimeout(() => {
       'dataType': "json",
       success: function (response) {
          var inmuebles_count = 0;
-         if(response != 'Sin resultados'){
+         if (response != 'Sin resultados') {
             var inmuebles_count = response.datosGrales.totalInmuebles;
          }
-         
+
          // buscar el id en el dom y imprimir el resultado
-         let contador4 = new CountUp("counter-sale-rent",0,inmuebles_count,N_INIT,TIME);
-         contador4.start();
+         let contador4 = new CountUp("counter-sale-rent", 0, inmuebles_count, N_INIT, TIME);
+          //  Hacer efecto segun la posicion del scroll
+      var ubicacion = $("body").offset().top;
+
+      console.log(ubicacion + 'hp');
+       $(window).scroll(function (event) {
+         var ubicacion = $("#estadisticas").offset().top;
+           var scroll = $(window).scrollTop();
+             if(scroll > ubicacion-450){
+                  contador4.start();
+               }  
+       });
       }
    });
 }, 500);
 
-//}
 
- 
+

@@ -1,7 +1,7 @@
 // Boton de subir
 $(document).ready(function() {
 
-    $('.subir, #estadisticas').click(function() {
+    $('.subir').click(function() {
         $('body, html').animate({
             scrollTop: '0px'
         }, 500);
@@ -16,9 +16,6 @@ $(document).ready(function() {
             
         }
     });
-
-
-
 
     $('#owl-destacadas').owlCarousel({
         loop:true,
@@ -39,10 +36,3 @@ $(document).ready(function() {
     
 });
 // fin de boton subir
-
-
-
-function elementos (){
-   estadistic();
-};
-   

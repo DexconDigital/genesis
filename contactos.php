@@ -120,9 +120,6 @@ $page = 'contacto' ?>
     </div>
 
 
-
-
-
     <?php include('layout/archivosfooter.php'); ?>
 
 
