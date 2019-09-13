@@ -190,7 +190,7 @@ $page = 'Inicio'; ?>
             </div>
         </section>
 
-        <section id="estadisticas">
+        <section id="estadisticas" onmouseover="estadistic()">
             <div class="banner_estadi ">
                 <div class="container  contenedor_banner">
 

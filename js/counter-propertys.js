@@ -1,3 +1,4 @@
+function estadistic(){
 // Requiere que el archivo "conexion_api/token_api.js" se llame primero
 // Requiere jquery
 // Requiere el archivo countUp.js
@@ -119,6 +120,6 @@ setTimeout(() => {
    });
 }, 500);
 
-
+}
 
  
