@@ -31,7 +31,7 @@ $(document).ready(function () {
 
     // Funcion para cargar departamentos, ciudades y barrios
     $.ajax({
-        url: 'https://www.simi-api.com/ApiSimiweb/response/v2/departamento',
+        url: PROTOCOLO+'://www.simi-api.com/ApiSimiweb/response/v2/departamento',
         type: 'GET',
         beforeSend: function (xhr) {
             xhr.setRequestHeader(
@@ -43,7 +43,7 @@ $(document).ready(function () {
             for (var i = 0; i < depto.length; i++) {
                 // Funcion para traer ciudades
                 $.ajax({
-                    url: 'https://www.simi-api.com/ApiSimiweb/response/v2/ciudad/idDepartamento/' + depto[i].id,
+                    url: PROTOCOLO+'://www.simi-api.com/ApiSimiweb/response/v2/ciudad/idDepartamento/' + depto[i].id,
                     type: 'GET',
                     beforeSend: function (xhr) {
                         xhr.setRequestHeader(
@@ -72,7 +72,7 @@ $(document).ready(function () {
         // Limpia el selected de los barrios cada vez que se cambia de ciudad
         $('#barrio_buscar').empty();
             $.ajax({
-                url: 'http://www.simi-api.com/ApiSimiweb/response/v2/barrios/idCiudad/' + ciudad_id,
+                url: PROTOCOLO+'://www.simi-api.com/ApiSimiweb/response/v2/barrios/idCiudad/' + ciudad_id,
                 type: 'GET',
                 beforeSend: function (xhr) {
                     xhr.setRequestHeader(
@@ -96,7 +96,7 @@ $(document).ready(function () {
     });
     // Funcion para traer tipo de gestion ejm: "arriendo, venta etc."
     $.ajax({
-        url: 'https://www.simi-api.com/ApiSimiweb/response/gestion',
+        url: PROTOCOLO+'://www.simi-api.com/ApiSimiweb/response/gestion',
            type: 'GET',
            beforeSend: function (xhr) {
            xhr.setRequestHeader(
@@ -119,7 +119,7 @@ $(document).ready(function () {
 
     // Funcion que trae el tipo de inmueble ejm: apartamento casa etc
     $.ajax({
-        url: 'http://www.simi-api.com/ApiSimiweb/response/v2/tipoInmuebles/unique/1',
+        url: PROTOCOLO+'://www.simi-api.com/ApiSimiweb/response/v2/tipoInmuebles/unique/1',
            type: 'GET',
            beforeSend: function (xhr) {
            xhr.setRequestHeader(
