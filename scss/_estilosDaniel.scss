@@ -7,18 +7,18 @@
     font-family: 'century-gotic';
     src: url("../fonts/GOTHIC.TTF")
 }
-body{
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    overflow-x:hidden;
-    padding: 0;
-    margin: 0;
-}
-body .body{
-    flex: 1;
-    padding: 0;
-}
+    body{
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        overflow-x:hidden;
+        padding: 0;
+        margin: 0;
+    }
+    body .body{
+        flex: 1;
+        padding: 0;
+    }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "century-gotic"; 
@@ -1100,7 +1100,7 @@ body::-webkit-scrollbar-thumb{
     .h3_contac2::after{
         position: absolute;
         left: 0;
-        top: 85px;
+        top:48px;
         width: 80px;
         height: 5px;
         content: "";

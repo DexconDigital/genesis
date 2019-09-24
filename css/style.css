@@ -1045,7 +1045,7 @@ body::-webkit-scrollbar-thumb {
   .h3_contac2::after {
     position: absolute;
     left: 0;
-    top: 85px;
+    top: 48px;
     width: 80px;
     height: 5px;
     content: "";

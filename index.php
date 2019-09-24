@@ -30,7 +30,7 @@ $page = 'Inicio'; ?>
                     <div class="carousel-item active">
                         <div class="view container_movil">
                             <img class="d-block w-100" id="style_slider_img" src="images/BOGOTA-min.jpg" alt="First slide">
-                            <div class="mask rgba-black-strong"></div>
+                            <div class="mask rgba-black-light waves-light"></div>
                         </div>
                         <div class="carousel-caption wow fadeInUp" data-wow-delay="0.6s" style="top:260px;">
                             <h1 id="style_slide_uno" class="h3-responsive"><?php echo $frases_slide_principal[0] ?></h1>
@@ -40,7 +40,7 @@ $page = 'Inicio'; ?>
                         <!--Mask color-->
                         <div class="view  container_movil">
                             <img class="d-block w-100" id="style_slider_img" src="images/MOSTRANDO_APTO-min.jpg" alt="Second slide">
-                            <div class="mask rgba-black-strong"></div>
+                            <div class="mask rgba-black-light waves-light"></div>
                         </div>
                         <div class="carousel-caption wow fadeInLeft" data-wow-delay="0.6s" style="top:153px;">
                             <h1 id="style_slide_dos" class="h3-responsive"><?php echo $frases_slide_principal[1] ?></h1>
@@ -51,7 +51,7 @@ $page = 'Inicio'; ?>
                         <!--Mask color-->
                         <div class="view  container_movil">
                             <img class="d-block w-100" id="style_slider_img" src="images/FAMILIA-CASA-min.jpg" alt="Third slide">
-                            <div class="mask rgba-black-strong"></div>
+                            <div class="mask rgba-black-light waves-light"></div>
                         </div>
                         <div class="carousel-caption wow fadeInDown" data-wow-delay="0.6s" style="top:155px;">
                             <h1 id="style_slide_tres" class="h3-responsive"><?php echo $frases_slide_principal[2] ?></h1>

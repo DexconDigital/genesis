@@ -48,8 +48,7 @@ $page = 'contacto' ?>
                                     <li class="info_contac"><i class="fas fa-calendar-alt icono_contac"></i><a class="color_a_foot_white" href=""><?php echo $datos_contacto['horario']['horario'] ?></li></a>
 
                                 </ul>
-
-                            </nav>
+                           </nav>
                         </div>
                     </div>
                     <div class="col-md-7 ">
@@ -57,22 +56,22 @@ $page = 'contacto' ?>
                             <h3 class="h3_contac">Mensaje</h3>
                             <form action="">
                                 <div class="col-md-12 row">
-                                    <div class="col-lg-6 col-md-12">
+                                    <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
                                             <input type="text" class="form-control" placeholder="Nombre">
                                         </div>
                                     </div>
-                                    <div class="col.lg.12 col-md-12">
+                                    <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
                                             <input type="text" class="form-control" placeholder="Apellido">
                                         </div>
                                     </div>
-                                    <div class="col.lg.12 col-md-12">
+                                    <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
                                             <input type="text" class="form-control" placeholder="Teléfono fijo ó celular">
                                         </div>
                                     </div>
-                                    <div class="col.lg.12 col-md-12">
+                                    <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
                                             <input type="email" class="form-control" placeholder="Correo">
                                         </div>

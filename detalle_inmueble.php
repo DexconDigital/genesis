@@ -47,7 +47,7 @@ require 'controllers/detalleInmuebleController.php' ?>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <?php include 'layout/archivosheader.php' ?>
+    <?php include 'layout/archivosheader.php'; ?>
     <link rel="stylesheet" href="./css/carousel.tamanos.css">
     <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/slick-theme.css">
