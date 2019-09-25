@@ -47,7 +47,7 @@ $datos_contacto = [
 	],
 	"celular" => [
 		"link"=> "+573118106792",
-		"imprimir" => "311 810 6792",
+		"imprimir" => "321 455 0461",
 		"icono" => "fas fa-mobile-alt",
 	],
 	"whatsapp" => [

@@ -5,6 +5,9 @@ require 'controllers/detalleInmuebleController.php' ?>
 <html lang="es">
 
 <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--scrip importante -->
     <?php include 'layout/archivosheader.php'; ?>
@@ -42,10 +45,6 @@ require 'controllers/detalleInmuebleController.php' ?>
     </span>
 
 
-
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <?php include 'layout/archivosheader.php'; ?>
     <link rel="stylesheet" href="./css/carousel.tamanos.css">
@@ -184,18 +183,16 @@ require 'controllers/detalleInmuebleController.php' ?>
                             <div class="col-md-12">
                                 <!-- Video -->
                             </div>
-                            
-                                <div class="col-md-12">
+
+                            <div class="col-md-12">
                                 <h4 class="property-single-detail-title"><strong>Mapa de Ubicación</strong></h4>
-                                    <div class="card mapa_tamaño">
-                                        <div class="">
-                                            <div id="map" class="w-100"></div>
-                                        </div>
+                                <div class="card mapa_tamaño">
+                                    <div class="">
+                                        <div id="map" class="w-100"></div>
                                     </div>
-
-
                                 </div>
-                            
+                            </div>
+
                         </div>
                         <div class="col-lg-5 col-md-12 col-12">
                             <div class="search-box daily-email bg2 text-center">

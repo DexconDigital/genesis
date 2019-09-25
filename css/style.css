@@ -763,9 +763,11 @@ body::-webkit-scrollbar-thumb {
     margin-top: -14%; }
 
   .img_venta {
-    width: 100%; }
+    width: 100%;
+    height: auto; }
 
   .img_arriendo {
+    height: auto;
     width: 100%;
     margin-left: 5%; }
 
