@@ -23,6 +23,9 @@ $usuario =  mysqli_fetch_array($sql);
         color: white;
 
     }
+    .container{
+    background-color: white;
+}
 
     .color_boton:hover {
         color: white;

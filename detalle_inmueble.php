@@ -209,7 +209,7 @@ require 'controllers/detalleInmuebleController.php' ?>
                                         <div class="col-12  mt-2 text-center">
                                             <div><?php echo $asesor['ntercero']; ?></div>
                                             <div><i class=""></i><a class="color_verde" href="tel:+57<?php echo $asesor['celular']; ?>"><?php echo $asesor['celular']; ?></a></div>
-                                            <div><i class=""></i><a class="color_verde" href="mailto:"><?php echo $asesor['correo']; ?></a></div>
+                                            <div><i class=""></i><a class="color_verde" href="mailto:<?php echo $asesor['correo']; ?>"><?php echo $asesor['correo']; ?></a></div>
 
                                         </div>
 

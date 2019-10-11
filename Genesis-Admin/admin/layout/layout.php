@@ -56,6 +56,11 @@ $imagen_inicio = $usuario[9];
         .colo_ico2 {
             color: white;
         }
+        .fondo{
+            background-image: url('images/fondo.png');
+            background-position: center;
+            background-size: cover;
+        }
     </style>
 </head>
 
@@ -137,8 +142,8 @@ $imagen_inicio = $usuario[9];
         </ul>
     </nav>
 
-    <div id="wrapper">
-
+    <div id="wrapper" class="fondo">
+    
         <ul class="sidebar navbar-nav color_ul">
 
             <li>
@@ -182,7 +187,7 @@ $imagen_inicio = $usuario[9];
                 </div>
             </li>
         </ul>
-
+        
 
 
 

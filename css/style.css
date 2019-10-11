@@ -1047,7 +1047,7 @@ body::-webkit-scrollbar-thumb {
   .h3_contac2::after {
     position: absolute;
     left: 0;
-    top: 48px;
+    top: 88px;
     width: 80px;
     height: 5px;
     content: "";
@@ -1300,6 +1300,15 @@ body::-webkit-scrollbar-thumb {
     color: white; }
 
   .color_blanco_url:hover {
-    color: white; } }
+    color: white; }
+
+  .h3_contac2::after {
+    position: absolute;
+    left: 0;
+    top: 46px;
+    width: 80px;
+    height: 5px;
+    content: "";
+    background: #77c720; } }
 
 /*# sourceMappingURL=style.css.map */

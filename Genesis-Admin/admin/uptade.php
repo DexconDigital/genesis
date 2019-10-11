@@ -78,7 +78,7 @@ if($destino != $comparador_fotos && $destinos != $comparador_archivo){
     copy($rutas,$destinos);
     copy($ruta,$destino);
     $con = Conect();
-    $qry=("UPDATE `noticias` SET `imagen` = '$destino', `archivo` = '$destino' WHERE `noticias`.`id` = '$id'");
+    $qry=("UPDATE `noticias` SET `imagen` = '$destino', `archivo` = '$destinos' WHERE `noticias`.`id` = '$id'");
     $sql=mysqli_query($con,$qry);  
     if(!$sql){
         echo 'No se logro actualizar';
