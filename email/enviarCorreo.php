@@ -31,10 +31,11 @@ try{
     // Mensaje para enviar
     
     $mail->isHTML(true);
-    //desde donde
-    $mail->setFrom('no-reply@genesis.com', 'no-reply@genesis.com');
+    //Cabecera
+    $mail->setFrom('genesis@genesis.com', 'genesis@genesis.com');
     //destinos
     $mail->addAddress('williamlopez@gainmobiliariasas.com');
+    
 
     $mail->Subject='Mensaje desde la pagina web de Inmobiliaria Genesis';
     $mail->Body = '<span>Hola, '.$nombre.' quiere recibir informacion con respeto a '.$asunto.' </span>

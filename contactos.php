@@ -20,16 +20,16 @@ $page = 'contacto' ?>
         </section>
 
         <section id="mapa" class="margen_contacto">
-            
-                <div class="col-12 p-0">
-                    <div class="">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.6105356778453!2d-74.06044668555337!3d4.663327743279707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a5edbe0bf49%3A0x936d31bf17fc020e!2sCl.+77+%2314-19%2C+Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1566497166353!5m2!1ses!2sco" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
-                        <div class="contenedor-overlay">
 
-                        </div>
+            <div class="col-12 p-0">
+                <div class="">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.6105356778453!2d-74.06044668555337!3d4.663327743279707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a5edbe0bf49%3A0x936d31bf17fc020e!2sCl.+77+%2314-19%2C+Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1566497166353!5m2!1ses!2sco" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <div class="contenedor-overlay">
+
                     </div>
                 </div>
-            
+            </div>
+
         </section>
 
         <section>
@@ -48,7 +48,7 @@ $page = 'contacto' ?>
                                     <li class="info_contac"><i class="fas fa-calendar-alt icono_contac"></i><a class="color_a_foot_white" href=""><?php echo $datos_contacto['horario']['horario'] ?></li></a>
 
                                 </ul>
-                           </nav>
+                            </nav>
                         </div>
                     </div>
                     <div class="col-md-7 ">
@@ -71,19 +71,19 @@ $page = 'contacto' ?>
                                             <input type="email" class="form-control" name="email" placeholder="Correo" required>
                                         </div>
                                     </div>
-                                  <div class="col-md-12">
-                                        <select class="browser select custom-select mb-4"  id="asunto" name="asunto" >
-                                            <option  selected>Seleccione</option>
-                                            <option  value="Solicitud de servicios"> Solicitud de servicios</option>
-                                            <option  value="Consignación de Inmueble"> Consignar Inmueble</option>
+                                    <div class="col-md-12">
+                                        <select class="browser select custom-select mb-4" id="asunto" name="asunto">
+                                            <option selected>Seleccione</option>
+                                            <option value="Solicitud de servicios"> Solicitud de servicios</option>
+                                            <option value="Consignación de Inmueble"> Consignar Inmueble</option>
 
                                         </select>
                                     </div>
-                        
+
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <textarea  cols="28" rows="10" name="message" class="textarea form-control tamaño_tex_area" placeholder="Mensaje"></textarea>
+                                        <textarea cols="28" rows="10" name="message" class="textarea form-control tamaño_tex_area" placeholder="Mensaje"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
