@@ -55,27 +55,7 @@
             <li class="b-none"> <a class="color_a_nav tamaño_tel_corr" href="mailto:<?php echo $datos_contacto['correo']['correo'] ?>"><i class="far fa-envelope m-2 li_color "></i><?php echo $datos_contacto['correo']['correo'] ?></a></li>
         </ul>
     </div>
-    <!--
-    <div class="container-fluit">
-        <div class="container contact-information ">
-            <div class="col-md-12 d-md-block">
-                <div class="d-flex bd-highlight ">
-                    <div class=" col-lg-6 col-md-6 col-sm-2 row mr-auto  bd-highlight ">
-                        <a class="color_a_nav  a_linea tamaño_tel_nav " href="tel:<?php echo $datos_contacto['telefono_fijo']['link'] ?> "><i class="fa fa-phone m-2 li_color"></i><?php echo $datos_contacto['telefono_fijo']['imprimir'] ?>&nbsp </a>
-                        <a class="color_a_nav tamaño_tel_tel " href="tel:<?php echo $datos_contacto['celular']['link'] ?>"><i class="fas fa-mobile-alt m-2 li_color"></i><?php echo $datos_contacto['celular']['imprimir'] ?></a>
-                    </div>
-
-                    <div id="menu_sec_2" class=" col-lg-6 col-md-6 col-sm-22 row  bd-highlight  d-flex align-items-end">
-                        <a class="color_a_nav  a_linea2 tamaño_tel_wapp" target="_blank" href="<?php echo $datos_contacto['whatsapp']['link'] ?>"><i class="fab fa-whatsapp m-2 li_color"></i><?php echo $datos_contacto['whatsapp']['imprimir'] ?>&nbsp</a>
-                        <a class="color_a_nav tamaño_tel_corr" href="mailto:<?php echo $datos_contacto['correo']['correo'] ?>"><i class="far fa-envelope m-2 li_color "></i><?php echo $datos_contacto['correo']['correo'] ?></a>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-    <div class="coltainer-fluit">
+<div class="coltainer-fluit">
         <div class="row ">
             <div class="col-12 border-top">
                 <nav id="" class="navbar navbar-expand-lg navbar-light mi_nav" style="padding: 0px 1rem;">

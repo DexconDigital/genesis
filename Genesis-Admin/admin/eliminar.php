@@ -18,7 +18,9 @@
         if (!$sql) {
             echo 'No se logro realizar la peticion';
         } else {
-            header("Location: lista-publicaciones.php");
+            
+             header("location: lista-publicaciones.php");
+              
         }
         ?>
     

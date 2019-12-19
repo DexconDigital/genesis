@@ -86,12 +86,12 @@ $page = 'contacto' ?>
                                         <textarea cols="28" rows="10" name="message" class="textarea form-control tamaño_tex_area" placeholder="Mensaje"></textarea>
                                     </div>
                                 </div>
-                                <div class="col-md-12">
-                                    <div class="custom-control custom-checkbox mb-4">
-                                        <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy" required>
-                                        <label class="custom-control-label" for="defaultContactFormCopy">Confimo que he leído, entendido y acepto la<a class="color_a_foot_black" href="Politica_de_datos.pdf" download="Politica de tratamiento de infromación.pdf"> política de tratamiento de datos personales.</a></label>
+                                    <div class="col-md-12">
+                                        <div class="custom-control custom-checkbox mb-4">
+                                            <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy" required>
+                                            <label class="custom-control-label" for="defaultContactFormCopy">Confimo que he leído, entendido y acepto la<a class="color_a_foot_black" href="Politica_de_datos.pdf" download="Politica de tratamiento de infromación.pdf"> política de tratamiento de datos personales.</a></label>
+                                        </div>
                                     </div>
-                                </div>
                                 <div class="col-sm-12">
                                     <div class="form-group">
                                         <button style="background-color:#99cf16; padding: 6px;" type="submit" class="btn rounded-0 col-5 waves-effect waves-light" name=""><span style="color:white">Enviar</span></button>

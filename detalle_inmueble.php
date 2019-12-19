@@ -95,6 +95,7 @@ require 'controllers/detalleInmuebleController.php' ?>
                                 }
                                 ?>
                             </section>
+                            
                             <div class="col-md-12 row  ">
                                 <div class="col-md-6 col-lg-6 col-12 contenerdor_booton_conta">
                                     <button type="button" class="btn color_comparit rounded-0 col-6 compartir_boton" name=""><a class="color_blanco_url" href="https://simicrm.app/mcomercialweb/fichas_tecnicas/fichatec3.php?reg=583-<?php echo $co ?>" target="_blank">Imprimir ficha</a></button>

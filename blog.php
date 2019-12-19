@@ -27,7 +27,7 @@ require 'controllers/noticiasController.php' ?>
                 <?php if(isset($noticias_array)){
                         modelo_noticia($noticias_array);
                     }else{
-                        echo '<div class="col 12">
+                        echo '<div class="col 12 cont_publicar ">
                         <h3 class="text-center">Muy pronto publicaremos contenido para ti<h3>
                         </div>';
                     }
